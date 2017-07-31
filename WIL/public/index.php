@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Proyecto</title>
+	<title>PROYECTO</title>
 </head>
 <body>
-		<h1>Ya sé</h1>
+
+	<h1>Si jala</h1>
+
 </body>
 </html>
