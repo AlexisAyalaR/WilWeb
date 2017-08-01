@@ -1,0 +1,2 @@
+nosotros = [];
+num = 7;
