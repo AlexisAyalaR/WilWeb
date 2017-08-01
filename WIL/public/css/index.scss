@@ -35,4 +35,29 @@ header{
 		top: 15px;
 		float: right;
 	}
+	.section1{
+		.section1__divIMg{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background: url(http://cdn26.us1.fansshare.com/photo/computerwallpaper/computer-hd-wallpaper-computer-background-computer-background-computer-science-wallpaper-82781153.jpg);
+			text-align: center;
+			.section1__img{
+				position: relative;
+				height: 548*0.25px;
+				width: 625*0.25px;
+			}
+			.section1__divImg1{
+				position: absolute;
+				bottom: 0;
+				width: 225*2px;
+				height: 85*2px;
+				.section1__img1{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
 }
