@@ -6,3 +6,8 @@ function creaPerfil(num){
 	var card = document.createElement("div");
 	card.setAttribute("class","w3-card");
 }
+function imprimePerfiels(){
+	for (var i = 0; i <num; i++)}{
+		
+	}
+}
