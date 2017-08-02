@@ -401,14 +401,18 @@ body {
 
 header {
   height: 137px;
-  width: 100%; }
-  header .header__img {
+  width: 100%;
+  /*.header__div{
+  	top: 15px;
+  	float: right;
+  }*/ }
+  header .header__div1 .header__img {
     height: 100%;
     width: 100%;
     height: 137px;
     width: 156.25px;
     float: left; }
-  header .header__title {
+  header .header__div1 .header__title {
     margin: 0px;
     padding: 0px;
     font-size: 21px;
@@ -416,27 +420,25 @@ header {
     float: left;
     top: 20px;
     font-family: 'Anton', sans-serif; }
-  header .header__div {
-    top: 15px;
-    float: right; }
-  header .section1 .section1__divIMg {
+
+.section1 .section1__divIMg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(http://cdn26.us1.fansshare.com/photo/computerwallpaper/computer-hd-wallpaper-computer-background-computer-background-computer-science-wallpaper-82781153.jpg);
+  text-align: center; }
+  .section1 .section1__divIMg .section1__img {
     position: relative;
-    width: 100%;
-    height: 100%;
-    background: url(http://cdn26.us1.fansshare.com/photo/computerwallpaper/computer-hd-wallpaper-computer-background-computer-background-computer-science-wallpaper-82781153.jpg);
-    text-align: center; }
-    header .section1 .section1__divIMg .section1__img {
-      position: relative;
-      height: 137px;
-      width: 156.25px; }
-    header .section1 .section1__divIMg .section1__divImg1 {
+    height: 137px;
+    width: 156.25px; }
+  .section1 .section1__divIMg .section1__divImg1 {
+    position: absolute;
+    bottom: 0;
+    width: 450px;
+    height: 170px; }
+    .section1 .section1__divIMg .section1__divImg1 .section1__img1 {
       position: absolute;
-      bottom: 0;
-      width: 450px;
-      height: 170px; }
-      header .section1 .section1__divIMg .section1__divImg1 .section1__img1 {
-        position: absolute;
-        width: 100%;
-        height: 100%; }
+      width: 100%;
+      height: 100%; }
 
 /*# sourceMappingURL=index.css.map */
