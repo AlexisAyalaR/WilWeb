@@ -29,7 +29,7 @@ header{
 			font-size: 21px;
 			color: black;
 			float: left;
-			top: 20px;
+			bottom: 20;
 			font-family: 'Anton', sans-serif;
 		}
 	}
@@ -37,6 +37,15 @@ header{
 		top: 15px;
 		float: right;
 	}*/
+	.header__imput{
+		margin: 0px;
+		padding: 0px;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		position: fixed;
+		top: 1000;
+	}
 }
 .section1{
 	.section1__divIMg{
