@@ -12,7 +12,11 @@ function imprimePerfiels(){
 	}
 }
 
-function openNav() {
-    document.getElementById("imput").style.width = "250px";
-    document.getElementById("imput").style.marginLeft = "250px";
+function openClose() {
+    var x = document.getElementById('imput');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
 }
