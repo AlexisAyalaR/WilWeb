@@ -38,9 +38,17 @@ header{
 		float: right;
 	}*/
 	.header__imput{
+		width: 500px;
+		height: 500px;
 		margin: 0px;
 		padding: 0px;
 		text-align: center;
+		.header__imputP{
+			font-size: 21px;
+		}
+		.header__imputBut{
+			float: right;
+		}
 		.header_div1{
 			height: 1200px;
 			width: 800px;
@@ -95,5 +103,4 @@ footer{
 	height: 100px;
 	width: 100%;
 	bottom: 0;
-
 }

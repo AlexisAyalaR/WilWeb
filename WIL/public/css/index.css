@@ -421,9 +421,15 @@ header {
     bottom: 20;
     font-family: 'Anton', sans-serif; }
   header .header__imput {
+    width: 500px;
+    height: 500px;
     margin: 0px;
     padding: 0px;
     text-align: center; }
+    header .header__imput .header__imputP {
+      font-size: 21px; }
+    header .header__imput .header__imputBut {
+      float: right; }
     header .header__imput .header_div1 {
       height: 1200px;
       width: 800px; }
