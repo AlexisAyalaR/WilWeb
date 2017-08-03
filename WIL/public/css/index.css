@@ -450,8 +450,21 @@ header {
   margin: 0px;
   padding: 0px; }
 
-footer {
+.section3 {
   height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+.section4 {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+footer {
+  position: absolute;
+  height: 100px;
   width: 100%;
   bottom: 0; }
 
