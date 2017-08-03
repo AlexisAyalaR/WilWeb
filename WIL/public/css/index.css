@@ -418,8 +418,17 @@ header {
     font-size: 21px;
     color: black;
     float: left;
-    top: 20px;
+    bottom: 20;
     font-family: 'Anton', sans-serif; }
+  header .header__imput {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    top: 1000; }
+    header .header__imput .header_div1 {
+      height: 1200px;
+      width: 800px; }
 
 .section1 .section1__divIMg {
   position: relative;
@@ -440,5 +449,16 @@ header {
       position: absolute;
       width: 100%;
       height: 100%; }
+
+.section2 {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+footer {
+  height: 100%;
+  width: 100%;
+  bottom: 0; }
 
 /*# sourceMappingURL=index.css.map */

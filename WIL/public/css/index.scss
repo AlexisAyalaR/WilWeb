@@ -40,11 +40,13 @@ header{
 	.header__imput{
 		margin: 0px;
 		padding: 0px;
-		height: 100%;
-		width: 100%;
 		text-align: center;
-		position: fixed;
+		position: relative;
 		top: 1000;
+		.header_div1{
+			height: 1200px;
+			width: 800px;
+		}
 	}
 }
 .section1{
@@ -71,4 +73,17 @@ header{
 			}
 		}
 	}
+}
+.section2{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+footer{
+	//position: relative;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+
 }

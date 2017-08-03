@@ -11,3 +11,8 @@ function imprimePerfiels(){
 		
 	}
 }
+
+function openNav() {
+    document.getElementById("imput").style.width = "250px";
+    document.getElementById("imput").style.marginLeft = "250px";
+}
