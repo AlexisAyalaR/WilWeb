@@ -12,7 +12,7 @@ function imprimePerfiels(){
 	}
 }
 
-function openClose() {
+function open() {
     var x = document.getElementById('imput');
     if (x.style.display === 'none') {
         x.style.display = 'block';

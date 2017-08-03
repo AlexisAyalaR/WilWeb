@@ -432,10 +432,12 @@ header {
       width: 800px; }
 
 .section1 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/06/webdesign.jpg); }
-  .section1 .section1__divIMg .section1__img {
-    height: 137px;
-    width: 156.25px; }
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/06/webdesign.jpg);
+  height: 898px;
+  width: 1440px; }
+  .section1 .section1__img {
+    height: 274px;
+    width: 312.5px; }
 
 .section2 {
   height: 100%;
