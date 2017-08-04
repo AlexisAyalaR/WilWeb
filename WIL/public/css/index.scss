@@ -34,22 +34,25 @@ header{
 	}	
 }
 
-.arcticle{
+.article{
 	height: 100%;
 	width: 100%;
+	padding: 0px;
+	margin: 0px;
 	.article__div{
 		padding: 10px;
-		text-align: center;
+		.article__p{
+			padding: 10px;
+		}
 		.article__divImg{
 			text-align: center;
 			height: 90%;
 			width: 100%;
-		}
-		.article__img{
-			text-align: center;
-		}
-		.article__p{
-			padding: 10px;
+			.article__img{
+				text-align: center;
+				height: 500*0.25px;
+				width: 1000*0.25px;
+			}
 		}
 	}
 }

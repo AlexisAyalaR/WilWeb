@@ -416,20 +416,23 @@ header {
     bottom: 0px;
     font-family: 'Anton', sans-serif; }
 
-.arcticle {
+.article {
   height: 100%;
-  width: 100%; }
-  .arcticle .article__div {
-    padding: 10px;
-    text-align: center; }
-    .arcticle .article__div .article__divImg {
+  width: 100%;
+  padding: 0px;
+  margin: 0px; }
+  .article .article__div {
+    padding: 10px; }
+    .article .article__div .article__p {
+      padding: 10px; }
+    .article .article__div .article__divImg {
       text-align: center;
       height: 90%;
       width: 100%; }
-    .arcticle .article__div .article__img {
-      text-align: center; }
-    .arcticle .article__div .article__p {
-      padding: 10px; }
+      .article .article__div .article__divImg .article__img {
+        text-align: center;
+        height: 125px;
+        width: 250px; }
 
 .section1 {
   background-image: url(http://cdn26.us1.fansshare.com/photo/computerbackgrounds/computer-hd-wallpaper-computer-background-computer-background-hd-777033549.jpg);
