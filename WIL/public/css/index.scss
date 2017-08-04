@@ -14,7 +14,7 @@ body{
 }
 
 header{
-	height: 548*0.25px;
+	height: 548*0.25+30px;
 	width: 100%;
 	.header__div1{
 		.header__img{
@@ -28,7 +28,7 @@ header{
 			font-size: 21px;
 			color: black;
 			float: left;
-			bottom: 20;
+			bottom: 0px;
 			font-family: 'Anton', sans-serif;
 		}
 	}
