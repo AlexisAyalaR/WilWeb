@@ -43,8 +43,8 @@ header{
 	height: 810px;
 	width: 1440px;
 	.section1__divImg{
-		top: 15px;
-		left: 40;
+		bottom: 0;
+		left: 0;
 		height: 548*0.5px;
 			width: 625*0.5px;
 		.section1__img{
@@ -52,22 +52,22 @@ header{
 			width: 625*0.5px;
 		}
 	}
-	.header__imput{
+	.section1__imput{
 		float: right;
 		margin: 0px;
 		padding: 0px;
 		text-align: center;
 		display: none;
-		.header__form{
+		.section1__form{
 			display: block;
 		}
-		.header__imputP{
+		.section1__imputP{
 			font-size: 21px;
 		}
-		.header__imputBut{
+		.section1__imputBut{
 			float: right;
 		}
-		.header_div1{
+		.section1_div1{
 			height: 1200px;
 			width: 800px;
 		}
