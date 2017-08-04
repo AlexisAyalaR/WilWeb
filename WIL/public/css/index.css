@@ -435,14 +435,11 @@ header {
   background-image: url(http://cdn26.us1.fansshare.com/photo/computerbackgrounds/computer-hd-wallpaper-computer-background-computer-background-hd-777033549.jpg);
   height: 810px;
   width: 1440px; }
-  .section1 .section1__divImg {
-    bottom: 0;
-    left: 0;
+  .section1 .section1__img {
+    bottom: 0px;
+    right: 0px;
     height: 274px;
     width: 312.5px; }
-    .section1 .section1__divImg .section1__img {
-      height: 274px;
-      width: 312.5px; }
   .section1 .section1__imput {
     float: right;
     margin: 0px;
