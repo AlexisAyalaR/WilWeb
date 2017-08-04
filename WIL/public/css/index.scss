@@ -97,6 +97,9 @@ header{
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
+	.section3__imput{
+		padding: 10px;
+	}
 }
 
 .section4{
@@ -111,4 +114,8 @@ footer{
 	height: 90px;
 	width: 100%;
 	bottom: 0;
+	.footer__img{
+		height: 25px;
+		width: 25px;
+	}
 }

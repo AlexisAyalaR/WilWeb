@@ -466,6 +466,8 @@ header {
   width: 100%;
   margin: 0px;
   padding: 0px; }
+  .section3 .section3__imput {
+    padding: 10px; }
 
 .section4 {
   height: 100%;
@@ -477,5 +479,8 @@ footer {
   height: 90px;
   width: 100%;
   bottom: 0; }
+  footer .footer__img {
+    height: 25px;
+    width: 25px; }
 
 /*# sourceMappingURL=index.css.map */
