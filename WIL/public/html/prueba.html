@@ -6,7 +6,7 @@
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<script src="index.js"></script>
+	<script src="../js/index.js"></script>
 </head>
 <body>
 <header class="header w3-display-container w3-white">
@@ -17,9 +17,20 @@
 	<div class="header__div w3-display-right">
 		<button onclick="openClose()" class="header__button w3-button w3-white w3-border w3-border-blue w3-round-large">Iniciar sesión</button>
 	</div>
+	
+</header>
+<nav class="w3-bar w3-border w3-blue">
+	<li class="w3-bar-item w3-button w3-mobile w3-border-right w3-grey">Inicio</li>
+	<li class="w3-bar-item w3-button w3-mobile w3-border-right">¿Qué es WIL?</li>
+	<li class="w3-bar-item w3-button w3-mobile w3-border-right">About us</li>
+	<li class="w3-bar-item w3-button w3-mobile w3-border-right">Proyectos</li>
+	<li class="w3-bar-item w3-button w3-mobile w3-border-right">Preguntas frecuentes</li>
+
+</nav>
+<section class="section1">
 	<div id="imput" class="header__imput">
 		<div class="header__div1 w3-blue w3-display-middle">
-			<button onclick="" class="header__imputBut">x</button>
+			<button onclick="openClose()" class="header__imputBut">x</button>
 			<form class="w3-container">
 			  <p class="header__imputP">Iniciar sesión</p>
 			  <label class="w3-text-white"><b>Usuario</b></label>
@@ -31,16 +42,6 @@
 			</form>
 		</div>
 	</div>
-</header>
-<nav class="w3-bar w3-border w3-blue">
-	<li class="w3-bar-item w3-button w3-mobile w3-border-right w3-grey">Inicio</li>
-	<li class="w3-bar-item w3-button w3-mobile w3-border-right">¿Qué es WIL?</li>
-	<li class="w3-bar-item w3-button w3-mobile w3-border-right">About us</li>
-	<li class="w3-bar-item w3-button w3-mobile w3-border-right">Proyectos</li>
-	<li class="w3-bar-item w3-button w3-mobile w3-border-right">Preguntas frecuentes</li>
-
-</nav>
-<section class="section1">
 	<div class="section1__divImg">
 		<img class="section1__img" src="../img/wil_logo.png">
 	</div>

@@ -398,7 +398,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Times New Roman", Georgia, Serif; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 header {
   height: 137px;
@@ -419,18 +419,6 @@ header {
     float: left;
     bottom: 20;
     font-family: 'Anton', sans-serif; }
-  header .header__imput {
-    float: right;
-    margin: 0px;
-    padding: 0px;
-    text-align: center; }
-    header .header__imput .header__imputP {
-      font-size: 21px; }
-    header .header__imput .header__imputBut {
-      float: right; }
-    header .header__imput .header_div1 {
-      height: 1200px;
-      width: 800px; }
 
 .section1 {
   background-image: url(http://cdn26.us1.fansshare.com/photo/computerbackgrounds/computer-hd-wallpaper-computer-background-computer-background-hd-777033549.jpg);
@@ -444,6 +432,21 @@ header {
     .section1 .section1__divImg .section1__img {
       height: 274px;
       width: 312.5px; }
+  .section1 .header__imput {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    display: none; }
+    .section1 .header__imput .header__form {
+      display: block; }
+    .section1 .header__imput .header__imputP {
+      font-size: 21px; }
+    .section1 .header__imput .header__imputBut {
+      float: right; }
+    .section1 .header__imput .header_div1 {
+      height: 1200px;
+      width: 800px; }
 
 .section2 {
   height: 100%;

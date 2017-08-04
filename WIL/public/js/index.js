@@ -7,16 +7,16 @@ function creaPerfil(num){
 	card.setAttribute("class","w3-card");
 }
 function imprimePerfiels(){
-	for (var i = 0; i <num; i++)}{
+	for (var i = 0; i <num; i++){
 		
 	}
 }
 
-function open() {
+function openClose() {
     var x = document.getElementById('imput');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
+    if (x.style.display === 'block') {
         x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
     }
 }
