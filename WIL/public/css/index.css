@@ -420,6 +420,13 @@ header {
     bottom: 0px;
     font-family: 'Anton', sans-serif; }
 
+.acticle .article__divImg {
+  text-align: center;
+  height: 90%;
+  width: 100%; }
+.acticle .article__img {
+  text-align: center; }
+
 .section1 {
   background-image: url(http://cdn26.us1.fansshare.com/photo/computerbackgrounds/computer-hd-wallpaper-computer-background-computer-background-hd-777033549.jpg);
   height: 810px;
