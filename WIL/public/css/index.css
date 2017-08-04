@@ -402,11 +402,7 @@ body {
 
 header {
   height: 167px;
-  width: 100%;
-  /*.header__div{
-  	top: 15px;
-  	float: right;
-  }*/ }
+  width: 100%; }
   header .header__div1 .header__img {
     height: 137px;
     width: 156.25px;
@@ -420,12 +416,20 @@ header {
     bottom: 0px;
     font-family: 'Anton', sans-serif; }
 
-.acticle .article__divImg {
-  text-align: center;
-  height: 90%;
+.arcticle {
+  height: 100%;
   width: 100%; }
-.acticle .article__img {
-  text-align: center; }
+  .arcticle .article__div {
+    padding: 10px;
+    text-align: center; }
+    .arcticle .article__div .article__divImg {
+      text-align: center;
+      height: 90%;
+      width: 100%; }
+    .arcticle .article__div .article__img {
+      text-align: center; }
+    .arcticle .article__div .article__p {
+      padding: 10px; }
 
 .section1 {
   background-image: url(http://cdn26.us1.fansshare.com/photo/computerbackgrounds/computer-hd-wallpaper-computer-background-computer-background-hd-777033549.jpg);
@@ -460,6 +464,8 @@ header {
   width: 100%;
   margin: 0px;
   padding: 0px; }
+  .section2 .section2__p {
+    padding: 10px; }
 
 .section3 {
   height: 100%;
@@ -468,12 +474,16 @@ header {
   padding: 0px; }
   .section3 .section3__imput {
     padding: 10px; }
+  .section3 .section3__p {
+    padding: 10px; }
 
 .section4 {
   height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px; }
+  .section4 .section4__p {
+    padding: 10px; }
 
 footer {
   height: 90px;
@@ -482,5 +492,7 @@ footer {
   footer .footer__img {
     height: 25px;
     width: 25px; }
+  footer .footer__p {
+    padding: 10px; }
 
 /*# sourceMappingURL=index.css.map */
