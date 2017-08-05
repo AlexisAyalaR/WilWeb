@@ -470,11 +470,19 @@ header {
       width: 800px; }
 
 .section2 {
-  height: 100%;
+  height: 200px;
   width: 100%;
   margin: 0px;
-  padding: 0px; }
+  padding: 10px; }
   .section2 .section2__p {
+    padding: 10px; }
+  .section2 .section2__img {
+    height: 200px;
+    width: 200px;
+    padding: 10px; }
+  .section2 .card {
+    width: 200px;
+    float: left;
     padding: 10px; }
 
 .section3 {
