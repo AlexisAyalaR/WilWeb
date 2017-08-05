@@ -103,10 +103,11 @@ header{
 }
 
 .section2{
-	height: 200px;
+	height: 1000px;
 	width: 100%;
 	margin: 0px;
 	padding: 10px;
+	text-align: center;
 	.section2__p{
 		padding: 10px;
 	}
@@ -115,10 +116,14 @@ header{
 		width: 200px;
 		padding: 10px;
 	}
+	.section2__nom{
+		text-align: center;
+	}
 	.card{
 		width: 200px;
 		float: left;
 		padding: 10px;
+		text-align: left;
 	}
 }
 
