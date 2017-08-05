@@ -1,14 +1,18 @@
 nombres = ["Victor", "Emiliano", "Horacio", "Alexis", "Paul", "Jaime", "Andrés"];
 imgs = ["../img/vicky.png", "../img/emi.png", "../img/horacio.png", "../img/alexis.png", "../img/paul.png", "../img/limon.png", "../img/andy.png"];
 cv = 
-["Back-End Master Developer <br> Estudiante de Ingeniería en Computación <br>", 
-"Front-End Master Developer <br> Estudiante de Ingeniería en Computación <br>",
- "Senior Programer <br> Estudiante de Ingeniería en Telecomunicaciones <br> <br>", 
- "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas", 
- "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Ingeniería en Telecomunicaciones", 
+["Back-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>", 
+"Front-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>",
+ "Director de RRPP <br> Senior Programmer <br> Estudiante de Ingeniería en Telecomunicaciones <br>", 
+ "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br>", 
+ "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Ingeniería en Telecomunicaciones <br>", 
  "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> <br>", 
- "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas"];
-experiencia = ["Radio ITAM <br> Practicas de verano 2017","Radio ITAM <br> Practicas de verano 2017","Radio ITAM <br> <br>","Página del WIL <br> <br>","Página del WIL <br> <br>","<br> <br>","<br> <br>"];
+ "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br>"];
+experiencia = 
+["Radio ITAM <br> Practicas de verano 2017",
+"Radio ITAM <br> Practicas de verano 2017",
+"Radio ITAM <br> <br>","Página del WIL <br> <br>",
+"Página del WIL <br> <br>","<br> <br>","<br> <br>"];
 num = 7;
 function creaPerfil(num){
 	var div = document.createElement("div");
