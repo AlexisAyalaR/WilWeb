@@ -1,5 +1,5 @@
 nombres = ["Victor", "Emiliano", "Horacio", "Alexis", "Paul", "Jaime", "Andrés"];
-imgs = ["../img/vicky.jpg", "../img/emi.jpg", "../img/horacio.jpg", "../img/alexis.jpg", "../img/paul.jpg", "../img/limon.jpg", "../img/andy.jpg"];
+imgs = ["../img/vicky.png", "../img/emi.png", "../img/horacio.png", "../img/alexis.png", "../img/paul.png", "../img/limon.png", "../img/andy.png"];
 experiencia = ["","","","","","",""];
 num = 7;
 function creaPerfil(num){
