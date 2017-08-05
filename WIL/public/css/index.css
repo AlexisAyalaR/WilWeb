@@ -439,8 +439,8 @@ header {
   height: 810px;
   width: 1440px; }
   .section1 .section1__img {
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     height: 274px;
     width: 312.5px; }
   .section1 .section1__imput {
