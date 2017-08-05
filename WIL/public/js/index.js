@@ -4,11 +4,11 @@ experiencia = ["","","","","","",""];
 num = 7;
 function creaPerfil(num){
 	var div = document.createElement("div");
-	div.setAttribute("class","w3-card");
+	div.setAttribute("class","w3-card-4");
 
 	var img = document.createElement("img");
 	div.appendChild(img);
-	img.setAttribute("class", "section2__img");
+	img.setAttribute("class", "section2__img w3-circle");
 	var aux = imgs[num];
 	img.setAttribute("src", aux);
 
@@ -22,8 +22,8 @@ function creaPerfil(num){
 	exp.setAttribute("class", "section2__bio");
 	exp.innerHTML = experiencia[num];
 
-	var sec = document.getElementById("section2__div");
-	console.log(div);
+	var sec = document.getElementById("sec");
+	console.log(sec);
 	sec.appendChild(div);
 }
 
