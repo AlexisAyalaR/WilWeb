@@ -1,6 +1,6 @@
 nombres = ["Victor", "Emiliano", "Horacio", "Alexis", "Paul", "Jaime", "Andrés"];
 imgs = ["../img/vicky.png", "../img/emi.png", "../img/horacio.png", "../img/alexis.png", "../img/paul.png", "../img/limon.png", "../img/andy.png"];
-experiencia = ["","","","","","",""];
+experiencia = ["Radio ITAM <br> Practicas de verano 2017","Radio ITAM <br> Practicas de verano 2017","Radio ITAM <br> <br>","<br> <br>","<br> <br>","<br> <br>","<br> <br>"];
 num = 7;
 function creaPerfil(num){
 	var div = document.createElement("div");
@@ -20,7 +20,7 @@ function creaPerfil(num){
 	var exp = document.createElement("p");
 	div.appendChild(exp);
 	exp.setAttribute("class", "section2__bio");
-	exp.innerHTML = experiencia[num];
+	exp.innerHTML = "Proyectos hechos en el WIL: <br>" + experiencia[num];
 
 	var sec = document.getElementById("sec");
 	console.log(sec);
