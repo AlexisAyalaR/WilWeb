@@ -439,6 +439,7 @@ header {
   height: 810px;
   width: 1440px; }
   .section1 .section1__img {
+    position: absolute;
     bottom: 0;
     right: 0;
     height: 274px;
