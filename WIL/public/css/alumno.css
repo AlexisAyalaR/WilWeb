@@ -427,6 +427,9 @@ header {
   .section2 .section2__img {
     height: 277.25px;
     width: 500px; }
+  .section2 .section2__img1 {
+    height: 280px;
+    width: 600px; }
 
 footer {
   height: 90px;
