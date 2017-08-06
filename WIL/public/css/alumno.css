@@ -419,6 +419,9 @@ header {
     bottom: 0px;
     font-family: 'Anton', sans-serif; }
 
+.section1 {
+  padding: 10px; }
+
 footer {
   height: 90px;
   width: 100%;
