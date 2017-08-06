@@ -41,6 +41,13 @@ header{
 .section1{
 	padding: 10px;
 }
+.section2{
+	padding: 10px;
+	.section2__img{
+		height: 1109*0.25px;
+		width:  2000*0.25px;
+	}
+}
 
 footer{
 	height: 90px;
