@@ -37,3 +37,17 @@ header{
 		}
 	}	
 }
+
+
+footer{
+	height: 90px;
+	width: 100%;
+	bottom: 0;
+	.footer__img{
+		height: 25px;
+		width: 25px;
+	}
+	.footer__p{
+		padding: 10px;
+	}
+}
