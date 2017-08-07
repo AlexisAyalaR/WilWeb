@@ -1,8 +1,8 @@
 nombres = ["Victor", "Emiliano", "Horacio", "Alexis", "Paul", "Jaime", "Andrés"];
 imgs = ["../img/vicky.png", "../img/emi.png", "../img/horacio.png", "../img/alexis.png", "../img/paul.png", "../img/limon.png", "../img/andy.png"];
 cv = 
-["Back-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>", 
-"Front-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>",
+["Cofundador <br> Back-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>", 
+"Cofundador <br> Front-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>",
  "Director de RRPP <br> Senior Programmer <br> Estudiante de Ingeniería en Telecomunicaciones <br>", 
  "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br>", 
  "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Ingeniería en Telecomunicaciones <br>", 
@@ -32,7 +32,7 @@ function creaPerfil(num){
 	var exp = document.createElement("p");
 	div.appendChild(exp);
 	exp.setAttribute("class", "section2__bio");
-	exp.innerHTML = "Perfil: <br>" + cv[num] + "<br> <br> Proyectos hechos en el WIL: <br>" + experiencia[num];
+	exp.innerHTML = cv[num] + "<br> <br> Proyectos hechos en el WIL: <br>" + experiencia[num];
 
 	var sec = document.getElementById("sec");
 	console.log(sec);

@@ -112,13 +112,17 @@ header{
 }
 
 .section2{
+	margin: 0px;
+	padding: 0px;
+	height: 1150px;
+	width: 100%;
 	.section2__p{
 		padding: 10px;
 	}
 	.card{
 		margin: 10px;
 		padding: 10px;
-		width: 450px;
+		width: 340px;
 		height: 500px;
 		border-radius: 10px;
 		float: left;
@@ -163,14 +167,15 @@ header{
 
 
 footer{
-	height: 90px;
+	height: 120px;
 	width: 100%;
 	bottom: 0;
-	.footer__img{
-		height: 25px;
-		width: 25px;
-	}
+	font-size: 21px;
 	.footer__p{
 		padding: 10px;
 	}
+}
+
+.tit{
+	font-size: 21px;
 }

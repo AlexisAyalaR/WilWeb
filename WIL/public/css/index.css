@@ -476,25 +476,30 @@ header {
   .section5 .section5__p {
     padding: 10px; }
 
-.section2 .section2__p {
-  padding: 10px; }
-.section2 .card {
-  margin: 10px;
-  padding: 10px;
-  width: 450px;
-  height: 500px;
-  border-radius: 10px;
-  float: left;
-  text-align: center; }
-  .section2 .card .section2__img {
-    height: 200px;
-    width: 200px;
+.section2 {
+  margin: 0px;
+  padding: 0px;
+  height: 1150px;
+  width: 100%; }
+  .section2 .section2__p {
+    padding: 10px; }
+  .section2 .card {
+    margin: 10px;
     padding: 10px;
+    width: 340px;
+    height: 500px;
+    border-radius: 10px;
+    float: left;
     text-align: center; }
-  .section2 .card .section2__nom {
-    text-align: center; }
-  .section2 .card .section2__bio {
-    text-align: left; }
+    .section2 .card .section2__img {
+      height: 200px;
+      width: 200px;
+      padding: 10px;
+      text-align: center; }
+    .section2 .card .section2__nom {
+      text-align: center; }
+    .section2 .card .section2__bio {
+      text-align: left; }
 
 .section3 {
   height: 100%;
@@ -515,13 +520,14 @@ header {
     padding: 10px; }
 
 footer {
-  height: 90px;
+  height: 120px;
   width: 100%;
-  bottom: 0; }
-  footer .footer__img {
-    height: 25px;
-    width: 25px; }
+  bottom: 0;
+  font-size: 21px; }
   footer .footer__p {
     padding: 10px; }
+
+.tit {
+  font-size: 21px; }
 
 /*# sourceMappingURL=index.css.map */
