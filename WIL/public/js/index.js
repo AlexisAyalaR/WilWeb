@@ -16,7 +16,7 @@ experiencia =
 num = 7;
 function creaPerfil(num){
 	var div = document.createElement("div");
-	div.setAttribute("class","card w3-card-4");
+	div.setAttribute("class","card w3-card-4 w3-white");
 
 	var img = document.createElement("img");
 	div.appendChild(img);
