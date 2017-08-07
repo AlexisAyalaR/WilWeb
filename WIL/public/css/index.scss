@@ -135,6 +135,7 @@ header{
 		}
 		.section2__nom{
 			text-align: center;
+			font-size: 21px;
 		}
 		.section2__bio{
 			text-align: left;
@@ -161,6 +162,18 @@ header{
 	margin: 0px;
 	padding: 0px;
 	.section4__p{
+		padding: 10px;
+	}
+}
+.section6{
+	height: auto;
+	width: auto;
+	margin: 0px;
+	padding: 0px;
+	.section6__p{
+		padding: 10px;
+	}
+	.section6__div{
 		padding: 10px;
 	}
 }

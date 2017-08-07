@@ -4,10 +4,10 @@ cv =
 ["Cofundador <br> Back-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>", 
 "Cofundador <br> Front-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>",
  "Director de RRPP <br> Senior Programmer <br> Estudiante de Ingeniería en Telecomunicaciones <br>", 
- "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br>", 
- "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Ingeniería en Telecomunicaciones <br>", 
- "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> <br>", 
- "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br>"];
+ "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br> <br>", 
+ "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Ingeniería en Telecomunicaciones <br> <br>", 
+ "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> <br> <br> <br>", 
+ "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br> <br> <br>"];
 experiencia = 
 ["Radio ITAM <br> Practicas de verano 2017",
 "Radio ITAM <br> Practicas de verano 2017",

@@ -497,7 +497,8 @@ header {
       padding: 10px;
       text-align: center; }
     .section2 .card .section2__nom {
-      text-align: center; }
+      text-align: center;
+      font-size: 21px; }
     .section2 .card .section2__bio {
       text-align: left; }
 
@@ -517,6 +518,16 @@ header {
   margin: 0px;
   padding: 0px; }
   .section4 .section4__p {
+    padding: 10px; }
+
+.section6 {
+  height: auto;
+  width: auto;
+  margin: 0px;
+  padding: 0px; }
+  .section6 .section6__p {
+    padding: 10px; }
+  .section6 .section6__div {
     padding: 10px; }
 
 footer {
