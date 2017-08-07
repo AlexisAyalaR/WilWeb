@@ -11,7 +11,7 @@
 </head>
 <body onload="generaPerfiles()">
 <header class="header w3-white">
-	<nav class="w3-bar w3-border w3-blue">
+	<nav class="w3-bar w3-border w3-blue w3-top">
 		<li class="w3-bar-item w3-button w3-mobile w3-border-right w3-white">
 			<div class="header__div1">
 				<img src="../img/wil_logo.png" class="header__img">
@@ -19,10 +19,13 @@
 		</li>
 		<li class="w3-bar-item w3-button w3-mobile w3-border-right w3-grey"><a href="">Inicio</a></li>
 		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#article">¿Qué es WIL?</a></li>
+		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#section5">¿Porqué WIL?</a></li>
 		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#section2">About us</a></li>
 		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#section3">Cuentanos tu proyecto</a></li>
 		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#section4">Preguntas frecuentes</a></li>
-		<li onclick="openClose()" class="w3-bar-item w3-button w3-mobile w3-border-right header__but">Iniciar sesión</li>
+		<div class="w3-right w3-hide-medium w3-hide-small">
+			<li onclick="openClose()" class="w3-bar-item w3-button w3-mobile w3-border-left header__but">Iniciar sesión</li>
+		</dir>
 	</nav>
 </header>
 <section class="section1 w3-container">
@@ -54,6 +57,15 @@
 		</div>
 	</div>
 </article>
+<section id="section5" class="section5">
+	<p class="section5__p">¿Porqué WIL?</p>
+	<ul>
+		<li>No necesitas saber programar</li>
+		<li>Puedes liberar tu servicio social</li>
+		<li>Aprendes a tu propio ritmo</li>
+		<li>Tu eliges tu horario</li>
+	</ul>
+</section>
 <section id="section2" class="section2">
 	<p class="section2__p">About us</p>
 	<div id="sec" class="section2__div">

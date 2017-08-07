@@ -468,6 +468,14 @@ header {
       height: 1200px;
       width: 800px; }
 
+.section5 {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px; }
+  .section5 .section5__p {
+    padding: 10px; }
+
 .section2 .section2__p {
   padding: 10px; }
 .section2 .card {
