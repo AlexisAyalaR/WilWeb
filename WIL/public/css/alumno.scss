@@ -18,12 +18,11 @@ body{
 }
 
 header{
-	height: 548*0.25+30px;
 	width: 100%;
 	.header__div1{
 		.header__img{
-			height: 548*0.25px;
-			width: 625*0.25px;
+			height: 548*0.05px;
+			width: 625*0.05px;
 			float: left;
 		}
 		.header__title{
@@ -40,6 +39,7 @@ header{
 
 .section1{
 	padding: 10px;
+	margin-top: 20px;
 }
 .section2{
 	padding: 10px;
@@ -54,14 +54,15 @@ header{
 }
 
 footer{
-	height: 90px;
+	height: 100px;
 	width: 100%;
 	bottom: 0;
-	.footer__img{
-		height: 25px;
-		width: 25px;
-	}
+	font-size: 21px;
 	.footer__p{
 		padding: 10px;
 	}
+}
+
+.tit{
+	font-size: 21px;
 }

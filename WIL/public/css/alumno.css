@@ -404,11 +404,10 @@ body {
   text-decoration: none; }
 
 header {
-  height: 167px;
   width: 100%; }
   header .header__div1 .header__img {
-    height: 137px;
-    width: 156.25px;
+    height: 27.4px;
+    width: 31.25px;
     float: left; }
   header .header__div1 .header__title {
     margin: 0px;
@@ -420,7 +419,8 @@ header {
     font-family: 'Anton', sans-serif; }
 
 .section1 {
-  padding: 10px; }
+  padding: 10px;
+  margin-top: 20px; }
 
 .section2 {
   padding: 10px; }
@@ -432,13 +432,14 @@ header {
     width: 600px; }
 
 footer {
-  height: 90px;
+  height: 100px;
   width: 100%;
-  bottom: 0; }
-  footer .footer__img {
-    height: 25px;
-    width: 25px; }
+  bottom: 0;
+  font-size: 21px; }
   footer .footer__p {
     padding: 10px; }
+
+.tit {
+  font-size: 21px; }
 
 /*# sourceMappingURL=alumno.css.map */
