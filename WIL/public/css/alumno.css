@@ -421,6 +421,13 @@ header {
 .section0 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/06/webdesign.jpg);
   height: 815px; }
+  .section0 .section1__divImg {
+    height: 274px;
+    width: 312.5px; }
+    .section0 .section1__divImg .section1__img {
+      top: 100;
+      width: 100%;
+      height: 100%; }
 
 .section1 {
   padding: 10px;
