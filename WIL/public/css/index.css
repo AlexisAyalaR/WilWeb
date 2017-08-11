@@ -519,25 +519,6 @@ footer {
   footer .footer__p {
     padding: 10px; }
 
-.section1__imput {
-  position: fixed;
-  float: right;
-  margin: 0px;
-  padding: 0px;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  display: none; }
-  .section1__imput .section1__form {
-    display: block; }
-  .section1__imput .section1__imputP {
-    font-size: 21px; }
-  .section1__imput .section1__imputBut {
-    float: right; }
-  .section1__imput .section1_div1 {
-    height: 1200px;
-    width: 800px; }
-
 .tit {
   font-size: 21px; }
 

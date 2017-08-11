@@ -10,21 +10,24 @@
 	<script src="../js/index.js"></script>
 </head>
 <body onload="generaPerfiles()">
-<div id="imput" class="section1__imput w3-container">
-		<div class="section1__div1 w3-white w3-display-middle">
-			<button onclick="openClose()" class="section1__imputBut">x</button>
-			<form class="section1__form w3-container">
-			  <p class="section1__imputP w3-text-blue">Iniciar sesión</p>
-			  <label class="w3-text-blue"><b>Usuario</b></label>
+<section class="modal w3-modal" id="imput">
+	<div class="section1__imput w3-modal-content w3-animate-zoom">
+		<div class=" modal__div w3-white w3-display-container">
+			<div onclick="openClose()" class="w3-padding w3-display-topright w3-blue"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+			<form class="section1__form w3-padding">
+			  <p class="section1__imputP w3-text-blue"><b>Iniciar sesión</b></p>
+			  <label class="w3-text-blue"><i class="fa fa-user-circle" aria-hidden="true"></i> Usuario</label>
 			  <input class="w3-input w3-border w3-light-grey" type="text">
-			  <label class="w3-text-blue"><b>Contraseña</b></label>
+			  <label class="w3-text-blue"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Contraseña</label>
 			  <input class="w3-input w3-border w3-light-grey" type="password">
 			  <br>
-			  <button class="w3-btn w3-grey">Ingresar</button>
+			  <button class="w3-btn w3-grey"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar</button>
+			  </div>
 			</form>
 			<br>
 		</div>
 	</div>
+</section>
 <header class="header w3-white">
 	<nav class="w3-bar w3-border w3-blue w3-top">
 		<li class="w3-bar-item w3-mobile w3-border-right w3-white">
@@ -40,7 +43,7 @@
 		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#section4"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a></li>
 		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#section6"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
 		<div class="w3-right w3-hide-medium w3-hide-small">
-			<li onclick="openClose()" class="w3-bar-item w3-button w3-mobile w3-border-left header__but"><i class="fa fa-user-circle" aria-hidden="true"></i> Iniciar sesión</li>
+			<li onclick="openClose()" class="w3-bar-item w3-button w3-mobile w3-border-left header__but"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar sesión</li>
 		</dir>
 	</nav>
 </header>
