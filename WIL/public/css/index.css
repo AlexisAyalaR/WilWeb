@@ -453,8 +453,6 @@ header .header__div1 .header__img {
       height: 100%; }
 
 .section2 {
-  margin: 0px;
-  padding: 0px;
   height: 1225px;
   width: 98%;
   background-color: #61d9f0;
@@ -497,9 +495,7 @@ header .header__div1 .header__img {
 
 .section6 {
   height: 300px;
-  width: auto;
-  margin: 0px;
-  padding: 0px; }
+  width: auto; }
   .section6 .section6__p {
     padding: 10px; }
   .section6 .section6__p1 {
