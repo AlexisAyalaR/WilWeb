@@ -503,6 +503,9 @@ header .header__div1 .header__img {
   .section6 .section6__div {
     padding: 10px; }
 
+.modal .modal__div {
+  background-color: #f8f9fa; }
+
 footer {
   height: 100px;
   width: 100%;
