@@ -33,8 +33,8 @@ header{
 	padding: 0px;
 	margin: 0px;
 	.article__div0{
-		padding: 10px;
 		background-color: rgb(97, 217, 240);
+		color: white;
 		.article__p{
 			padding: 10px;
 		}
@@ -50,7 +50,21 @@ header{
 		}
 	}
 	.article__div1{
-		background-color: rgb(182, 255, 255);
+		background-color: rgb(55, 229, 229);
+		color: white;
+		.article__p{
+			padding: 10px;
+		}
+		.article__divImg1{
+			text-align: center;
+			height: 432*0.7px;
+			width: 632*0.7px;
+			.article__img1{
+				text-align: center;
+				height: 100%;
+				width: 100%;
+			}
+		}
 	}
 }
 
