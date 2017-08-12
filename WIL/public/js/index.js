@@ -1,4 +1,11 @@
-nombres = ["Victor", "Emiliano", "Horacio", "Alexis", "Paul", "Jaime", "Andrés"];
+nombres = 
+["Victor <br> WorrenGilgamesh", 
+"Emiliano <br> uboat46",
+ "Horacio <br> <br>",
+  "Alexis <br> AlexisAyalaR", 
+"Paul <br> JPaulVI",
+ "Jaime <br> jlimnos",
+  "Andrés <br> andrscyv"];
 imgs = ["../img/vicky.png", "../img/emi.png", "../img/horacio.png", "../img/alexis.png", "../img/paul.png", "../img/limon.png", "../img/andy.png"];
 cv = 
 ["Cofundador <br> Back-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>", 

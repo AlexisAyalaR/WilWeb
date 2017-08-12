@@ -32,21 +32,25 @@ header{
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
-	.article__div{
+	.article__div0{
 		padding: 10px;
+		background-color: rgb(97, 217, 240);
 		.article__p{
 			padding: 10px;
 		}
 		.article__divImg{
 			text-align: center;
-			height: 90%;
-			width: 90%;
+			height: 500*0.6px;
+			width: 1000*0.6px;
 			.article__img{
 				text-align: center;
-				height: 500*0.25px;
-				width: 1000*0.25px;
+				height: 100%;
+				width: 100%;
 			}
 		}
+	}
+	.article__div1{
+		background-color: rgb(182, 255, 255);
 	}
 }
 
@@ -68,15 +72,16 @@ header{
 	margin: 0px;
 	padding: 0px;
 	height: 1200px;
-	width: 100%;
+	width: 98%;
+	background-color: rgb(140, 210, 250);
 	.section2__p{
 		padding: 10px;
 	}
 	.card{
 		margin: 10px;
 		padding: 10px;
-		width: 340px;
-		height: 500px;
+		width: 330px;
+		height: 515px;
 		border-radius: 10px;
 		float: left;
 		text-align: center;
