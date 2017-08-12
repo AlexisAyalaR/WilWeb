@@ -14,13 +14,13 @@ class mailController extends Controller
 {
     public function envia(Request $req){
 
-    	/*
+    	
     	$tipo = $req->input('tipoProyecto');
     	$desc = $req->input('descripcion');
     	$telf = $req->input('telefono');
     	$mail = $req->input('email');
 
     	Mail::send(new Proyecto($req));
-    	*/
+    	
   	}  
 }

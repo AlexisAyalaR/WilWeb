@@ -12,7 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/index');
 });
 
-Route::post('/enviarProyecto','mailController@envia');
+Route::post('/enviaProyecto','mailController@envia');
+
+Route::get('/alumno', function(){
+	return view('/alumno');
+});
+
+Route::get('/personal', function(){
+	return view('/personal');
+});
+
+Route::get('/personalS', function(){
+	return view('/personalS');
+});

@@ -113,7 +113,7 @@
 		</div>
 		<div class="section3__imput w3-half">
 			<div class="section3__div1 w3-padding ">
-				<form class="section3__form" action="/WilWeb/Wil/public/html/alumno.html" method="post">
+				<form class="section3__form" action="/enviaProyecto" method="post">
 				<input name="_token" type="hidden" value="{!! csrf_token() !!}" />
 					<div class="">
 						<br>
