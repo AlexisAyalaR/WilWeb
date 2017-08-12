@@ -114,9 +114,10 @@
 		<div class="section3__imput w3-half">
 			<div class="section3__div1 w3-padding ">
 				<form class="section3__form" action="/enviarProyecto" method="post">
-				<input type="hidden" name="_token" value="{{ csrf_token() }}">
+				<input name="_token" type="hidden" value="{!! csrf_token() !!}" />
 					<div class="">
 						<br>
+						<input type="hidden" name="_token" value="{!! csrf_token() !!}">
 						<label class="w3-text-black"><i class="fa fa-file-text" aria-hidden="true"></i> <b>Tipo de proyecto</b></label>
 						<input class="w3-input w3-border w3-light-grey" type="text" name="tipoProyecto">
 						<label class="w3-text-black"><i class="fa fa-phone" aria-hidden="true"></i> <b>Teléfono</b></label>
