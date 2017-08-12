@@ -33,8 +33,8 @@ header{
 	padding: 0px;
 	margin: 0px;
 	.article__div0{
-		background-color: rgb(97, 217, 240);
-		color: white;
+		background-color: #FAF7EB;
+		color: black;
 		.article__p{
 			padding: 10px;
 		}
@@ -50,8 +50,8 @@ header{
 		}
 	}
 	.article__div1{
-		background-color: rgb(55, 229, 229);
-		color: white;
+		background-color: #D0E9EA;
+		color: black;
 		.article__p{
 			padding: 10px;
 		}
@@ -85,17 +85,18 @@ header{
 .section2{
 	margin: 0px;
 	padding: 0px;
-	height: 1200px;
+	height: 1225px;
 	width: 98%;
-	background-color: rgb(140, 210, 250);
+	background-color: rgb(97, 217, 240);
+	color: white;
 	.section2__p{
 		padding: 10px;
 	}
 	.card{
-		margin: 10px;
-		padding: 10px;
-		width: 330px;
-		height: 515px;
+		margin: 16px;
+		padding: 16px;
+		width: 320px;
+		height: 520px;
 		border-radius: 10px;
 		float: left;
 		text-align: center;
@@ -118,8 +119,10 @@ header{
 .section3{
 	height: 100%;
 	width: 100%;
-	margin: 0px;
-	padding: 0px;
+	.section3__div1{
+		background-color: rgb(140, 210, 250);
+		color: black;
+	}
 	.section3__imput{
 		padding: 10px;
 	}
@@ -129,13 +132,8 @@ header{
 }
 
 .section4{
-	height: 100%;
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
-	.section4__p{
-		padding: 10px;
-	}
+	background-color: rgb(85, 119, 219);
+	color: white;
 }
 .section6{
 	height: 300px;
