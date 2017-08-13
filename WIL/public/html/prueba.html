@@ -46,7 +46,6 @@
 		<li class="w3-bar-item w3-mobile w3-hover-shadow"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> ¿Qué es WIL?</a></li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> ¿Porqué WIL?</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> ¿Porqué WIL?</a></li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow"><a class="link" href="#section2"><i class="fa fa-users" aria-hidden="true"></i> About us</a></li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow"><a class="link" href="#section3"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Cuentanos tu proyecto</a></li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow"><a class="link" href="#section4"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a></li>
@@ -120,13 +119,13 @@
 						<br>
 						<input type="hidden" name="_token" value="{!! csrf_token() !!}">
 						<label class="w3-text-black"><i class="fa fa-file-text" aria-hidden="true"></i> <b>Tipo de proyecto</b></label>
-						<input class="w3-input w3-border w3-light-grey" type="text" name="tipoProyecto">
+						<input class="w3-input w3-border w3-light-grey" required type="text" name="tipoProyecto">
 						<label class="w3-text-black"><i class="fa fa-phone" aria-hidden="true"></i> <b>Teléfono</b></label>
-						<input class="w3-input w3-border w3-light-grey" type="number" name="telefono">
+						<input class="w3-input w3-border w3-light-grey" required type="number" name="telefono">
 						<label class="w3-text-black"><i class="fa fa-envelope-square" aria-hidden="true"></i> <b>Correo</b></label>
-						<input class="w3-input w3-border w3-light-grey" type="email" name="email">
+						<input class="w3-input w3-border w3-light-grey" required type="email" name="email">
 						<label class="w3-text-black w3-border-left"><i class="fa fa-pencil-square" aria-hidden="true"></i> <b>Descripción</b></label>
-						<textarea class="w3-input w3-border w3-light-grey" type="text" rows="7" name="descripcion"></textarea>
+						<textarea class="w3-input w3-border w3-light-grey" required type="text" rows="7" name="descripcion"></textarea>
 						<br>
 						<button class="w3-btn w3-grey w3-round-large"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar</button>
 						<br>
