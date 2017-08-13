@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Route::post('/enviaProyecto','mailController@envia');
 
-Route::post('/WilWeb/Wil/public/html/alumno.html', 'loginController@muestraUsuario');
+Route::post('/WilWeb/Wil/public/html/alumno.html', function(){
+	$json = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
+    $paul = json_encode($json);
+    	return $paul;
+});
