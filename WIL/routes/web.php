@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::post('/enviaProyecto','mailController@envia');
+
+Route::post('/WilWeb/Wil/public/html/alumno.html', 'loginController@muestraUsuario');
