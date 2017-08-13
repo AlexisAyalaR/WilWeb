@@ -19,11 +19,12 @@
 		<div class=" modal__div w3-display-container">
 			<div onclick="openClose()" class="w3-padding w3-display-topright w3-blue w3-hover-red"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
 			<form class="modal__form w3-padding">
+			 <input name="_token" type="hidden" value="{!! csrf_token() !!}" />
 			  <p class="modal__imputP w3-text-blue"><b>Iniciar sesión</b></p>
 			  <label class="w3-text-blue"><i class="fa fa-user-circle" aria-hidden="true"></i> Usuario</label>
-			  <input class="w3-input w3-border w3-light-grey" type="text">
+			  <input class="w3-input w3-border w3-light-grey" type="text" name="usuario">
 			  <label class="w3-text-blue"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Contraseña</label>
-			  <input class="w3-input w3-border w3-light-grey" type="password">
+			  <input class="w3-input w3-border w3-light-grey" type="password" name="contrasena">
 			  <br>
 			  <button class="w3-btn w3-grey"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar</button>
 			</form>
