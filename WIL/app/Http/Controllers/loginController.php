@@ -11,13 +11,8 @@ class loginController extends Controller
     	$usuario = $req->input('usuario');
     	$prueba -> name = 'Alexis';
 
-    	$json = array(
-    		'employees' => array(
-        	array('firstName' => 'Alexis', 'lastName' => 'Ayala'),
-        	array('firstName' => 'Paul', 'lastName' => 'Viruena')
-    		)
-    	);
-    	
+    	$json = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
+
     	$paul = json_encode($json);
     	return $paul;
     }
