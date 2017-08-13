@@ -10,6 +10,5 @@ class loginController extends Controller
 
     	$usuario = $req->input('usuario');
     	return $usuario;
-
     }
 }
