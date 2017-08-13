@@ -420,8 +420,8 @@ header .header__div1 .header__img {
       padding: 10px; }
     .article .article__div0 .article__divImg {
       text-align: center;
-      height: 300px;
-      width: 600px; }
+      height: 50%;
+      width: 50%; }
       .article .article__div0 .article__divImg .article__img {
         text-align: center;
         height: 100%;
@@ -433,8 +433,8 @@ header .header__div1 .header__img {
       padding: 10px; }
     .article .article__div1 .article__divImg1 {
       text-align: center;
-      height: 302.4px;
-      width: 442.4px; }
+      height: 50%;
+      width: 50%; }
       .article .article__div1 .article__divImg1 .article__img1 {
         text-align: center;
         height: 100%;
