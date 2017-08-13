@@ -1,10 +1,10 @@
-var request = new XMLHttpRequest();
+var r = new XMLHttpRequest();
 
-request.onreadystatechange = function() {
+r.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         myObj = JSON.parse(this.responseText);
-        document.getElementById("request").innerHTML = myObj;
+        document.getElementById("request").innerHTML = myObj.name;
     }
 };
-request.open("GET", "loginController.php", true);
-request.send();
+r.open("POST", "loginController.php", true);
+r.send();
