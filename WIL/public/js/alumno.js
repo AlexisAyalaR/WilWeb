@@ -6,5 +6,5 @@ r.onreadystatechange = function() {
         document.getElementById("request").innerHTML = myObj;
     }
 };
-r.open("POST", "loginController.php", true);
+r.open("POST", "../Controllers/loginController.php", true);
 r.send();
