@@ -6,5 +6,5 @@ r.onreadystatechange = function() {
         document.getElementById("request").innerHTML = myObj;
     }
 };
-r.open("POST", "http://localhost/WilWeb/Wil/app/Http/Controllers/loginController.php", true);
+r.open("POST", "http://localhost/WilWeb/Wil/app/Http/Controllers/paul.php", true);
 r.send();
