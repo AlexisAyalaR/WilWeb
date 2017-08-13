@@ -52,7 +52,7 @@
 		<li class="w3-bar-item w3-mobile w3-hover-shadow"><a class="link" href="#section6"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
 		<div class="w3-right w3-hide-medium w3-hide-small">
 			<li onclick="openClose()" class="w3-bar-item w3-mobile w3-hover-shadow header__but"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar sesión</li>
-		</dir>
+		</div>
 	</nav>
 </header>
 <section id="section1" class="section1 w3-display-container">
@@ -97,7 +97,7 @@
 <section id="section2" class="section2 w3-margin">
 	<p class="section2__p tit">About us</p>
 	<p class="section2__p">Conoce al equipo de WIL:</p>
-	<div id="sec" class="section2__div">
+	<div id="sec" class="section2__div w3-hide-small">
 	</div>
 </section>
 <section id="section3" class="section3 w3-center w3-container">
@@ -138,21 +138,35 @@
 </section>
 <section id="section4" class="section4 w3-margin w3-margin w3-padding">
 	<p class="section4__p tit">Preguntas frecuentes</p>
-	<dir class="section4__div">
-		<p>
-			¿Lo que aprendo en el WIL se ve en alguna materia? <br>
-			Lamentablemente en ninguna materia del ITAM se ve Back-End o Front-End, es por eso que nación el WIL, para que aquellos que les interese el desarrollo web tangan las herramientas para llevar acabo sus proyectos. <br>
-			¿Qué necesito para entrar al WIL? <br>
-			Para entrar al WIL solo necesitas una copia de tu credencial y una copia de tu horario. <br>
-			¿Tiene algun costo el WIL? <br>
-			Las asesorías del WIL son totalmente gratuitas. <br>
-			¿Se necesita saber programar para entrar al WIL? <br>
-		</p>
-	</dir>
+	<div class="section4__div">
+		<div class="w3-dropdown-click">
+			<button onclick="frecuentes1()" class="">P: ¿Lo que aprendo en el WIL se ve en alguna materia?</button>
+			<div id="Demo1" class="w3-dropdown-content w3-bar-block w3-border">
+				<p class="w3-bar-item">R: Lamentablemente en ninguna materia del ITAM se ve Back-End o Front-End, es por eso que nación el WIL, para que aquellos que les interese el desarrollo web tangan las herramientas para llevar acabo sus proyectos.</p>
+			</div>
+		</div>
+		<div class="w3-dropdown-click">
+			<button onclick="frecuentes2()" class="">P: ¿Qué necesito para entrar al WIL?</button>
+			<div id="Demo2" class="w3-dropdown-content w3-bar-block w3-border">
+				<p href="" class="w3-bar-item">R: Para entrar al WIL solo necesitas una copia de tu credencial y una copia de tu horario.</p>
+			</div>
+		</div>
+		<div class="w3-dropdown-click">
+			<button onclick="frecuentes3()" class="">P: ¿Tiene algun costo el WIL?</button>
+			<div id="Demo3" class="w3-dropdown-content w3-bar-block w3-border">
+				<p href="" class="w3-bar-item">R: Las asesorías del WIL son totalmente gratuitas.</p>
+			</div>
+		</div>
+		<div class="w3-dropdown-click">
+			<button onclick="frecuentes4()" class="">P: ¿Se necesita saber programar para entrar al WIL?</button>
+			<div id="Demo4" class="w3-dropdown-content w3-bar-block w3-border">
+				<p href="" class="w3-bar-item">R: No es necesario, aquí te enseñamos desde cero para desarrollar páginas web.</p>
+			</div>
+		</div>
 </section>
 <section id="section6" class="section6 w3-center">
 	<p class="section6__p tit">Contacto</p>
-	<dir class="section6__div">
+	<div class="section6__div">
 		<p class="w3-third">
 			<b>Correo:</b> <br>
 			wil@itam.mx <br>
@@ -173,7 +187,7 @@
 		<p class="w3-third">
 			<div ><iframe src="https://www.mapsdirections.info/crear-un-mapa-de-google/map.php?width=300&height=150&hl=en&q=rio%20hondo%201+(ITAM)&ie=UTF8&t=&z=15&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/crear-un-mapa-de-google/">Crear Mapa Google</a> by <a href="https://www.mapsdirections.info/">Mapa España</a></iframe></div>
 		</p>
-	</dir>
+	</div>
 </section>
 <footer class="footer w3-center w3-indigo w3-display-container">
 	<p class="footer__arriba w3-display-topmiddle w3-hover-opacity"><a class="link" href="#section1">Ir arriba <i class="fa fa-long-arrow-up fa-6" aria-hidden="true"></i></a></p>

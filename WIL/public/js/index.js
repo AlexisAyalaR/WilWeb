@@ -1,7 +1,7 @@
 nombres = 
 ["Victor <br> WorrenGilgamesh", 
 "Emiliano <br> uboat46",
- "Horacio <br> <br>",
+ "Horacio <br> Arkinoth",
   "Alexis <br> AlexisAyalaR", 
 "Paul <br> JPaulVI",
  "Jaime <br> jlimnos",
@@ -58,5 +58,41 @@ function openClose() {
         x.style.display = 'none';
     } else {
         x.style.display = 'block';
+    }
+}
+
+function frecuentes1(){
+	var x = document.getElementById("Demo1");
+	if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function frecuentes2(){
+	var x = document.getElementById("Demo2");
+	if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function frecuentes3(){
+	var x = document.getElementById("Demo3");
+	if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function frecuentes4(){
+	var x = document.getElementById("Demo4");
+	if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
     }
 }
