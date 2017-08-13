@@ -414,31 +414,15 @@ header .header__div1 .header__img {
   padding: 0px;
   margin: 0px; }
   .article .article__div0 {
-    background-color: #FAF7EB;
+    background-color: #bad9ec;
     color: black; }
     .article .article__div0 .article__p {
       padding: 10px; }
-    .article .article__div0 .article__divImg {
-      text-align: center;
-      height: 50%;
-      width: 50%; }
-      .article .article__div0 .article__divImg .article__img {
-        text-align: center;
-        height: 100%;
-        width: 100%; }
   .article .article__div1 {
-    background-color: #D0E9EA;
+    background-color: #f1efe3;
     color: black; }
     .article .article__div1 .article__p {
       padding: 10px; }
-    .article .article__div1 .article__divImg1 {
-      text-align: center;
-      height: 50%;
-      width: 50%; }
-      .article .article__div1 .article__divImg1 .article__img1 {
-        text-align: center;
-        height: 100%;
-        width: 100%; }
 
 .section1 {
   background-size: cover;
@@ -454,9 +438,10 @@ header .header__div1 .header__img {
 
 .section2 {
   height: 1225px;
-  width: 98%;
-  background-color: #61d9f0;
-  color: white; }
+  width: 98%; }
+  .section2 .section2__div1 {
+    background-color: #1f6ca0;
+    color: white; }
   .section2 .section2__p {
     padding: 10px; }
   .section2 .card {
@@ -482,15 +467,18 @@ header .header__div1 .header__img {
   height: 100%;
   width: 100%; }
   .section3 .section3__div1 {
-    background-color: #8cd2fa;
+    background-color: silver;
     color: black; }
   .section3 .section3__imput {
     padding: 10px; }
   .section3 .section3__p {
     padding: 10px; }
+  .section3 .section3__div2 {
+    background-color: #bad9ec;
+    color: black; }
 
 .section4 {
-  background-color: #5577db;
+  background-color: #1f6ca0;
   color: white; }
 
 .section6 {

@@ -33,37 +33,17 @@ header{
 	padding: 0px;
 	margin: 0px;
 	.article__div0{
-		background-color: #FAF7EB;
+		background-color: rgb(186,217,236);
 		color: black;
 		.article__p{
 			padding: 10px;
-		}
-		.article__divImg{
-			text-align: center;
-			height: 50%;
-			width: 50%;
-			.article__img{
-				text-align: center;
-				height: 100%;
-				width: 100%;
-			}
 		}
 	}
 	.article__div1{
-		background-color: #D0E9EA;
+		background-color: rgb(241,239,227);
 		color: black;
 		.article__p{
 			padding: 10px;
-		}
-		.article__divImg1{
-			text-align: center;
-			height: 50%;
-			width: 50%;
-			.article__img1{
-				text-align: center;
-				height: 100%;
-				width: 100%;
-			}
 		}
 	}
 }
@@ -85,8 +65,10 @@ header{
 .section2{
 	height: 1225px;
 	width: 98%;
-	background-color: rgb(97, 217, 240);
-	color: white;
+	.section2__div1{
+		background-color: rgb(31,108,160);
+		color: white;
+	}
 	.section2__p{
 		padding: 10px;
 	}
@@ -118,7 +100,7 @@ header{
 	height: 100%;
 	width: 100%;
 	.section3__div1{
-		background-color: rgb(140, 210, 250);
+		background-color: rgb(192,192,192);
 		color: black;
 	}
 	.section3__imput{
@@ -127,10 +109,14 @@ header{
 	.section3__p{
 		padding: 10px;
 	}
+	.section3__div2{
+		background-color: rgb(186,217,236);
+		color: black;
+	}
 }
 
 .section4{
-	background-color: rgb(85, 119, 219);
+	background-color: rgb(31,108,160);
 	color: white;
 }
 .section6{
