@@ -9,6 +9,7 @@ class loginController extends Controller
     public function muestraUsuario(Request $req){
 
     	$usuario = $req->input('usuario');
-    	return $usuario;
+    	$paul = json_encode($usuario)
+    	return $paul;
     }
 }
