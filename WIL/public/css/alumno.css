@@ -411,27 +411,45 @@ header .header__div1 .header__img {
 .titulo {
   font-family: 'Anton', sans-serif; }
 
+.section0 {
+  background-color: #bad9ec;
+  color: black; }
+
 .section2 {
-  background-color: #1f6ca0;
-  color: white; }
+  background-color: #ebf4f9;
+  color: black; }
 
 .section3 {
-  height: 100%;
-  width: 100%; }
-  .section3 .section3__div1 {
-    background-color: silver;
-    color: black; }
-  .section3 .section3__imput {
-    padding: 10px; }
-  .section3 .section3__p {
-    padding: 10px; }
-  .section3 .section3__div2 {
-    background-color: #bad9ec;
-    color: black; }
+  background-color: #bad9ec;
+  color: black; }
 
 .section4 {
-  background-color: #1f6ca0;
-  color: white; }
+  background-color: #ebf4f9;
+  color: black; }
+
+.section5 {
+  background-color: #bad9ec;
+  color: black; }
+
+.section6 {
+  background-color: #ebf4f9;
+  color: black; }
+
+.section7 {
+  background-color: #bad9ec;
+  color: black; }
+
+.section8 {
+  background-color: #ebf4f9;
+  color: black; }
+
+.section9 {
+  background-color: #bad9ec;
+  color: black; }
+
+.section10 {
+  background-color: #ebf4f9;
+  color: black; }
 
 .w3-sidebar {
   display: none; }
