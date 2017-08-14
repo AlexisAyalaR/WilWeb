@@ -33,26 +33,42 @@
 	</div>
 	<div class="w3-third">
 		<br>
-		lol
 	</div>
 </section>
 <header class="header w3-top">
 	<nav class="w3-bar w3-border w3-blue w3-padding-16">
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity">
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small">
 			<div class="header__div1">
 				<img src="../img/wil_logo.png" class="header__img">
-		</div>
+			</div>
 		</li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> ¿Qué es WIL?</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> ¿Porqué WIL?</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity"><a class="link" href="#section2"><i class="fa fa-users" aria-hidden="true"></i> About us</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity"><a class="link" href="#section3"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Cuentanos tu proyecto</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity"><a class="link" href="#section4"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity"><a class="link" href="#section6"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> ¿Qué es WIL?</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> ¿Porqué WIL?</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#section2"><i class="fa fa-users" aria-hidden="true"></i> About us</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#section3"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Cuentanos tu proyecto</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#section4"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#section6"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
 		<div class="w3-right">
-			<li onclick="openClose()" class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity header__but"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar sesión</li>
+			<li onclick="openClose()" class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small header__but"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar sesión</li>
 		</div>
+		<li class="w3-bar-item w3-hover-shadow w3-hover-opacity">
+			<div class="header__div1">
+				<img src="../img/wil_logo.png" class="header__img">
+			</div>
+		</li>
+		<li onclick="openClose1()" class="w3-bar-item w3-right w3-hide-large"><i class="fa fa-bars"></i></a></li>
+	</nav>
+	<nav class="w3-sidebar w3-animate-left w3 w3-bar-block w3-blue w3-hide-large" id="pequenio">
+		<li class="w3-bar-item w3-button w3-large w3-padding-16 w3-right w3-hover-red" onclick="openClose1()">X</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> ¿Qué es WIL?</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> ¿Porqué WIL?</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#section2"><i class="fa fa-users" aria-hidden="true"></i> About us</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#section3"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Cuentanos tu proyecto</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#section4"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#section6"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
+		<li onclick="openClose()" class="w3-bar-item w3-button"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar sesión</li>
 	</nav>
 </header>
 <section id="section1" class="section1 w3-display-container">

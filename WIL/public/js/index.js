@@ -60,3 +60,12 @@ function openClose() {
         x.style.display = 'block';
     }
 }
+
+function openClose1() {
+    var x = document.getElementById('pequenio');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}

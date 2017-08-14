@@ -494,6 +494,9 @@ header .header__div1 .header__img {
 .modal .modal__div {
   background-color: #f8f9fa; }
 
+.w3-sidebar {
+  display: none; }
+
 footer {
   height: 100px;
   width: 100%;
