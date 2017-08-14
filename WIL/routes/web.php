@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('/pruebaPaul');
+    return view('/welcome');
 });
 
 Route::post('/enviaProyecto','mailController@envia');
