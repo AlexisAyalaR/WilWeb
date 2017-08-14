@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Input;
 use Validator;
+use Redirect;
+use App\usuario;
 
 class registraController extends Controller
 {
@@ -16,7 +18,7 @@ class registraController extends Controller
     	$nivel = $req->input('nivel');
 
 
-    	$data = Input::except(array('token'));
+    	$data = Input::except(array('_token'));
 
     	$regla = array(
     		'email' => 'required|email',
@@ -34,9 +36,11 @@ class registraController extends Controller
     	$validador = Validator::make($data, $regla, $mensaje);
 
     	if($validador->fails()){
-
+    		return redirect()->back()->withError($validador);
     	} else{
 
+    		usuario::agrega(Input::except(array('_token', 'passC'))); 
+    		return redirect('/WilWeb/Wil/public/html/personalS.html')->with('se registró nuevo usuario');
     	}
     }
 }

@@ -15,20 +15,9 @@ Route::get('/', function () {
     return view('/welcome');
 });
 
-Route::post('/enviaProyecto','mailController@envia');
+Route::post('/WilWeb/Wil/public/html/prueba.html','mailController@envia');
 
-Route::post('/WilWeb/Wil/public/html/alumno.html', 'loginController@muestraUsuario');
+Route::post('/WilWeb/Wil/public/html/login.html', 'loginController@entra');
 
-Route::post(/*'/WilWeb/Wil/public/html/registra.html'*/ '/register','registraController@registraUsuario');
+Route::post('/WilWeb/Wil/public/html/registra.html','registraController@registraUsuario');
 
-
-
-
-/*
-function(){
-
-	$json -> name = 'Alexis'; //array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
-    $paul = json_encode($json);
-
-    return $paul;
-*/
