@@ -19,10 +19,10 @@
 			</div>
 		</li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> Introducción</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> Guías</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section2"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
-			<li onclick="openClose()" class="w3-bar-item w3-mobile w3-right w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium header__but"><a class="link" href="../html/prueba.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Cerrar sesión</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section2"><i class="fa fa-code" aria-hidden="true"></i> Introducción</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section"><i class="fa fa-terminal" aria-hidden="true"></i> Guías</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
+			<li onclick="openClose()" class="w3-bar-item w3-mobile w3-right w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium header__but"><a class="link" href="prueba.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Cerrar sesión</a></li>
 		</div>
 		<li onclick="openClose1()" class="w3-bar-item w3-hide-large"><i class="fa fa-bars"></i></a></li>
 		<li class="w3-bar-item w3-hide-large"><i class="fa fa-terminal" aria-hidden="true"></i>Web ITAM Laboratory</li>
@@ -33,25 +33,20 @@
 		<li class="w3-bar-item w3-button"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> ¿Qué es WIL?</a></li>
 		<li class="w3-bar-item w3-button"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> ¿Porqué WIL?</a></li>
 		<li class="w3-bar-item w3-button"><a class="link" href="#section2"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
-		<li onclick="openClose()" class="w3-bar-item w3-button"><i class="fa fa-sign-in" aria-hidden="true"></i> Cerrar sesión</li>
+		<li onclick="openClose()" class="w3-bar-item w3-button"><a class="link" href="prueba.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Cerrar sesión</a></li>
 	</nav>
 </header>
-<section class="section0">
-	<div class="w3-text-black w3-display-topmiddle" style="padding: 75px">
-		<span class="w3-xlarge w3-hide-small w3-text-white">Empieza a programar tus páginas web</span><br>
-	</div>
-	<div class="w3-display-topleft section1__divImg">
-		<img class="section1__img" src="../img/wil_logo.png">
-	</div>
-</section>
-<section class="section1 w3-container">
-	<p>Progreso</p>
+<section class="section0 w3-container">
+	<br>
+	<br>
+	<br>
+	<p class="tit">Progreso</p>
 	<div class="w3-border">
   		<div class="w3-blue" style="height:24px;width:20%"></div>
 	</div>
 </section>
-<section id="section2" class="section2">
-	<p class="tit">Introducción</p>
+<section id="section2" class="section2 w3-row-padding">
+	<p class="tit"><b>Introducción</b></p>
 	<div>
 		<p>
 			<b>Bienvenido al WIL,</b> <br>
@@ -64,6 +59,9 @@
 				<li>ls: te muestrar el contenido de la carpeta de dónde estas.</li>
 				<li>cd nombreDeCarpeta: se usa para entrar a una carpeta</li>
 			</ul>
+			</p>
+<section id="section3" class="section3 w3-row-padding">
+			<p>
 			El siguiente paso será saber subir tus archivos. Para lograrlo tienes que estar en la carpeta de tu repositorio y usar los siguientes comamdos en orden:
 			<ul>
 				<li>git status: te informa las modificaciones que no estan en GitHub (este comando te lo puedes saltar)</li>
@@ -77,28 +75,30 @@
 				<li>CSS se usa para darle presentación a un sitio web.</li>
 				<li>JavaScript se usa para darle interactividad a un sitio web.</li>
 			</ul>
-			<img class="section2__img" src="https://cdn-images-1.medium.com/max/2000/1*l4xICbIIYlz1OTymWCoUTw.jpeg">
+			<img class="w3-image section2__img" src="https://cdn-images-1.medium.com/max/2000/1*l4xICbIIYlz1OTymWCoUTw.jpeg">
 		</p>
-		<p><b>HTML</b></p>
+</section>
+<section id="section5" class="section4 w3-row-padding">
+		<p class="tit"><b>HTML</b></p>
 		<p>El primer lenguaje fundamental. (no sé que poner aquí)</p>
-		<p><b>CSS</b></p>
-		<p>El segundo lenguaje fundamental. (no sé que poner aquí)</p>	
-		<p><b>JavaScript</b></p>
-		<p>El tercer leguaje fundamental. (no sé que poner aquí)</p>
-		<p><b>"Responsive"</b></p>
-		<p>Una de las caracteristicas que un sitio web bien hecho es que sea "responsive", es decir, que tus sitios web se adapten a todos los dispositivos. Para saber cómo se hace un sitio web "responsivo" sigue <a href="https://www.w3schools.com/css/css_rwd_intro.asp">esta guía</a> <br> <br>
-		<img class="section2__img1" src="http://www.outsiders.cat/wp-content/uploads/2015/07/RWD_responsive_blog.png">
-		</p>
 	</div>
 </section>
-<section id="section3" class="section3 w3-blue">
-	<div>
-		<p id="request"></p>
-	</div>
+<section id="section6" class="section3 w3-row-padding">
+	<p class="tit"><b>CSS</b></p>
+	<p>El segundo lenguaje fundamental. (no sé que poner aquí)</p>	</section>
+<section id="section7" class="section4 w3-row-padding">
+	<p class="tit"><b>JavaScript</b></p>
+	<p>El tercer leguaje fundamental. (no sé que poner aquí)</p>
 </section>
-<section id="section4" class="section4">
+<section id="section8" class="section5 w3-row-padding">
+	<p class="tit"><b>"Responsive"</b></p>
+	<p>Una de las caracteristicas que un sitio web bien hecho es que sea "responsive", es decir, que tus sitios web se adapten a todos los dispositivos. Para saber cómo se hace un sitio web "responsivo" sigue <a href="https://www.w3schools.com/css/css_rwd_intro.asp">esta guía</a>
+	</p>
+	<img class="w3-image section2__img1" src="http://www.outsiders.cat/wp-content/uploads/2015/07/RWD_responsive_blog.png">
+	
 </section>
-<section id="section5" class="section5">
+<section id="section9" class="section9">
+	<p class="tit"><b>Horario</b></p>
 </section>
 <footer class="footer w3-blue w3-display-container">
 	<p class="footer__arriba w3-display-topmiddle w3-hover-opacity"><a class="link" href="#section1">Ir arriba <i class="fa fa-long-arrow-up fa-6" aria-hidden="true"></i></a></p>
