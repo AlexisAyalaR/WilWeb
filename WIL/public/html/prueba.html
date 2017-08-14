@@ -26,7 +26,7 @@
 			  <label class="w3-text-blue"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Contraseña</label>
 			  <input class="w3-input w3-border w3-light-grey" type="password" name="contrasena">
 			  <br>
-			  <button class="w3-btn w3-grey"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar</button>
+			  <button class="titulo w3-btn w3-grey"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar</button>
 			</form>
 			<br>
 		</div>
@@ -37,27 +37,23 @@
 </section>
 <header class="header w3-top">
 	<nav class="w3-bar w3-border w3-blue w3-padding-16">
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small">
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium">
 			<div class="header__div1">
 				<img src="../img/wil_logo.png" class="header__img">
 			</div>
 		</li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> ¿Qué es WIL?</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> ¿Porqué WIL?</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#section2"><i class="fa fa-users" aria-hidden="true"></i> About us</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#section3"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Cuentanos tu proyecto</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#section4"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small"><a class="link" href="#section6"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> ¿Qué es WIL?</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> ¿Porqué WIL?</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section2"><i class="fa fa-users" aria-hidden="true"></i> About us</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section3"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Cuentanos tu proyecto</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section4"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section6"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
 		<div class="w3-right">
-			<li onclick="openClose()" class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small header__but"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar sesión</li>
+			<li onclick="openClose()" class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium header__but"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar sesión</li>
 		</div>
-		<li class="w3-bar-item w3-hover-shadow w3-hover-opacity">
-			<div class="header__div1">
-				<img src="../img/wil_logo.png" class="header__img">
-			</div>
-		</li>
-		<li onclick="openClose1()" class="w3-bar-item w3-right w3-hide-large"><i class="fa fa-bars"></i></a></li>
+		<li onclick="openClose1()" class="w3-bar-item w3-hide-large"><i class="fa fa-bars"></i></a></li>
+		<li class="w3-bar-item w3-hide-large"><i class="fa fa-terminal" aria-hidden="true"></i>Web ITAM Laboratory</li>
 	</nav>
 	<nav class="w3-sidebar w3-animate-left w3 w3-bar-block w3-blue w3-hide-large" id="pequenio">
 		<li class="w3-bar-item w3-button w3-large w3-padding-16 w3-right w3-hover-red" onclick="openClose1()">X</a></li>
@@ -67,17 +63,23 @@
 		<li class="w3-bar-item w3-button"><a class="link" href="#section2"><i class="fa fa-users" aria-hidden="true"></i> About us</a></li>
 		<li class="w3-bar-item w3-button"><a class="link" href="#section3"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Cuentanos tu proyecto</a></li>
 		<li class="w3-bar-item w3-button"><a class="link" href="#section4"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a></li>
-		<li class="w3-bar-item w3-button"><a class="link" href="#section6"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
+		<li class="w3-bar-item w3-button w3-hide-medium"><a class="link" href="#section6"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
+		<li class="w3-bar-item w3-button w3-hide-large w3-hide-small"><a class="link" href="#section5"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacto</a></li>
 		<li onclick="openClose()" class="w3-bar-item w3-button"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar sesión</li>
 	</nav>
 </header>
-<section id="section1" class="section1 w3-display-container">
+<section id="section1" class="section1 w3-display-container w3-hide-small">
 	<div class="w3-text-black w3-display-bottommiddle" style="padding: 50px">
 		<span class="w3-xlarge w3-hide-small w3-text-white w3-opacity">Aprende a programar tus páginas web</span><br>
 	</div>
 	<div class="w3-display-bottomright section1__divImg">
-		<img class="section1__img w3-opacity" src="../img/wil_logo.png">
+		<img class="section1__img w3-opacity  w3-hide-medium" src="../img/wil_logo.png">
 	</div>
+</section>
+<section class="w3-hide-large">
+	<br>
+	<br>
+	<br>
 </section>
 <article id="article" class="article w3-center w3-container">
 	<div class="w3-row-padding w3-margin">
@@ -161,7 +163,7 @@
 	</div>
 </section>
 <section id="section4" class="w3-row-padding section4 w3-margin w3-padding w3-container">
-	<div class="w3-half">	
+	<div class="w3-half w3-hide-small">	
 		<p class="section4__p tit">Preguntas frecuentes</p>
 		<div class="section4__div w3-container">
 			<div class="w3-dropdown-hover">
@@ -196,11 +198,48 @@
 			</div>
 		</div>
 	</div>
-	<div class="w3-half">
+	<div class="w3-hide-large w3-hide-medium">
+		<p class="section4__p tit">Preguntas frecuentes</p>
+		<p>
+			P:¿Lo que aprendo en el WIL se ve en alguna materia? <br>
+			R: Lamentablemente en ninguna materia del ITAM se ve Back-End o Front-End, es por eso que nación el WIL, para que aquellos que les interese el desarrollo web tangan las herramientas para llevar acabo sus proyectos. <br>
+			<br>
+			P: ¿Qué necesito para entrar al WIL? <br>
+			R: Para entrar al WIL solo necesitas una copia de tu credencial y una copia de tu horario. <br>
+			<br>
+			P: ¿Tiene algun costo el WIL? <br>
+			R: Las asesorías del WIL son totalmente gratuitas. <br>
+			<br>
+			P: ¿Se necesita saber programar para entrar al WIL? <br>
+			R: No es necesario, aquí te enseñamos desde cero para desarrollar páginas web.
+		</p>
+	</div>
+	<div class="w3-half w3-hide-medium">
 		<img class="w3-image" src="http://www.ironpaper.com/webintel/wp-content/uploads/2013/02/wireframes-website-project-presentation.jpg">
 	</div>
 </section>
-<section id="section6" class="section6 w3-row-padding w3-center">
+<section id="section5" class="w3-hide-small w3-hide-large w3-row-padding w3-center">
+	<p class="section6__p tit">Contacto</p>
+	<div class="section6__div">
+		<p class="w3-half">
+			<b>Correo:</b> <br>
+			wil@itam.mx <br>
+			<br>
+			<b>Teléfono:</b> <br>
+			+52 1 55 1684 3500 <br>
+			56 28 4000 ext: 3652
+		</p>
+		<p class="w3-half">
+			<b>Dirección:</b> <br>
+			ITAM, Campus Rio Hondo <br>
+			Río Hondo #1 <br>
+			Col. Progreso Tizapán <br>
+			CP. 01080. Álvaro Obregón, <br>
+			Ciudad de México <br>
+			<br>
+		</p>
+</section>
+<section id="section6" class="section6 w3-row-padding w3-center  w3-hide-medium">
 	<p class="section6__p tit">Contacto</p>
 	<div class="section6__div">
 		<p class="w3-third">
@@ -220,10 +259,18 @@
 			Ciudad de México <br>
 			<br>
 		</p>
-		<p class="w3-third">
-			<div ><iframe src="https://www.mapsdirections.info/crear-un-mapa-de-google/map.php?width=300&height=150&hl=en&q=rio%20hondo%201+(ITAM)&ie=UTF8&t=&z=15&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/crear-un-mapa-de-google/">Crear Mapa Google</a> by <a href="https://www.mapsdirections.info/">Mapa España</a></iframe></div>
+		<p class="w3-third w3-hide-small">
+			<div class="w3-hide-small" ><iframe src="https://www.mapsdirections.info/crear-un-mapa-de-google/map.php?width=300&height=150&hl=en&q=rio%20hondo%201+(ITAM)&ie=UTF8&t=&z=15&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/crear-un-mapa-de-google/">Crear Mapa Google</a> by <a href="https://www.mapsdirections.info/">Mapa España</a></iframe></div>
 		</p>
 	</div>
+</section>
+<section class="w3-hide-large w3-hide-medium">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 </section>
 <footer class="footer w3-center w3-indigo w3-display-container">
 	<p class="footer__arriba w3-display-topmiddle w3-hover-opacity"><a class="link" href="#section1">Ir arriba <i class="fa fa-long-arrow-up fa-6" aria-hidden="true"></i></a></p>

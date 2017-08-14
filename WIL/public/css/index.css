@@ -408,6 +408,9 @@ header .header__div1 .header__img {
   height: 27.4px;
   width: 31.25px; }
 
+.titulo {
+  font-family: 'Anton', sans-serif; }
+
 .article {
   height: 100%;
   width: 100%;
