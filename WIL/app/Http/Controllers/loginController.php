@@ -14,9 +14,18 @@ class loginController extends Controller
 {
     public function entra(Request $req){
 
+        $myObj->name = "John";
+        $myObj->age = 30;
+        $myObj->city = "New York";
+
+        $myJSON = json_encode($myObj);
+
+        return $myJSON;
+
+        /*
     	$email = $req->input('email');
     	$pass = $req->input('pass');
-
+        
     	$usuario = DB::table('users')->where('email', $email)->get();
     	$decodeJson = json_decode($usuario,true);
     	$arrayJson = $decodeJson[0];
@@ -33,6 +42,7 @@ class loginController extends Controller
     		else
     			redirect('/WilWeb/Wil/public/html/personalS.html');
     		return $usuario;
+            */
     	}
 
     }

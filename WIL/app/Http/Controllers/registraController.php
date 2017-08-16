@@ -17,7 +17,7 @@ class registraController extends Controller
     	$passC = $req->input('passC');
     	$nivel = $req->input('nivel');
 
-
+        
     	$data = Input::except(array('_token'));
 
     	$regla = array(

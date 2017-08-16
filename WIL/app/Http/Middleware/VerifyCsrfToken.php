@@ -12,6 +12,9 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        //
+        
+        '/WilWeb/Wil/public/html/prueba.html' 
+        '/WilWeb/Wil/public/html/alumno.html'
     ];
+
 }
