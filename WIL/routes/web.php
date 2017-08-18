@@ -19,5 +19,5 @@ Route::post('/WilWeb/Wil/public/html/prueba.html','mailController@envia');
 
 Route::post('/WilWeb/Wil/public/html/alumno.html', 'loginController@entra');
 
-Route::post('/WilWeb/Wil/public/html/registra.html','registraController@registraUsuario');
+Route::post('/registra', ["uses" => 'registraController@registraUsuario']);
 

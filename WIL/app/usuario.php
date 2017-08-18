@@ -5,25 +5,18 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Input;
 use Hash;
+use DB;
 
 class usuario extends Model
 {
 	protected $tabla = "usuario_table";
 
-    public function agrega($data){
+    public static function agrega($email, $pass, $nivel){
 
-    	$email = Input::get('email');
-    	$pass = Hash::make(Input::get('pass'));
-    	$nivel = Input::get('nivel');
-    	$progreso = 0;
-    		
-    	$usuarios = new Register();
+        $passH = Hash::make($pass);
 
-    	$usuarios->email=$email;
-    	$usuarios->password=$pass;
-    	$usuarios->nivel=$nivel;
-    	$usuarios->progreso=$progreso;
-
-    	$usuarios->save();
+        DB::table('usuarios')->insert(
+            ['email' => $email, 'password' => $passH, 'nivel' => $nivel, 'progreso' => 0]
+        );
     }
 }
