@@ -9,7 +9,13 @@ use DB;
 
 class usuario extends Model
 {
-	protected $tabla = "usuario_table";
+
+	public function horario(){
+
+		return $this->hasMany(Horario::class);
+	}
+
+
 
     public static function agrega($email, $pass, $nivel){
 

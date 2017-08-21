@@ -17,7 +17,7 @@ class CreateHorarioTable extends Migration
             $table->increments('idH');
             $table->integer('dia');
             $table->string('horas');
-            $table->integer('id');
+            $table->integer('idU');
             $table->rememberToken();
             $table->timestamps();
         });
