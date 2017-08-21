@@ -10,36 +10,48 @@
 	<script src="../js/personalS.js"></script>
 </head>
 <body onload="">
-<header class="header w3-white">
-	<nav class="w3-bar w3-border w3-blue w3-top">
-		<li class="w3-bar-item w3-mobile w3-border-right w3-white">
+<header class="header w3-top">
+	<nav class="w3-bar w3-border w3-blue w3-padding-16">
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium">
 			<div class="header__div1">
 				<img src="../img/wil_logo.png" class="header__img">
-		</div>
+			</div>
 		</li>
-		<li class="w3-bar-item w3-button w3-mobile w3-border-right w3-grey"><a class="link" href="prueba.html"><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
-		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> Proyectos</a></li>
-		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#section5"><i class="fa fa-terminal" aria-hidden="true"></i> ???</a></li>
-		<li class="w3-bar-item w3-button w3-mobile w3-border-right"><a class="link" href="#section3"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
-		<div class="w3-right w3-hide-medium w3-hide-small">
-			<li onclick="openClose()" class="w3-bar-item w3-button w3-mobile w3-border-left header__but"><i class="fa fa-user-circle" aria-hidden="true"></i> Cerrar sesión</li>
-		</dir>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section1"><i class="fa fa-code" aria-hidden="true"></i> Proyectos</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section2"><i class="fa fa-terminal" aria-hidden="true"></i> Horario</a></li>
+		<li onclick="openClose()" class="w3-bar-item w3-mobile w3-right w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium header__but"><a class="link" href="prueba.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Cerrar sesión</a></li>
+		</div>
+		<li onclick="openClose1()" class="w3-bar-item w3-hide-large"><i class="fa fa-bars"></i></a></li>
+		<li class="w3-bar-item w3-hide-large"><i class="fa fa-terminal" aria-hidden="true"></i>Web ITAM Laboratory</li>
+	</nav>
+	<nav class="w3-sidebar w3-animate-left w3 w3-bar-block w3-blue w3-hide-large" id="pequenio">
+		<li class="w3-bar-item w3-button w3-large w3-padding-16 w3-right w3-hover-red" onclick="openClose1()">X</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="prueba.html"><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#section1"><i class="fa fa-code" aria-hidden="true"></i> Proyectos</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#section2"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
+		<li onclick="openClose()" class="w3-bar-item w3-button"><a class="link" href="prueba.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Cerrar sesión</a></li>
 	</nav>
 </header>
-<section class="section1 w3-container">
-	<p class="tit">Proyectos</p>
-	<div>
+<br>
+<br>
+<section id="section1" class="section1 w3-row-padding">
+	<p class="tit"><b>Proyectos</b></p>
+	<div class="w3-half">
 		<p>
-			En esta secció ...
+			En esta sección ...
 		</p>
 	</div>
+	<div class="w3-half">
+		<img class="w3-image" src="http://www.omgubuntu.co.uk/wp-content/uploads/2016/09/terminal-icon.png">
+	</div>
 </section>
-<section id="section2" class="section2">
-	<p class="tit">???</p>
-</section>
-<section id="section3" class="section3 w3-blue">
-	<p class="tit">Horario</p>
-	<form class="section3__form" action="http://localhost/WilWeb/Wil/public/registra" method="post">
+<br>
+<section id="section2" class="section2 w3-row-padding">
+	<p class="tit"><b>Horario</b></p>
+	<div class="w3-half">
+		<p>
+			<form class="section3__form" action="http://localhost/WilWeb/Wil/public/registra" method="post">
 				<meta name="csrf-token" content="{{ csrf_token() }}" />
 					<div class="">
 						<br>
@@ -57,8 +69,14 @@
 						<br>
 						<br>
 					</div>
-				</form>
+	</form>
+		</p>
+	</div>
+	<div class="w3-half">
+		<img class="w3-image" src="http://www.omgubuntu.co.uk/wp-content/uploads/2016/09/terminal-icon.png">
+	</div>
 </section>
+<br>
 <section id="section4" class="section4">
 </section>
 <section id="section5" class="section5">
