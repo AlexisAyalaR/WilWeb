@@ -20,9 +20,11 @@ class loginController extends Controller
         
     	$usuario = DB::table('usuarios')->where('email', $email)->get();
     	$decodeJson = json_decode($usuario,true);
+        if(count($decodeJson)==0)
+            return \Response::json(["miembro"=>false],500);
+
     	$usuarioJson = $decodeJson[0];
     	$usuario_pass = $usuarioJson['password'];
-
 
     	if($pass != $usuario_pass){
             return \Response::json(["miembro"=>false],500);
