@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use App\usuario;
 use Illuminate\Http\Request;
 use DB;
+use Hash;
 
 class loginController extends Controller
 {
@@ -26,7 +27,9 @@ class loginController extends Controller
     	$usuarioJson = $decodeJson[0];
     	$usuario_pass = $usuarioJson['password'];
 
-    	if($pass != $usuario_pass){
+        $passDH = Hash::make($usuario_pass);
+
+    	if($pass != $passDH){
             return \Response::json(["miembro"=>false],500);
 
 
