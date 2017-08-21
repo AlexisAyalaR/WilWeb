@@ -34,6 +34,10 @@ class usuarioController extends Controller
     	return \Response::json(["miembro"=>true],200);
     }
 
+    public function getInfo(){
+
+    	return session('jsonMiembro');
+    }
 
     public function cambiaHorario(Request $req){
     	/*

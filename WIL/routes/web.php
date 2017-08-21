@@ -23,5 +23,6 @@ Route::post('/registra', ["uses" => 'usuarioController@registraUsuario']);
 
 Route::post('/cambiaHorario', ["uses" => 'usuarioController@cambiaHorario']);
 
-
 Route::post('/cambiaProgreso/{id}', ["uses" => 'usuarioController@cambiaProgreso']);
+
+Route::get('/getInfoUsuario', ["uses" => 'usuarioController@getInfo']);
