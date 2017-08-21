@@ -12,7 +12,7 @@ class horarioController extends Controller
 {
     public function cambia(Request $req){
 
-        $UnoSieteL = $req->input('17:00L');
+        $UnoSieteL = $req->input('17:00Lu');
 
 
     	return $UnoSieteL;
