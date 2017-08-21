@@ -15,11 +15,17 @@ class registraController extends Controller
         
     	$email = $req->input('email');
     	$pass = $req->input('pass');
+    	$passC = $req->input('passC');
     	$nivel = $req->input('nivel');
 
-    	usuario::agrega($email, $pass, $nivel); 
+    	if($pass != $passC)
+    		return \Response::json(["miembro"=>false],500);
     	
-        
+    	else
+    		usuario::agrega($email, $pass, $nivel); 
+
+    	/*if insert si funciona*/
+    	return \Response::json(["miembro"=>true],200);
     }
 }
 

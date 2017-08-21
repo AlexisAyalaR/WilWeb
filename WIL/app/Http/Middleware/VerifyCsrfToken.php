@@ -18,6 +18,7 @@ class VerifyCsrfToken extends BaseVerifier
         '/WilWeb/Wil/public/html/personalS.html',
         '/WilWeb/Wil/public/html/personal.html',
         'registra',
+        'login',
         'enviaProyecto'
     ];
 

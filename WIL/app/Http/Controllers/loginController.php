@@ -14,35 +14,34 @@ class loginController extends Controller
 {
     public function entra(Request $req){
 
-        $myObj->name = "John";
-        $myObj->age = 30;
-        $myObj->city = "New York";
-
-        $myJSON = json_encode($myObj);
-
-        return $myJSON;
-
-        /*
+        
     	$email = $req->input('email');
     	$pass = $req->input('pass');
         
-    	$usuario = DB::table('users')->where('email', $email)->get();
+    	$usuario = DB::table('usuarios')->where('email', $email)->get();
     	$decodeJson = json_decode($usuario,true);
-    	$arrayJson = $decodeJson[0];
-    	$usuario_pass = $arrayJson['password'];
+    	$usuarioJson = $decodeJson[0];
+    	$usuario_pass = $usuarioJson['password'];
+
 
     	if($pass != $usuario_pass){
-    		redirect()->back()->with('Usuario o contraseña incorrecta');
+            return \Response::json(["miembro"=>false],500);
+
+
     	} else{
-    		$usuario_nivel = $arrayJson['nivel'];
-    		if($usuario_nivel == 0)
-    			redirect('/WilWeb/Wil/public/html/alumno.html');
+    		$usuario_nivel = $usuarioJson['nivel'];
+
+    		if($usuario_nivel == 0){
+                /*Agarra el horario*/
+                return \Response::json(["miembro"=>$usuarioJson, 'nivel'=>$usuario_nivel],200);
+            }
+    			
     		elseif($usuario_nivel == 1)
-    			redirect('/WilWeb/Wil/public/html/personal.html');
+    			return \Response::json(["miembro"=>$usuarioJson, 'nivel'=>$usuario_nivel],200);
+
     		else
-    			redirect('/WilWeb/Wil/public/html/personalS.html');
-    		return $usuario;
-            */
+    			return \Response::json(["miembro"=>$usuarioJson, 'nivel'=>$usuario_nivel],200);
+            
     	}
 
     }

@@ -24,5 +24,6 @@ class usuario extends Model
         DB::table('usuarios')->insert(
             ['email' => $email, 'password' => $passH, 'nivel' => $nivel, 'progreso' => 0]
         );
+        
     }
 }
