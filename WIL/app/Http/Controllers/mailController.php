@@ -8,7 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 use Mail;
-use WilWeb/WIL\Mail\Proyecto;
+use App\Mail\Proyecto;
 
 class mailController extends Controller
 {
