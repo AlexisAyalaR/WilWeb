@@ -1,0 +1,12 @@
+.c1{
+	display: inline-block;
+	background-color:red;
+	height: 400px;
+    width: 100%;
+}
+.c2{
+	display: inline-block;
+	background-color: navy;
+	height: 400px;
+    width: 100%;
+}

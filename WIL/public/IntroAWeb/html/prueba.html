@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/html2.css">
+<title>Mi guia HTML</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<div class="img">
+			<img class="logo" src="../img/html.png" style="width:75px;height:75px;">
+		</div>
+		<h1 id="titulo">Mi guía de HTML</h1>
+	</header>
+	<ul class="barraH">
+		<li class="barraH">Inicio</li>
+		<li class="barraH">Acerca de</li>
+		<li class="barraH">Contacto</li>
+		<li class="barraH indice">Indice</li>
+	</ul>
+	<div class="row">
+		<div class="col-3 col-s-3 barraV">
+			<ul class="menuList barraV">
+				<li class="barraV">Introducción</li>
+				<li class="barraV">Elementos de HTML</li>
+				<li class="barraV">Atributos</li>
+				<li class="barraV">Headings</li>
+				<li class="barraV">Parrafos</li>
+				<li class="barraV">Ligas</li>
+				<li class="barraV">Imágenes</li>
+				<li class="barraV">Elementos de HTML</li>
+				<li class="barraV">Headings</li>
+				<li class="barraV">Parrafos</li>
+				<li class="barraV">Comentarios</li>
+				<li class="barraV">Tablas</li>
+				<li class="barraV">Niveles de bloque</li>
+				<li class="barraV">Atributo clase</li>
+				<li class="barraV">Iframe</li>
+				<li class="barraV">Camino de un archivo</li>
+				<li class="barraV">Elementos de Head</li>
+				<li class="barraV">Computer code</li>
+				<li class="barraV">Entities</li>
+				<li class="barraV">Forms</li>
+			</ul>
+		</div>
+		<div class="col-6 col-s-9 contenido">
+			<img class="howTo" src="../img/How to HTML.png" style="width: 815px; height: 486px;">
+			<div class="cont1">
+			<h2>Introducción</h2>
+			<p>Todo en HTML jala con &lt;tags&gt; de este tipo: &lt;tagname&gt;content goes here...&lt;/tagname&gt;
+			siempre tiene un opening tag y un closing tag
+			</p>
+			<h3>!Doctype</h3>
+			<p>!Doctype le dice a tu navegador como mostrar las páginas correctamente. Así se declara: &lt;!DOCTYPE html&gt;</p>
+			<h3>Editores</h3>
+			<p>Existen varios editores, pero cualquier editor de texto jala. Solo no olvides de ponerlo en un archivo .html</p>
+			<h3>Documentos HTML</h3>
+			<p>Todos los documentos HTML tinen que tener el &lt;!DOCTYPE html&gt;, empezar con &lt;html&gt; y terminar con &lt;/html&gt; y, por supuesto, su parte visible: &lt;body&gt; ... &lt;/body&gt;<p>
+			<h2>Elementos de HTML</h2>
+			<p>HTML tiene varios elementos como "html" el cual define el tipo de documento y se tiene que cerrar, "body" define lo que tendra el documento y se tiene que cerrar, y hay elementos de tipo "content" que los que contendra el documento, estos ultimo de como "p", "h2" y se tienen que cerrar.
+			Es muy importante cerrar estos tags.
+			Hay ciertos tipos de tags llamados "empty" los cuales no tienen contenido y no se tienen que cerrar el como el break("br"). A HTML le vale que uses mayúsculas, pero es mejor no usarlas.
+			</p>
+			<h2>Atributos</h2>
+			<p>Los elementos de HTML pueden atributos, los cuales añaden informacion adicional al elemento. Los atributos simepre se especifican en el start tag. Los atributos se declacan de la suiguiente manera: name="value".</p>
+			<p>Ejemplos de atributos:</p>
+			<ul>
+				<li>lang: es el idioma ej: &lt;html lang="en-US"&gt; </li>
+				<li>title: sale como tooltip cuando pasas el mouse como parrafo ej: &lt;p title="I'm a tooltip"&gt;.</li>
+				<li>href: es la referencia hacia un link ej: &lt;a href="https://www.w3schools.com"&gt;</li>
+				<li>src: es para la fuente de un imagen</li>
+				<li>width: es para el ancho de una imagen</li>
+				<li>height: es para le largo imagen</li>
+				<li>Ej: &lt;img src="w3schools.jpg" width="104" height="142" &gt; </li>
+				<li>para el ancho y el largo la medida el en pixeles</li>
+				<li>alt: es la descripción de la imagen, además se muestra en caso de que la imagen mo se pueda mostrar este texto aparecera ej: &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&dt;</li>
+				<li>alt	Specifies an alternative text for an image, when the image cannot be displayed
+				disabled	Specifies that an input element should be disabled
+				href	Specifies the URL (web address) for a link
+				id	Specifies a unique id for an element
+				src	Specifies the URL (web address) for an image
+				style	Specifies an inline CSS style for an element
+				title	Specifies extra information about an element (displayed as a tool tip)</li>
+			</ul>
+			<h2>Headings</h2>
+			<p>Los Headings son tags de los titulos y van del "h1" al "h6" dependiendo de su importancia</p>
+			<h2>Parrafos</h2>
+			<p>Para declarar un parrafo se usa el tag "p"</p>
+			<h2>Ligas</h2>
+			<p>Para declarar una liga de usa el tag "a" seguido del atributo "href"</p>
+			<p>Puedes usar un link en imgenes, texto, etc... ej: &lt;a href="url"&gt;link text&lt;/a&gt;</p>
+			<a href="https://www.itam.mx">ITAM</a>
+			</div>
+			<div class="cont2">
+			<h2>Imágenes</h2>
+			<p>Para declarar una imagen se usa el tag "img" y puede tener los siguientes atributos: fuente "scr", texto alterno "alt, largo "width" y ancho "height"</p>
+			<h3>Sintaxis para declarar imágenes</h3>
+			<pre>
+Para declarar una imagen HTML no se necesita un closing tag.
+Pudes insertar imagen animadas y no animadas en tu documento.
+Esta es la sintaxis: &lt;img src="url" alt="some_text" 
+style="width:width;height:height;"&gt;
+<img src="http://www.elwebmaster.com/wp-content/uploads/2015/07/HTML5_logo_and_wordmark.svg_.png" alt="imagen de HTML5" style="width: :500px; height: 500px">
+			</pre>
+			<h3>Mapa en un imagen</h3>
+			<pre>
+Ejemplo de como poner una imagen en un mapa: 
+&lt;img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;"&gt;
+	&lt;map name="planetmap"&gt;
+	&lt;area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm"&gt;
+	&lt;area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm"&gt;
+	&lt;area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm"&gt;
+&lt;/map&gt;</pre>
+			</div>
+			<div class="cont1">
+			<h2>Headings 2</h2>
+			<h3>Horizontal Rules</h3>
+			<p>hr: es un break tematico ej: &lt;hr&gt;</p>
+			<p>head: es para contener metadata se usa como &lt;head&gt;. en el usualmente se define el titulo del documento, le tipo de los caracteres, los coleres entre otras cosas</p>
+			<h2>Parrafos 2</h2>
+			<h3>El elemento pre</h3>
+			<pre>
+Es el elemento preformateado.
+Esta hecho para conservar espacios y saltos de linea.
+			</pre>
+			<h2>Cita larga y cita corta</h2>
+			<h3>Cita corta</h3>
+			<p>Al añadir &lt;q&gt; creas una cita corta ej: &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&gt;/q&gt;&lt;/p&gt;</p>
+			<h3>Cita larga</h3>
+			<p>Al añadir &lt;blockquote&gt; creas una cita larga ej: &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;.</p>
+			<h3>Abreviaciones</h3>
+			<p>Se necesita usar &lt;abbr&gt; para abreviar ej: &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;</p>
+			<h3>Direcciones</h3>
+			<pre>
+			Se usa &lt;address&gt; para las direciones
+			&lt;address&gt;
+			Written by John Doe.&lt;br&gt; 
+			Visit us at:&lt;br&gt;
+			Example.com&lt;br&gt;
+			Box 564, Disneyland&lt;br&gt;
+			USA
+			&lt;/address&gt;</pre>
+			<h3>Citar un elemento</h3>
+			<p>Se usa &lt;cite&gt; para citar un elemeto (ponerlo en italicas) ej: &gt;p&lt;&gt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;</p>
+			<h3>Override bidireccional</h3>
+			<p>Con &lt;bdo&gt; puedes escribir de izq a der ej: &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;</p>
+			<h2>Comentarios</h2>
+			<p>Para añadir un comentario se usa "!--" despues de un "&lt;" y se cierra con "--" con "&gt;"</p>
+			<h3>Comentarios condicionales</h3>
+			<p>Los comentarios condicinados ej:&lt;!--[if IE 9]&gt;
+		    	.... some HTML here ....
+			&lt;![endif]--&gt; </p>
+			<h3>Atributo Target</h3>
+			<p>Con el atributo target, le especificas al documento como queres que se abran los links</p>
+			<ul>
+				<li>_blank: abre la liga en una nueva ventana</li>
+				<li>_self: abre la liga en la misma venatana (esta es la ventana que viene por default)</li>
+				<li>_parent: abre la liga en una parent frame </li>
+				<li>_top: abre la lia en una ventana completa</li>
+				<li>framename: abre la liga en la frame nombrada</li>
+				<li>Ej:&lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt;
+				<li>Ejemplo de como ponerle una liga a una imagen: &lt;a href="default.asp"&gt;
+		  	&lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"&gt;
+			&lt;/a&gt;</li>
+			</ul>
+			<h3>Bookmark</h3>
+			<p>Los bookmark se usan para saltar a una parte especifica de un documento ej: se añade la bookmark &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt; y luego se le añade la liga &lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;</p>
+			<p>Ejemplo de como usar una liga con un path &lt;a href="https://www.w3schools.com/html/default.asp"&gt;HTML tutorial&lt;/a&gt;</p>
+			<h2>Tablas</h2>
+			<h3>Definir una tabla</h3>
+			<pre>
+Para definir una tabal se usa el tag "table" y se tiene que cerrar.
+Cada renglon se define ocon el tag "tr" y se tiene que cerrar.
+Cada celda se define con el tag "td" y se tiene que cerrar,puede con tener imagenes, texto, otra tabla, etc...
+Existen los siguientes tags:
+colspan: se usa para declara una celda que ocupa mas de una columna
+rowspan: se usa para declarar una celda que ocupa mas de una renglón
+Se usa el tag "caption" para añadir un titulo a la tabla
+			</pre>
+			<h2>Listas</h2>
+			<h3>Lista desordenada</h3>
+			<p>La lista desordena se crea usando el tag "ul" y cada elemento de la lista se crea usando el tag "li"</p>
+			<h3>Lista ordenada</h3>
+			<p> 
+			La lista ordenada se crea con el tal "ol" y cada elemento de  la lita se crea usnado el tag "li" (la lista ordenada le añade numeros a los elementos).
+			con el atributo "type" le dices a la lista si quieres que ente ordenada por numeros, letras etc...("1","A","a","I","i")</p>
+			<h3>Listas de decsripción</h3>
+			<p>Para crear listas de descripción se usa el tag "dl" , cada elemendo de declara con el tag "dt" y la descripción del elemento se usa "dd"</p>
+			<p>Nota: Las listas pueden estar anidadas y pueden contener texto, imagenes y todo tipo de contenido HTML.</p>
+			<h2>Niveles de bloque</h2>
+			<h3>Div</h3>
+			<pre>
+El tag "div" se usa como contenedor de elementos HTML.
+El tag "span" se usa como contenerdor de texto.
+			</pre>
+			</div>
+			<div class="cont2">
+			<h2>Atributo clase</h2>
+			<pre>
+Ejemplo de como declarar varios elementos de la misma clase:
+&lt;style&gt;
+div.cities {
+background-color: black;
+color: white;
+margin: 20px 0 20px 0;
+padding: 20px;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="cities"&gt;
+&lt;h2&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital of England. 
+It is the most populous city in the United Kingdom, 
+with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="cities"&gt;
+&lt;h2&gt;Paris&lt;/h2&gt;
+&lt;p&gt;Paris is the capital and most populous city of France.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="cities"&gt;
+&lt;h2&gt;Tokyo&lt;/h2&gt;
+&lt;p&gt;Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+and the most populous metropolitan area in the world.&lt;/p&gt;
+&lt;/div&gt;
+			</pre>
+			<h2>Iframe</h2>
+			<pre>
+El Iframe sirve para poder ver un sitio web dentro de tu documento HTML.
+Se declara de la siguiente forma:
+&lt;iframe src="URL"&gt;&lt;/iframe&gt;
+Le puedes añadir ancho y largo.
+			</pre>
+			<H2>Camino de un archivo</H2>
+			<pre>
+Los caminos describen la locación de un archivo en la estructura de archivos de una pagina web.
+Ej: &gt;img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"&gt;
+			</pre>
+			<h2>Elementos de Head</h2>
+			<pre>
+El tag "head" es un contenedor de metadata.
+Es a el a quien se le pone el tag "title", "style", "link" (para ligar estilos externos),
+"meta" (para especificar que caracteres estan siendo utilisados).
+Ej: &lt;meta charset="UTF-8"&gt;
+También se le puede añadir descripción, palabras clave, autor y que la pagina se recargue cada cierto tiempo.
+Ej: &lt;meta http-equiv="refresh" content="30"&gt;.
+			</pre>
+			<h3>Viewport</h3>
+			<p>El Viewport le dice al documento cómo debe se mostrase con respecgo a la pantalla donde se esté viendo ej: &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+			<h3>Script</h3>
+			<p>El Script sirve para definir un client-side JavaScripts</p>
+			<h3>Base</h3>
+			<p>El base te sirve para especificar la base URL y la base target todas las URLs relativas en la pagina (no sé bien a que se refieren)</p>
+			<h2>Computer code</h2>
+			<p>El tag "code" sirve para escribir codigo</p>
+			<p>El tag "var" irve para definir variables</p>
+			</div>
+			<div class="cont1">
+			<h2>Caracteres especiales</h2>
+			<h3>Entidades</h3>
+			<p>
+			<table class="w3-table-all notranslate">
+		    <tr>
+		      <th>Result</th>
+		      <th>Description</th>
+		      <th>Entity Name</th>
+		      <th>Entity Number</th>
+		    </tr>
+		    <tr>
+		      <td style="height: 29px"></td>
+		      <td style="height: 29px">non-breaking space</td>
+		      <td style="height: 29px">&amp;nbsp;</td>
+		      <td style="height: 29px">&amp;#160;</td>
+		    </tr>
+		    <tr>
+		      <td>&lt;</td>
+		      <td>less than</td>
+		      <td>&amp;lt;</td>
+		      <td>&amp;#60;</td>
+		    </tr>
+		    <tr>
+		      <td>&gt;</td>
+		      <td>greater than</td>
+		      <td>&amp;gt;</td>
+		      <td>&amp;#62;</td>
+		    </tr>
+		    <tr>
+		      <td>&amp;</td>
+		      <td>ampersand</td>
+		      <td>&amp;amp;</td>
+		      <td>&amp;#38;</td>
+		    </tr>
+		    <tr>
+		      <td>&quot;</td>
+		      <td>double quotation mark </td>
+		      <td>&amp;quot;</td>
+		      <td>&amp;#34;</td>
+		    </tr>
+		    <tr>
+		      <td>&apos;</td>
+		      <td>single quotation mark (apostrophe) </td>
+		      <td>&amp;apos;</td>
+		      <td>&amp;#39;</td>
+		    </tr>
+		    <tr>
+		      <td>&cent;</td>
+		      <td>cent</td>
+		      <td>&amp;cent;</td>
+		      <td>&amp;#162;</td>
+		    </tr>
+		    <tr>
+		      <td>&pound;</td>
+		      <td>pound</td>
+		      <td>&amp;pound;</td>
+		      <td>&amp;#163;</td>
+		    </tr>
+		    <tr>
+		      <td>&yen;</td>
+		      <td>yen</td>
+		      <td>&amp;yen;</td>
+		      <td>&amp;#165;</td>
+		    </tr>
+		    <tr>
+		      <td>&euro;</td>
+		      <td>euro</td>
+		      <td>&amp;euro;</td>
+		      <td>&amp;#8364;</td>
+		    </tr>
+		    <tr>
+		      <td>&copy;</td>
+		      <td>copyright</td>
+		      <td>&amp;copy;</td>
+		      <td>&amp;#169;</td>
+		    </tr>
+		    <tr>
+		      <td>&#174;</td>
+		      <td>registered trademark</td>
+		      <td>&amp;reg;</td>
+		      <td>&amp;#174;</td>
+		    </tr>
+		    </table>
+			</p>
+			<h2>marcas diacriticas</h2>
+			<p><table class="w3-table-all notranslate">
+			<tr>
+			<th>Mark</th>
+			<th>Character</th>
+			<th>Construct</th>
+			<th>Result</th>
+			</tr>
+			<tr>
+			      <td>&nbsp;&#768;</td>
+			      <td>a</td>
+			      <td>a&amp;#768;</td>
+			      <td>a&#768;</td>
+			</tr>
+			<tr>
+			      <td>&nbsp;&#769;</td>
+			      <td>a</td>
+			      <td>a&amp;#769;</td>
+			      <td>a&#769;</td>
+			</tr>
+			<tr>
+			      <td>&#770;</td>
+			      <td>a</td>
+			      <td>a&amp;#770;</td>
+			      <td>a&#770;</td>
+			</tr>
+			<tr>
+			      <td>&nbsp;&#771;</td>
+			      <td>a</td>
+			      <td>a&amp;#771;</td>
+			      <td>a&#771;</td>
+			</tr>
+			<tr>
+			      <td>&nbsp;&#768;</td>
+			      <td>O</td>
+			      <td>O&amp;#768;</td>
+			      <td>O&#768;</td>
+			</tr>
+			<tr>
+			      <td>&nbsp;&#769;</td>
+			      <td>O</td>
+			      <td>O&amp;#769;</td>
+			      <td>O&#769;</td>
+			</tr>
+			<tr>
+			      <td>&#770;</td>
+			      <td>O</td>
+			      <td>O&amp;#770;</td>
+			      <td>O&#770;</td>
+			</tr>
+			<tr>
+			      <td>&nbsp;&#771;</td>
+			      <td>O</td>
+			      <td>O&amp;#771;</td>
+			      <td>O&#771;</td>
+			</tr>
+			</table>
+			</p>
+			<h3>Simbolos</h3>
+			<p>
+				<table class="w3-table-all notranslate">
+			<tr>
+			<th style="width:10%">Char</th>
+			<th style="width:10%">Number</th>
+			<th style="width:15%">Entity</th>
+			<th>Description</th>
+			</tr>
+			<tr>
+			<td>&#8704;</td>
+			<td>&amp;#8704;</td>
+			<td>&amp;forall;</td>
+			<td>FOR ALL</td>
+			</tr>
+			<tr>
+			<td>&#8706;</td>
+			<td>&amp;#8706;</td>
+			<td>&amp;part;</td>
+			<td>PARTIAL DIFFERENTIAL</td>
+			</tr>
+			<tr>
+			<td>&#8707;</td>
+			<td>&amp;#8707;</td>
+			<td>&amp;exist;</td>
+			<td>THERE EXISTS</td>
+			</tr>
+			<tr>
+			<td>&#8709;</td>
+			<td>&amp;#8709;</td>
+			<td>&amp;empty;</td>
+			<td>EMPTY SETS</td>
+			</tr>
+			<tr>
+			<td>&#8711;</td>
+			<td>&amp;#8711;</td>
+			<td>&amp;nabla;</td>
+			<td>NABLA</td>
+			</tr>
+			<tr>
+			<td>&#8712;</td>
+			<td>&amp;#8712;</td>
+			<td>&amp;isin;</td>
+			<td>ELEMENT OF</td>
+			</tr>
+			<tr>
+			<td>&#8713;</td>
+			<td>&amp;#8713;</td>
+			<td>&amp;notin;</td>
+			<td>NOT AN ELEMENT OF</td>
+			</tr>
+			<tr>
+			<td>&#8715;</td>
+			<td>&amp;#8715;</td>
+			<td>&amp;ni;</td>
+			<td>CONTAINS AS MEMBER</td>
+			</tr>
+			<tr>
+			<td>&#8719;</td>
+			<td>&amp;#8719;</td>
+			<td>&amp;prod;</td>
+			<td>N-ARY PRODUCT</td>
+			</tr>
+			<tr>
+			<td>&#8721;</td>
+			<td>&amp;#8721;</td>
+			<td>&amp;sum;</td>
+			<td>N-ARY SUMMATION</td>
+			</tr>
+			</table>
+			</p>
+			<h3>Algunas letras griegas</h3>
+
+			<p><table class="w3-table-all notranslate">
+			<tr>
+			<th style="width:10%">Char</th>
+			<th style="width:10%">Number</th>
+			<th style="width:15%">Entity</th>
+			<th>Description</th>
+			</tr>
+			<tr>
+			<td>&#913;</td>
+			<td>&amp;#913;</td>
+			<td>&amp;Alpha;</td>
+			<td>GREEK CAPITAL LETTER ALPHA</td>
+			</tr>
+			<tr>
+			<td>&#914;</td>
+			<td>&amp;#914;</td>
+			<td>&amp;Beta;</td>
+			<td>GREEK CAPITAL LETTER BETA</td>
+			</tr>
+			<tr>
+			<td>&#915;</td>
+			<td>&amp;#915;</td>
+			<td>&amp;Gamma;</td>
+			<td>GREEK CAPITAL LETTER GAMMA</td>
+			</tr>
+			<tr>
+			<td>&#916;</td>
+			<td>&amp;#916;</td>
+			<td>&amp;Delta;</td>
+			<td>GREEK CAPITAL LETTER DELTA</td>
+			</tr>
+			<tr>
+			<td>&#917;</td>
+			<td>&amp;#917;</td>
+			<td>&amp;Epsilon;</td>
+			<td>GREEK CAPITAL LETTER EPSILON</td>
+			</tr>
+			<tr>
+			<td>&#918;</td>
+			<td>&amp;#918;</td>
+			<td>&amp;Zeta;</td>
+			<td>GREEK CAPITAL LETTER ZETA</td>
+			</tr>
+			</table></p>
+			<h3>Otros simbolos</h3>
+			<p><table class="w3-table-all notranslate">
+			<tr>
+			<th style="width:10%">Char</th>
+			<th style="width:10%">Number</th>
+			<th style="width:15%">Entity</th>
+			<th>Description</th>
+			</tr>
+			<tr>
+			<td>&#169;</td>
+			<td>&amp;#169;</td>
+			<td>&amp;copy;</td>
+			<td>COPYRIGHT SIGN</td>
+			</tr>
+			<tr>
+			<td>&#174;</td>
+			<td>&amp;#174;</td>
+			<td>&amp;reg;</td>
+			<td>REGISTERED SIGN</td>
+			</tr>
+			<tr>
+			<td>&#8364;</td>
+			<td>&amp;#8364;</td>
+			<td>&amp;euro;</td>
+			<td>EURO SIGN</td>
+			</tr>
+			<tr>
+			<td>&#8482;</td>
+			<td>&amp;#8482;</td>
+			<td>&amp;trade;</td>
+			<td>TRADEMARK</td>
+			</tr>
+			<tr>
+			<td>&#8592;</td>
+			<td>&amp;#8592;</td>
+			<td>&amp;larr;</td>
+			<td>LEFTWARDS ARROW</td>
+			</tr>
+			<tr>
+			<td>&#8593;</td>
+			<td>&amp;#8593;</td>
+			<td>&amp;uarr;</td>
+			<td>UPWARDS ARROW</td>
+			</tr>
+			<tr>
+			<td>&#8594;</td>
+			<td>&amp;#8594;</td>
+			<td>&amp;rarr;</td>
+			<td>RIGHTWARDS ARROW</td>
+			</tr>
+			<tr>
+			<td>&#8595;</td>
+			<td>&amp;#8595;</td>
+			<td>&amp;darr;</td>
+			<td>DOWNWARDS ARROW</td>
+			</tr>
+			<tr>
+			<td>&#9824;</td>
+			<td>&amp;#9824;</td>
+			<td>&amp;spades;</td>
+			<td>BLACK SPADE SUIT</td>
+			</tr>
+			<tr>
+			<td>&#9827;</td>
+			<td>&amp;#9827;</td>
+			<td>&amp;clubs;</td>
+			<td>BLACK CLUB SUIT</td>
+			</tr>
+			<tr>
+			<td>&#9829;</td>
+			<td>&amp;#9829;</td>
+			<td>&amp;hearts;</td>
+			<td>BLACK HEART SUIT</td>
+			</tr>
+			<tr>
+			<td>&#9830;</td>
+			<td>&amp;#9830;</td>
+			<td>&amp;diams;</td>
+			<td>BLACK DIAMOND SUIT</td>
+			</tr>     
+			</table></p>
+			</div>
+			<div class="cont2">
+			<h2>Forms</h2>
+			<pre>
+Las forms se usan para recaudar info del usuario.
+El tag "imput" es el más imporante de todos (hay que especificar que tipo de dato va a recibir: 
+"text", "radio","sumit", "password", "reset", "checkbox", "button",
+"color", "date", "datetime-local", "email","month", "number",
+"search" (par search fields), "time", "url", "week", ).
+El atributo "action" te dice que acción hace el documento cuando se preciona "sumit".
+Los tags "GET"(por omisión) y "POST"(si trabajas con info confidencial) te dicen como tienes que enviar la form.
+El tag "fieldset" se usa para agrupar infomación.
+El tag "legend" se usa para tener la caption.
+El tag "select" te difine un drodown list y adentro llenas los valores con el tag "option".
+El tag "textarea" es tribial y hat que poner "rows" y "columns".
+El tag "buttom" es tribial ej: &lt;button type="button" onclick="alert('Hello World!')"&gt;Click Me!&lt;/button&gt;
+El tag "datalist" es un imput con elementos predefinidos.
+Ej: 
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> 
+</form>
+El tag "keygen" sirve para proveer de autentificar al usuario ej:
+<form action="/action_page.php">
+  Username: <input type="text" name="user">
+Encryption: <keygen name="security">
+<input type="submit">
+</form>
+El tag "output" te dice te da el resultado del calculo de un script
+Restriciones:
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Specifies that an input field should be disabled</td>
+</tr>
+<tr>
+<td class="html5badge">max</td>
+<td>Specifies the maximum value for an input field</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>Specifies the maximum number of character for an input field</td>
+</tr>
+<tr>
+<td class="html5badge">min</td>
+<td>Specifies the minimum value for an input field</td>
+</tr>
+<tr>
+<td class="html5badge">pattern</td>
+<td>Specifies a regular expression to check the input value against</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>Specifies that an input field is read only (cannot be changed)</td>
+</tr>
+<tr>
+<td class="html5badge">required</td>
+<td>Specifies that an input field is required (must be filled out)</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Specifies the width (in characters) of an input field</td>
+</tr>
+<tr>
+<td class="html5badge">step</td>
+<td>Specifies the legal number intervals for an input field</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Specifies the default value for an input field</td>
+</tr>
+</table>
+Se le debe de añadir un rango con el tag "range".
+			</pre>
+			<h3>Atributos de Imput</h3>
+			<pre>
+HTML5 added the following attributes for &lt;input&gt;:
+
+autocomplete
+autofocus
+disable
+form
+formaction
+formenctype
+formmethod
+formnovalidate
+formtarget
+height and width
+list
+maxlength
+min and max
+multiple
+pattern (regexp)
+placeholder
+readonly
+required
+size
+step
+value
+and the following attributes for &lt;form&gt;:
+
+autocomplete
+novalidate
+			</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

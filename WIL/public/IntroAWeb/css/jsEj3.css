@@ -1,0 +1,67 @@
+html{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+.contenido{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: rgb(40, 200, 200);
+	border-radius: 10px;
+}
+
+.bloque{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	width: 400px;
+	height: 40px;
+	background-color: rgb(25, 230, 230);
+	border-radius: 10px;
+}
+
+img{
+	width: 75%;
+	height: 75%;
+	float: left;
+}
+
+.rand{
+	background-color: rgb(40, 200, 200);
+	height: 50px;
+	width: 100px;
+	margin: 0px;
+	padding: 10px;
+	float: left;
+	border-radius: 10px;
+}
+
+p.p{
+	margin: 0px;
+	padding: 0px;
+}
+
+.bot{
+	float: right;
+}
+.footer{
+	background-color: rgb(40, 200, 200);
+	height: 100px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 10px;
+	bottom: 0;
+}
+
+.bloque{
+	text-align: center;
+}

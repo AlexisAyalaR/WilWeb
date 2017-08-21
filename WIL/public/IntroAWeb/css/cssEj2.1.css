@@ -1,0 +1,12 @@
+.c1{
+	background-color: red;
+	height: 800px;
+	width: 50%;
+	float: right;
+}
+.c2{
+	background-color: navy;
+	height: 800px;
+	width: 50%;
+	float: left;
+}

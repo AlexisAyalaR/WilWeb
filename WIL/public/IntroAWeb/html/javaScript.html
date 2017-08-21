@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi guia JavaScript</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/JavaScript.css">
+</head>
+<body>
+<header>
+	<img class="logo" src="../img/JavaScript.png" style="width:75px;height:75px;">
+	<h1 id="titulo">Mi guía de JavaScript</h1>
+	<ul class="barraH">
+		<li class="barraH">Indice</li>
+		<li class="barraH">Pág. Principal</li>
+		<li class="barraH">Contacto</li>
+		<li class="barraH indice">Indice</li>
+	</ul>
+</header>
+	<div class="row">
+		<div class="col-3 col-s-3 barraV">
+			<ul class="menuList barraV">
+				<li class="barraV">Introducción</li>
+				<li class="barraV">Outputs</li>
+				<li class="barraV">DataTypes</li>
+				<li class="barraV">Funcciones</li>
+				<li class="barraV">Objetos</li>
+				<li class="barraV">Eventos</li>
+				<li class="barraV">Ligas útiles</li>
+			</ul>
+		</div>
+	<div class="col-6 col-s-9 contenido">
+	<img src="../img/How to JavaScript.png" style="width: 815px; height: 486px;">
+	<div class="cont1">
+		<h1>JavaScript</h1>
+		<h2>Introcción</h2>
+		<p>JavaScript es el lenguaje de programación que te permite alterar el comportamiento de tu página web.</p>
+		<h2>Dónde escribir JavaScript</h2>
+		<p>para poder usar JavaScript se debe de insertar en el tag "script" de html y se puede insertar tanto en head como en body.</p>
+		<p>También se pueden escribir las funciones de JavaScript en archivos externos.<br>
+		Ej: function myFunction() {<br>
+   document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+   Y se referencian así:<br>
+   &lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&gt;body&gt;<br>
+<br>
+&lt;script src="myScript.js"&gt;&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+   		Los archivos JavaScript tienen como extensión ".js".
+		</p>
+		</div>
+		<div class="cont2">
+		<h2>Outputs</h2>
+		<p>
+			Hay cuatro tipos de output en JS:
+			<ul>
+				<li>innerHTML</li>
+				<li>.write()</li>
+				<li>window.alert()</li>
+				<li>console.log()</li>
+			</ul>
+		</p>
+		<h2>Sintaxis</h2>
+		<p>
+			En JS las declaraciones se hacen con ";" al final. <br>
+			Tiene "literals" (fijas) y variables. <br>
+			También tiene operadores expresiones y keywords. <br>
+			Las variables se declaran de la siguiente forma: <br>
+			var nobreDeVariable = valor;
+		</p>
+		<h2>DataTypes</h2>
+		<p>Hay tres tipos de datos rincipales.
+			<ul>
+				<li>Number</li>
+				<li>String</li>
+				<li>Object</li>
+			</ul>
+		</p>
+		</div>
+		<div class="cont1">
+		<h2>Funciones</h2>
+		<p>
+			Las funciones de daclaran de la suiguiente forma: <br>
+			function nombreDeFuncción(parametro1, parametro2,...){ <br>
+				//código de la funcción <br>
+			} <br>
+		</p>
+		<h2>Objetos</h2>
+		<p>
+			Ejemplo de un objeto: <br>
+			var car = {type:"Fiat", model:"500", color:"white"}; <br>
+		</p>
+		<h2>Eventos</h2>
+		<p>
+			Estos son los eventos más comunes en JS:
+			<table class="w3-table-all" style="width: 100%">
+				<tbody><tr>
+				  <th>Event</th>
+				  <th>Description</th>
+				</tr>
+				<tr>
+				  <td>onchange</td>
+				  <td>An HTML element has been changed</td>
+				</tr>
+				<tr>
+				  <td>onclick</td>
+				  <td>The user clicks an HTML element</td>
+				</tr>
+				<tr>
+				  <td>onmouseover</td>
+				  <td>The user moves the mouse over an HTML element</td>
+				</tr>
+				<tr>
+				  <td>onmouseout</td>
+				  <td>The user moves the mouse away from an HTML element</td>
+				</tr>
+				<tr>
+				  <td>onkeydown</td>
+				  <td>The user pushes a keyboard key</td>
+				</tr>
+				<tr>
+				  <td>onload</td>
+				  <td>The browser has finished loading the page</td>
+				</tr>
+				</tbody>
+			</table>
+		</p>
+		</div>
+		<div class="cont2">
+		<h2>Ligas útiles</h2>
+		<p>
+			<a href="https://www.w3schools.com/js/js_reserved.asp">Palabras reservadas</a>
+			<a href="https://www.w3schools.com/js/js_json.asp">JSON</a>
+			<a href="https://www.w3schools.com/js/js_operators.asp">Operadores</a>
+			<a href="https://www.w3schools.com/js/js_arithmetic.asp">Aritmetica</a>
+			<a href="https://www.w3schools.com/js/js_assignment.asp">Asignaciones</a>
+		</p>
+		</div>
+	</div>
+</body>
+</html>

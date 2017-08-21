@@ -1,0 +1,43 @@
+.contenido{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255,140,40);
+	border-radius: 10px;
+}
+
+.Res{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: 100px;
+	height: 100px;
+}
+
+img{
+	width: 75%;
+	height: 75%;
+	float: left;
+}
+
+.rand{
+	background-color: rgb(14, 169, 214);
+	height: 100px;
+	width: 100px;
+	margin: 0px;
+	padding: 10px;
+	float: left;
+	border-radius: 10px;
+}
+
+p.p{
+	margin: 0px;
+	padding: 0px;
+	bottom: 0px;
+}
+
+.bot{
+	float: right;
+}

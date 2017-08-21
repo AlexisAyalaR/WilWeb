@@ -1,0 +1,75 @@
+.c0{
+	height: 400px
+}
+.c1{
+	background-color: rgb(0, 150, 210);
+	height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+}
+
+.c2{
+	background-color: rgb(240, 100, 95);
+	height: 150px;
+	width: 150px;
+	margin-top: 125px;
+	margin-left: 100px;
+	float: left;
+}
+
+.c3{
+	background-color: rgb(244, 208, 12);
+	height: 75px; 
+	width: 75px;
+	margin-top: 150px;
+	margin-left: 200px;
+	float: left;
+}
+
+.c4{
+	background-color: rgb(240, 160, 40);
+	height: 37.5Px; 
+	width: 37.5px;
+	margin-top: 165px;
+	margin-left: 300px;
+	float: left;
+}
+
+.c5{
+	background-color: rgb(240, 160, 40);
+	height: 37.5Px; 
+	width: 37.5px;
+	margin-left: 175px; 
+	margin-top: 165px;
+	margin-right: 300px;
+	float: left;
+}
+
+.c6{
+	background-color: rgb(244, 208, 12);
+	height: 75px; 
+	width: 75px;
+	margin-top: 150px;
+	margin-right: 200px;
+	float: left;
+}
+
+.c7{
+	background-color: rgb(240, 100, 95);
+	height: 150px;
+	width: 150px;
+	margin-top: 125px;
+	margin-right: 100px;
+	float: left;
+}
+
+.c8{
+	background-color: rgb(0, 150, 210);
+	height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    margin-right: 50px;
+    float: left;
+}

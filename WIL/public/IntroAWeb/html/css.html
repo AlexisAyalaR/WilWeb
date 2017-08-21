@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi guía CSS</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+</head>
+<body>
+<header>
+	<img class="logo" src="../img/css.png" style="width:75px;height:75px;">
+	<h1 id="titulo">Mi guía de CSS</h1>
+	<ul class="barraH">
+		<li class="barraH">Indice</li>
+		<li class="barraH">Pág. Principal</li>
+		<li class="barraH">Contacto</li>
+		<li class="barraH indice">Indice</li>
+	</ul>
+</header>	
+	<div class="row">
+		<div class="col-3 col-s-3 barraV">
+			<ul class="menuList barraV">
+				<li class="barraV">Introducción</li>
+				<li class="barraV">Selectores</li>
+				<li class="barraV">Elementos de CSS</li>
+				<li class="barraV">Styles</li>
+				<li class="barraV">Colores</li>
+				<li class="barraV">Background</li>
+				<li class="barraV">Bordes</li>
+				<li class="barraV">Margenes</li>
+				<li class="barraV">Padding</li>
+				<li class="barraV">Altura y hancho</li>
+				<li class="barraV">Box model</li>
+				<li class="barraV">Text</li>
+				<li class="barraV">Icons</li>
+				<li class="barraV">Responsive</li>
+			</ul>
+		</div>
+	<div class="col-6 col-s-9 contenido">
+	<img src="../img/How to CSS.png" style="width: 815px; height: 486px;">
+	<div class="cont1">
+	<h1>CSS</h1>
+	<p>CSS significa Cascading Style Sheets, indica como van a estar colocados los elementos de HTML</p>
+	<h2>Sintaxis de CSS</h2>
+	<p>
+CSS consiste en dos boques, uno llamado "selector" y otro llamado "declaration".
+Ej: h1 {color:blue; font-size:12px;}
+Donde "color" y "font-size" son propiedades y "blue" y "declaration" son valores.
+Las declaraciones contienen punto-comas (";").
+Cada declaración contiene una propiedad y un valor separados por una columna.
+Los bloques de declaración deben de estar entre llaves ("{" y "}").
+Los selectores son elementos de CSS para seleccionar elementos de HTML tipo name, id, 
+class, attributes, etc.
+	</p>
+	<h2>Selectors</h2>
+	<h3>Element selector</h3>
+	<p>
+Con el element selector puedes seleccionear los elementos de HTML a partir de su nombre ej:
+p {
+    text-align: center;
+    color: red;
+}
+	</p>
+	<h3>Id selector</h3>
+	<p>
+Con el id selector puedes seleccionar los elemento de HTLM a partir de su id con tan solo poner "#" 
+antes del id ej:
+#para1 {
+    text-align: center;
+    color: red;
+}
+	</p>
+	<h3>Class selector</h3>
+	<p>
+Con el class selector puedes seleccionar los elemento de HTLM a partir de su clase con 
+tan solo poner "." antes de la clase ej:
+.center {
+    text-align: center;
+    color: red;
+}
+También puedes especifocar un colo elemnto de una clase ej:
+p.center {
+    text-align: center;
+    color: red;
+}
+O a elementos de más de una clase ej:
+&lt;p class="center large"&gt;This paragraph refers to two classes.&lt;/p&gt;
+	</p>
+	<h3>Agrupar selectors</h3>
+	<p>
+Puedes agrupar selectors para minimizar codigo separandolos con una coma (",") ej:
+h1, h2, p {
+    text-align: center;
+    color: red;
+}
+	</p>
+	</div>
+	<div class="cont2">
+	<h2>Comentarios en CSS</h2>
+	<p>Puedes añadir comentarios con CSS usan "/*" antes del comentario y "*/" después del comentario.</p>
+	<h2>Como usar CSS</h2>
+	<h3>External Style Sheet</h3>
+	<p>
+Puedes crear un archivo de CSS usando ".css" y referenciarlo en el documento HTML ej:
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+&lt;/head&gt;
+	</p>
+	<h3>Internal Style Sheet</h3>
+	<p>
+Se suele estilisar internamente los diseños de un documento si este tiene un estilo único.
+para eso se usa el tag "style" debajo del tag "head" ej:
+&lt;head&gt;
+&lt;style&gt;
+body {
+    background-color: linen;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+	</p>
+	<h3>Inline Style Sheet</h3>
+	<p>
+Se puede añadir css a un solo elemento de HTML ej:
+&lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading&lt;/h1&gt;
+	</p>
+	<h3>Prioridad en los Styles Sheets</h3>
+	<ul>
+		<li>Inline style (inside an HTML element)</li>
+		<li>External and internal style sheets (in the head section)</li>
+		<li>Browser default</li>
+	</ul>
+	</div>
+	<div class="cont1">
+	<h2>Colores</h2>
+	<p>
+Pues añadir colo a tu documento por:
+<ul>
+	<li>El nombre del color como valor.</li>
+	<li>El valor RGB</li>
+	<li>El valor HEX</li>
+</ul>
+	</p>
+	<h3>Por nombres</h3>
+	<p>
+Los colores 
+Para consultar todos los colores <a href="https://www.w3schools.com/colors/colors_names.asp">click aquí</a>
+	</p>
+	<h3>Por codigo RGB</h3>
+	<p>
+Para usar el codigo RGB se usa la siguiente formula:
+rgb(red, green, blue)
+Donde cada parámetro es la intensidad de 0 a 255
+	</p>
+	<h3>Por código hexadecimal</h3>
+	<p>
+Para usar el codigo HEX se usa la siguiente formula:
+#RRGGBB
+Donde cada parámetro es un valor entre 00 y FF
+	</p>
+	</div>
+	<div class="cont2">
+	<h2>Background</h2>
+	<p>
+Background color:
+
+body {
+    background-color: lightblue;
+}
+
+Background image:
+body {
+    background-image: url("paper.gif");
+}
+
+Ciertos backrounds se tienen que repetir verticamente u horizontalmente para que se vean bien:
+body {
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+}
+
+Si no quieres que se repita una imgen:
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+}
+
+Para posicionar un imagen:
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+	background-position: right top;
+}
+
+Para que la imagen se quede fija:
+body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+	Shorthand property (Para minimizar el código):
+	body {
+    background: #ffffff url("img_tree.png") no-repeat right top;
+}
+	</p>
+	</div>
+	<div class="cont1">
+	<h2>Bordes</h2>
+	<p>
+Distintos bordes:
+<ul>
+	<li>dotted - Defines a dotted border</li>
+	<li>dashed - Defines a dashed border</li>
+	<li>solid - Defines a solid border</li>
+	<li>double - Defines a double border</li>
+	<li>groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+	<li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+	<li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+	<li>outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+	<li>none - Defines no border</li>
+	<li>hidden - Defines a hidden border</li>
+</ul>
+Ejeplos de comom añadir bordes:
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+	</p>
+	<h3>Tamaño del borde</h3>
+	<p>
+Se puede seleccionar el tamaño del borde unidades (px, cm, pt, em) o por valores predeterminados: 
+thin, medium, or thick.
+Ej:
+p.one {
+	border-style: solid;
+	border-width: 5px;
+}
+
+p.two {
+    border-style: solid;
+    border-width: medium;
+}
+
+p.three {
+	border-style: solid;
+	border-width: 2px 10px 4px 20px;
+}
+Se le puede añadir color al borde con border-color.
+Ej:
+p.one {
+	border-style: solid;
+	border-color: red;
+}
+
+p.two {
+    border-style: solid;
+    border-color: green;
+}
+
+p.three {
+    border-style: solid;
+    border-color: red green blue yellow;
+}
+(The border-color property can have from one to four values
+(for the top border, right border, bottom border, and the left border)
+	</p>
+	<h3>Bordes individuales</h3>
+	<p>
+Cada borde puede tener estilo y color unico ej:
+p {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+p {
+    border-style: dotted solid;
+}
+	</p>
+	<h3>Shorthand Property</h3>
+	<p>
+Se puede minizar el codigo con la shorthand property con los siguientes atributos:
+<ul>
+	<li>border-width</li>
+	<li>border-style (required)</li>
+	<li>border-color</li>
+</ul>
+Ej:
+p {
+	border: 5px solid red;
+}
+
+Puedes estilizar un solo un borde ej:
+p {
+	border-left: 6px solid red;
+	background-color: lightgrey;
+}
+	</p>
+	<h3>border-radius</h3>
+	<p>
+Se usa border-radius para crear un borde redondo ej:
+p {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+	</p>
+	</div>
+	<div class="cont2">
+	<h2>Margenes</h2>
+	<p>
+CSS tiene las siguientes propiedades para cada elemento:
+<ul>
+	<li>margin-top</li>
+	<li>margin-right</li>
+	<li>margin-bottom</li>
+	<li>margin-left</li>
+</ul>
+Los cuales pueden tener los siguientes valores:
+<ul>
+	<li>auto: el navegador lo calcula</li>
+	<li>ength: especificado en px, pt, cm, etc</li>
+	<li>%: especificando el margen en porcentage del elemento contenido</li>
+	<li>inherit: le dice al elemento que tiene que heredar el margen de su padre</li>
+</ul>
+Ej:
+p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+	</p>
+	<h3>Shorthand Property</h3>
+	<p>
+Se pueden especificar todas las propiedades de un margen en una sola propiedad ej:
+p {
+    margin: 100px 150px 100px 80px;
+}
+	</p>
+	<h2>Padding</h2>
+	<p>
+CSS tiene las siguientes propiedades para cada elemento:
+<ul>
+	<li>padding-top</li>
+	<li>padding-right</li>
+	<li>padding-bottom</li>
+	<li>padding-left</li>
+</ul>
+Los cuales pueden tener los siguientes valores:
+<ul>
+	<li>lenght</li>
+	<li>%</li>
+	<li>inherit</li>
+</ul>
+Ej:
+p {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+	</p>
+	<h3>Shorthand Property</h3>
+	<p>
+Ej:p {
+    padding: 50px 30px 50px 80px;
+}
+div.ex1 {
+    padding: 25px 50px 75px 100px;
+}
+
+div.ex2 {
+    padding: 25px 50px 75px;
+}
+
+div.ex3 {
+    padding: 25px 50px;
+}
+
+div.ex4 {
+    padding: 25px;
+}
+	</p>
+	<h2>Alto y ancho</h2>
+	<p>
+Con height y width le das tamaña al elemento (ya viene una propoción por omisión)
+div {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+}
+con max-height y max-width le dices al elemento cual será su máximo tamaño.
+	</p>	
+	<h2>Modelo Box</h2>
+	<p>
+En HTML un elemento se puede considerar como cajas:
+Consiste de las siguientes partes:
+<ul>
+	<li>Content: Es el contenido del elemento (donde las imágenes y el texot aparecen</li>
+	<li>Padding: Crea un espacio transparente al rededor del contenido</li>
+	<li>Border: Un borde que va al rededor del padding y el content</li>
+	<li>Margin: Crea un area afuera del borde</li>
+</ul>
+<img src="boxmodel-image.png">
+Ej:
+div {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+Para calcular la anchura de un elemento se usa la siguiente formula:
+Ancho total de un elemento = 
+width + left padding + right padding + left border + right border + left margin + right margin
+Y para la altua de un elemento:
+Altura total de un elemento = 
+height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+	</p>
+	<h2>Outline</h2>
+	<p>
+Outline es una linea afuera del borde de un elemento (se usa para resaltar un elemento de los demás).
+outline-stlye es la propiedad que especifica el estilo que va a llevar el outline.
+Valores posibles:
+<ul>
+	<li>dotted - Defines a dotted outline</li>
+	<li>dashed - Defines a dashed outline</li>
+	<li>solid - Defines a solid outline</li>
+	<li>double - Defines a double outline</li>
+	<li>groove - Defines a 3D grooved outline. The effect depends on the outline-color value</li>
+	<li>ridge - Defines a 3D ridged outline. The effect depends on the outline-color value</li>
+	<li>inset - Defines a 3D inset outline. The effect depends on the outline-color value</li>
+	<li>outset - Defines a 3D outset outline. The effect depends on the outline-color value</li>
+	<li>none - Defines no outline</li>
+	<li>hidden - Defines a hidden outline</li>
+</ul>
+Ej:
+p {
+    border: 1px solid black;
+    outline-color: red;
+}
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+
+Para las siguientes propiedades se necisita declarar primero la propiedad outline-style.
+outline-color ej:
+p {
+    border: 1px solid black;
+    outline-style: double;
+    outline-color: red;
+}
+
+outline-width ej:
+p {border: 1px solid black;}
+
+p.one {
+    outline-style: double;
+    outline-color: red;
+    outline-width: thick;
+}
+
+p.two {
+    outline-style: double;
+    outline-color: green;
+    outline-width: 3px;
+}
+
+Outline tiene Shorthand property
+Ej:
+p {
+    border: 1px solid black;
+    outline: 5px dotted red;
+}
+	</p>
+	</div>
+	<div class="cont1">
+	<h2>Texto</h2>
+	<h3>Color</h3>
+	<p>
+Con la propiedad color le das color al texto ej:
+body {
+	color: blue;
+}
+h1 {
+    color: green;
+}
+	</p>
+	<h3>Text Alignment</h3>
+	<p>
+Con la propiedad text-align alineas horizonatalmente el texto.
+Valores posibles: right, left, centered, justified ej:
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: left;
+}
+
+h3 {
+    text-align: right;
+}
+	</p>
+	<h3>Text decoration</h3>
+	<p>
+Con la propiedad text-decoration se usa para quitar o pones docoraciones en el texto.
+Valores posibles: none(le quitas la decoración al texto), overline, line-through, underline.
+Ej:
+h1 {
+    text-decoration: overline;
+}
+h2 {
+    text-decoration: line-through;
+}
+h3 {
+    text-decoration: underline;
+}
+	</p>
+	<h3>Text transformation</h3>
+	<p>
+Con la propiedad text-transform le dices al texto como se va a mostrar.
+Valores posible: uppercase, lowercase, capitalize.
+Ej:
+p.uppercase {
+    text-transform: uppercase;
+}
+p.lowercase {
+    text-transform: lowercase;
+}
+p.capitalize {
+    text-transform: capitalize;
+}
+	</p>
+	<h3>Text indentation</h3>
+	<p>
+Con la propiedad text-indent marcas la sangría del texto.
+Ej:
+p {
+    text-indent: 50px;
+}
+	</p>
+	<h3>Letter spacing</h3>
+	<p>
+Con la propiedad letter-spacing defines el espacio entre los carácteres.
+Ej:
+h1 {
+    letter-spacing: 3px;
+}
+h2 {
+    letter-spacing: -3px;
+}
+	</p>
+	<h3>Line Height</h3>
+	<p>
+Con la propiedad line-height le defines el espacio entre las lineas.
+Ej:
+p.small {
+    line-height: 0.8;
+}
+p.big {
+    line-height: 1.8;
+}
+	</p>
+	<h3>Text direction</h3>
+	<p>
+Con la propiedad direction defines la direccion del texto.
+Ej:
+div {
+    direction: rtl;
+}
+(rtl significa rigth to left)
+	</p>
+	<h3>Word Spacing</h3>
+	<p>
+Con el word-spacing defines el epacio entre las palabras.
+Ej:
+h1 {
+    word-spacing: 10px;
+}
+h2 {
+    word-spacing: -5px;
+}
+	</p>
+	<h2>Fuentes</h2>
+	<h3>Font Family</h3>
+	<p>
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+	</p>
+	<h3>Font Style</h3>
+	<p>
+Con la propiedad font-style decides si va en italicas o no.
+Valores posibles: normal, italic, oblique
+Ej:
+p.normal {
+    font-style: normal;
+}
+p.italic {
+    font-style: italic;
+}
+p.oblique {
+    font-style: oblique;
+}
+	</p>
+	<h3>Font size</h3>
+	<p>
+Con el parametro font-size defines el tamaño del texto.
+Ej:
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+p {
+    font-size: 14px;
+}
+puedes usar pixeles(px) o em (Nota: 16px = 1em).
+	</p>
+	<h3>Font Weight</h3>
+	<p>
+Tribial
+ej:
+p.normal {
+    font-weight: normal;
+}
+p.thick {
+    font-weight: bold;
+}
+	</p>
+	<h3>Font Variant</h3>
+	<p>
+p.normal {
+    font-variant: normal;
+}
+p.small {
+    font-variant: small-caps;
+}
+	</p>
+	</div>
+	<div class="cont2">
+	<h2>Icons</h2>
+	<p>
+Para añadir solo necesitas pegar esto despues del tag head: 
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+Para ver más iconos: <a href="https://www.w3schools.com/icons/default.asp"></a>
+	</p>
+	<h2>Posicionamiento</h2>
+	<h3>Ejemplo de como posicionar una imagen en un texto.</h3>
+	<p>
+.container {
+    position: relative;
+}
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+img { 
+    width: 100%;
+    height: auto; hg
+    opacity: 0.3;
+}
+	</p>
+	<h2>Responsive</h2>
+	<a href="https://material.io/devices/">Tamaños de ciertos dispositivos</a>
+	</div>
+	<div class="cont1">
+	<h3>Media Queries</h3>
+	<h4>Sintaxis</h4>
+	<p>
+@media not|only mediatype and (expressions) {
+    CSS-Code;
+}
+	</p>
+	<h3>Viewport</h3>
+	<p>
+Con el viewport puedes escalar tu documento.
+Solo necesitas añaidir lo siguirte a tu firma:
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+Algunas reglas a tomar en cuenta:
+<ul>
+	<li>No usar elemento fijos con un ancho largo.</li>
+	<li>No dejar que los elemtos queden bien en un solo viewport.</li>
+	<li>Usa medai queries para adaptar los estilos en las pequeñas y grandes pantallas.</li>
+</ul>
+	</p>
+	<h3>Gridview</h3>
+	<p>
+Muchas páginas usan el gridview para ser diseñadas, lo que significa que esta dividida en muchas columnas.
+Nota: usualmente las página cuenta con 12 columnas y un tamaño de 100% del tamaño del navegador.
+	</p>
+	<h4>Cómo construir un gridview</h4>
+	<p>
+Asegurate que tus elementos de CSS tienen la propiedad: "box-sizing" con valor "border-box"
+Ej:
+* {
+    box-sizing: border-box;
+}
+luego se crean 12 columnas :class="col-".
+Ej:
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+Todas estas columnas deben de tener un el floar a la izq y un padding de 15px.
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+&lt;div class="row"&gt;
+	&lt;div class="col-3"&gt;...&lt;/div&gt; <!-- 25% -->
+	&lt;div class="col-9"&gt;...&lt;/div&gt; <!-- 75% -->
+&lt;/div&gt;
+
+Todos los renglones tienen un flow que hay que limpiar con las siguientes instrucciones:
+	.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+	</p>
+	<h3>Media queries (continuación)</h3>
+	<p>
+Con los media queries puedes modificar ciertos elementos del documento cuando 
+el viewport cambia de tamaño.
+Es muy recomendado diseñar la versión móvil primero.
+Ej:
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+	</p>
+	<h3>Orientación</h3>
+	<h4>Paisaje</h4>
+	<p>
+@media only screen and (orientation: landscape) {
+   	body {
+       	background-color: lightblue;
+   	}
+}
+	</p>
+	<h3>Imagenes</h3>
+	<p>
+img {
+   	max-width: 100%;
+   	height: auto;
+}
+	</p>
+	<h3>Video</h3>
+	<p>
+video {
+   	width: 100%;
+   	height: auto;
+}
+	</p>
+	</div>
+	</div>
+	</div>
+</body>
+</html>
