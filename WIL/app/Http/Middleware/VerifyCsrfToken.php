@@ -19,6 +19,7 @@ class VerifyCsrfToken extends BaseVerifier
         '/WilWeb/Wil/public/html/personal.html',
         'registra',
         'login',
+        'cambiaHorario',
         'enviaProyecto'
     ];
 

@@ -21,3 +21,4 @@ Route::post('/login', ["uses" => 'loginController@entra']);
 
 Route::post('/registra', ["uses" => 'registraController@registraUsuario']);
 
+Route::post('/cambiaHorario', ["uses" => 'horarioController@cambia']);
