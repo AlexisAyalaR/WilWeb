@@ -9,3 +9,7 @@ function cambiaColor(x){
         x.value = 1;
     }
 }
+function dameMatriz(){
+	var x = [][];
+	
+}
