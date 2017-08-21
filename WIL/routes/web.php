@@ -19,6 +19,9 @@ Route::post('/enviaProyecto', ["uses" => 'mailController@envia']);
 
 Route::post('/login', ["uses" => 'loginController@entra']);
 
-Route::post('/registra', ["uses" => 'registraController@registraUsuario']);
+Route::post('/registra', ["uses" => 'usuarioController@registraUsuario']);
 
-Route::post('/cambiaHorario', ["uses" => 'horarioController@cambia']);
+Route::post('/cambiaHorario', ["uses" => 'usuarioController@cambiaHorario']);
+
+
+Route::post('/cambiaProgreso/{id}', ["uses" => 'usuarioController@cambiaProgreso']);
