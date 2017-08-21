@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::post('/enviaProyecto', ["uses" => 'mailController@envia']);
 
-Route::post('/WilWeb/Wil/public/html/alumno.html', 'loginController@entra');
+Route::post('/login', ["uses" => 'loginController@entra']);
 
 Route::post('/registra', ["uses" => 'registraController@registraUsuario']);
 
