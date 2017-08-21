@@ -27,9 +27,7 @@ class loginController extends Controller
     	$usuarioJson = $decodeJson[0];
     	$usuario_pass = $usuarioJson['password'];
 
-        $passDH = Hash::make($usuario_pass);
-
-    	if($pass != $passDH){
+    	if(!Hash::check($pass, $usuario_pass)){
             return \Response::json(["miembro"=>false],500);
 
 
