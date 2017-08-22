@@ -35,40 +35,28 @@ class usuarioController extends Controller
     	return \Response::json(["miembro"=>true],200);
     }
 
+
+
     public function getInfo(){
 
     	return session('jsonMiembro');
     }
 
+
+
     public function cambiaHorario(Request $req){
-    	/*
-    	for ($i=1; $i <6 ; $i++) { 
-    		for($j=1; j< 10; j++) {
-    			$
 
-    		}
-    	}
-
-
-
-    	for ($i=0; $i < ; $i++) { 
-    		
-    	}
-
-
-    	$UnoSieteL = $req->input('17:00L');
-        $UnoSieteL = $req->input('17:00L');
-
-
-    	return $UnoSieteL;
-    	*/
+        /*RECIBO*/
     }
+
+    
 
     public function cambiaProgreso($id, $req){
   		
-  		/*DROPDOWN*/
+  		$nombre = $_POST['alumno'];
+        $progreso = $_POST['progreso'];
     	DB::table('users')
-            ->where('id', $id)
-            ->update(['progreso' => $req->input('progreso')]);
+            ->where('nombre', $nombre)
+            ->update(['progreso' => $progreso]);
     }
 }
