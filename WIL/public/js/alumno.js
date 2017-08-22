@@ -12,7 +12,7 @@ $(document).ready(function(){
 		        x = 33;
 		        break;
 		    case 3:
-		    	x = 50%;
+		    	x = 50;
 		    	break;
 		    case 4:
 		    	x = 66;
