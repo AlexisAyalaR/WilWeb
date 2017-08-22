@@ -12,6 +12,11 @@ use App\Mail\Proyecto;
 
 class mailController extends Controller
 {
+    /* 
+    * Funcion que se encarga de mandar el mail con los datos del proyecto
+    * Parametros: Request->POST
+    * Return:
+    */
     public function envia(Request $req){
 
     	

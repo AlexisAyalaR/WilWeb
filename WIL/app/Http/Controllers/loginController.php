@@ -13,8 +13,12 @@ use Hash;
 
 class loginController extends Controller
 {
+    /* 
+    * Funcion que se encarga de permitir el ingreso a los usuarios
+    * Parametros: Request->POST
+    * Return: Redirecciona a la página indicada
+    */
     public function entra(Request $req){
-
         
     	$email = $req->input('email');
     	$pass = $req->input('pass');
@@ -29,14 +33,11 @@ class loginController extends Controller
 
     	if(!Hash::check($pass, $usuario_pass)){
             return redirect()->back();
-            //\Response::json(["miembro"=>false],500);
-
 
     	} else{
     		$usuario_nivel = $usuarioJson['nivel'];
 
     		if($usuario_nivel == 0){
-                /*Agarra el horario*/
                 session(['jsonMiembro' => $usuarioJson]); 
                 return redirect('/html/alumno.html');
 

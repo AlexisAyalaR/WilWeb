@@ -7,11 +7,21 @@ use DB;
 
 class horario extends Model
 {
+    /* 
+    * Funcion que se encarga de dar la relación entre usuario y horario
+    * Parametros:
+    * Return: los usuarios de un horario dado
+    */
     public function usuario(){
 
     	return $this->belongsTo(Usuario::class);
     }
 
+    /* 
+    * Funcion que se encarga de agregar un horario los horarios nulos del nuevo usuario
+    * Parametros: El id del del usuario al cual se le agregará un horario
+    * Return:
+    */
     public static function agrega($id){
 
     	for ($i=1; $i < 6; $i++) { 
@@ -21,6 +31,11 @@ class horario extends Model
     	}
     }
 
+    /* 
+    * Funcion que se encarga de editar los horarios de un usuario
+    * Parametros: El id del del usuario al cual se editaran los horarios y los horarios mismos
+    * Return:
+    */
     public static function modifica($usuario_id ,$arrayLunes, $arrayMartes, $arrayMiercoles, $arrayJueves, $arrayViernes){
     	DB::table('horarios')
     		->where([
@@ -57,6 +72,11 @@ class horario extends Model
             ->update(['horas' => $arrayViernes]);
     }
 
+    /* 
+    * Funcion que se encarga de regresar los horarios de un usuario dado
+    * Parametros: El id del del usuario del cual se requieren los horarios.
+    * Return:
+    */
     public static function getById($usuario_id){
 
         return DB::table('horarios')

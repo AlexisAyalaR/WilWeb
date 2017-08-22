@@ -12,6 +12,11 @@ use Illuminate\Http\Request;
 
 class infoController extends Controller
 {
+    /* 
+    * Funcion que se encarga de entregar el nombre de los alumnos
+    * Parametros: 
+    * Return: el nombre de los alumnos
+    */
     public function cargaAlumnos(){
     	
     	$alumnos = DB::table('usuarios')
@@ -23,6 +28,11 @@ class infoController extends Controller
     	return \Response::json(["alumnos" => $alumnos], 200);
   	}  
 
+    /* 
+    * Funcion que se encarga de entregar el nombre de los ususarios
+    * Parametros: 
+    * Return: el nombre de los usuarios
+    */
   	public function cargaUsuarios(){
     	
     	$usuarios = DB::table('usuarios')
@@ -35,3 +45,4 @@ class infoController extends Controller
     	return \Response::json(["usuarios" => $usuarios], 200);
   	} 
 }
+

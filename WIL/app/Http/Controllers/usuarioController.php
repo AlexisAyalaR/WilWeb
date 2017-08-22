@@ -13,8 +13,12 @@ use DB;
 class usuarioController extends Controller
 {
 
+    /* 
+    * Funcion que se encarga de registrar un usuario desde PersonalS
+    * Parametros: Request->POST
+    * Return: json{miembro=boolean}
+    */
 	public function registraUsuario(Request $req){
-
         
         //CARGA DROPDOWN
     	$email = $req->input('email');
@@ -40,6 +44,11 @@ class usuarioController extends Controller
     	return \Response::json(["miembro"=>true],200);
     }
 
+    /* 
+    * Funcion que se encarga de eliminar un usuario desde PersonalS
+    * Parametros: Request->POST
+    * Return: json{miembro=boolean}
+    */
     public function eliminaUsuario(Request $req){
 
         //CARGA DROPDOWN
@@ -55,7 +64,11 @@ class usuarioController extends Controller
         }
     }
 
-
+    /* 
+    * Funcion que se encarga de dar entregar los datos de un usuario ya ingresado. 
+    * Parametros: 
+    * Return: json{usuario, horario}
+    */
     public function getInfo(){
 
     	$usuario = session('jsonMiembro');
@@ -68,8 +81,11 @@ class usuarioController extends Controller
 
     }
 
-
-
+    /* 
+    * Funcion que se encarga de dar cambiar el horario del usuario ingresado. 
+    * Parametros: Request->POST
+    * Return: json{miembro=boolean}
+    */
     public function cambiaHorario(Request $req){
 
         $matriz = $req->input('matriz');
@@ -102,9 +118,12 @@ class usuarioController extends Controller
         return \Response::json(["miembro"=>true],200);
     }
 
-
-
-    public function cambiaProgreso($id, $req){
+    /* 
+    * Funcion que se encarga de dar cambiar el progreso del usuario seleccionado con en ddl en Personal. 
+    * Parametros: Request-> Post
+    * Return: json{miembro=boolean}
+    */
+    public function cambiaProgreso(Request $req){
   		
         //CARGA DROPDOWN
   		$nombre = $_POST['alumno'];
