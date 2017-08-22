@@ -17,7 +17,7 @@ class usuarioController extends Controller
     	$email = $req->input('email');
     	$pass = $req->input('pass');
     	$passC = $req->input('passC');
-    	$nivel = $req->input('nivel');
+    	$nivel = $_POST['nivel'];
 
     	if($pass != $passC)
     		return \Response::json(["miembro"=>false],500);
