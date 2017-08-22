@@ -26,6 +26,6 @@ $(document).ready(function(){
 		    default:
 		        x = 0;
 		}
-    	$(".barraP").css("width" ,data.mienmbro.progreso+"%");
+    	$(".barraP").css("width" ,data.miembro.progreso+"%");
     });
 });
