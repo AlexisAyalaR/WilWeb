@@ -2,9 +2,9 @@
 
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoUsuario", function(data, status){
+    	console.log(data);
     	var x = 0;
     	var y = data.miembro.progreso;
-    	console.log(y);
  		switch(y) {
 		    case 1:
 		        x = 16.5;
@@ -27,7 +27,7 @@ $(document).ready(function(){
 		    default:
 		        x = 0;
 		}
-		console.log(x);
     	$(".barraP").css("width" ,x+"%");
+    	var z = 0;
     });
 });
