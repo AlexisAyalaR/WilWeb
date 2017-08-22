@@ -14,10 +14,10 @@ class CreateHorarioTable extends Migration
     public function up()
     {
         Schema::create('horarios', function (Blueprint $table) {
-            $table->increments('idH');
+            $table->increments('id');
             $table->integer('dia');
             $table->string('horas');
-            $table->integer('idU');
+            $table->integer('usuario_id');
             $table->rememberToken();
             $table->timestamps();
         });

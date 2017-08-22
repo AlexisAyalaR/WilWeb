@@ -22,4 +22,16 @@ class infoController extends Controller
 
     	return \Response::json(["alumnos" => $alumnos], 200);
   	}  
+
+  	public function cargaUsuarios(){
+    	
+    	$usuarios = DB::table('usuarios')
+    				->select('nombre')
+    				->where('nivel', 0)
+    				->orWhere('nivel', 1)
+    				->orderBy('nombre', 'desc')
+    				->get();
+
+    	return \Response::json(["usuarios" => $usuarios], 200);
+  	} 
 }

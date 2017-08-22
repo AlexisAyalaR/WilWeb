@@ -26,4 +26,8 @@ class usuario extends Model
         );
         
     }
+
+    public static function elimina($nombre){
+    	DB::table('usuarios')->where('nombre', $nombre)->delete();
+    }
 }
