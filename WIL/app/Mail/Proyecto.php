@@ -30,7 +30,7 @@ class Proyecto extends Mailable
     public function build(Request $req)
     {
         return $this->view('mail', [
-            'tipoProy' => $req->tipo,
+            'tipoProy' => $req->tipoProyecto,
             'descrip' => $req->descripcion,
             'telefono' => $req->telefono,
             'email' => $req->email

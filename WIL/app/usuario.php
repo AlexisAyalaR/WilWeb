@@ -17,12 +17,12 @@ class usuario extends Model
 
 
 
-    public static function agrega($email, $pass, $nivel){
+    public static function agrega($email, $nombre, $pass, $nivel){
 
         $passH = Hash::make($pass);
 
         DB::table('usuarios')->insert(
-            ['email' => $email, 'password' => $passH, 'nivel' => $nivel, 'progreso' => 0]
+            ['email' => $email, 'nombre' => $nombre, 'password' => $passH, 'nivel' => $nivel, 'progreso' => 0]
         );
         
     }

@@ -22,5 +22,6 @@ class mailController extends Controller
 
     	Mail::send(new Proyecto($req));
     	
+    	return redirect()->back();
   	}  
 }

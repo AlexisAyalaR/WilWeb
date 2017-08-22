@@ -15,6 +15,7 @@ class usuarioController extends Controller
 
         
     	$email = $req->input('email');
+        $nombre = $req->input('nombre');
     	$pass = $req->input('pass');
     	$passC = $req->input('passC');
     	$nivel = $_POST['nivel'];
@@ -24,7 +25,7 @@ class usuarioController extends Controller
     	
     	else{
     		try{
-    			usuario::agrega($email, $pass, $nivel); 
+    			usuario::agrega($email, $nombre, $pass, $nivel); 
     		}catch(\Exception $e){
     			\Log::info('Error getInfo: '.$e);
     			return \Response::json(["miembro"=>false],500);

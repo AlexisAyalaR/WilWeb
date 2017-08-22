@@ -27,4 +27,4 @@ Route::post('/cambiaProgreso/{id}', ["uses" => 'usuarioController@cambiaProgreso
 
 Route::get('/getInfoUsuario', ["uses" => 'usuarioController@getInfo']);
 
-//Route::get('/getAlumnos', ["uses" => '']);
+Route::get('/getAlumnos', ["uses" => 'infoController@cargaAlumnos']);
