@@ -48,7 +48,9 @@ class usuarioController extends Controller
 
     public function cambiaHorario(Request $req){
 
-        /*RECIBO*/
+        $matriz = $req->input('matriz');
+
+        return $matriz;
     }
 
 

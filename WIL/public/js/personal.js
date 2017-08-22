@@ -48,9 +48,11 @@ function cambiaValue(cb, n, m){
 
 function envia(){
 
-    var arrayTotal = [arrayLu, arrayMa, arrayMi, arrayJu, arrayVi];
+    var arrayTotal = [arrayLu, 5 ,arrayMa, 5 ,arrayMi, 5 ,arrayJu, 5 ,arrayVi];
 
     alert(arrayTotal);
+
+    return document.getElementById("matriz").value = arrayTotal;
                           
 }
 
