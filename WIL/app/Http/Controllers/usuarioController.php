@@ -25,7 +25,9 @@ class usuarioController extends Controller
     	
     	else{
     		try{
-    			usuario::agrega($email, $nombre, $pass, $nivel); 
+    			usuario::agrega($email, $nombre, $pass, $nivel);
+                //DB que regresa id del usuario agregado
+                horario::agrega($id); 
     		}catch(\Exception $e){
     			\Log::info('Error getInfo: '.$e);
     			return \Response::json(["miembro"=>false],500);
@@ -49,7 +51,7 @@ class usuarioController extends Controller
         /*RECIBO*/
     }
 
-    
+
 
     public function cambiaProgreso($id, $req){
   		
