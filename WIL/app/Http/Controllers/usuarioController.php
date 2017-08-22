@@ -22,15 +22,14 @@ class usuarioController extends Controller
     	$pass = $req->input('pass');
     	$passC = $req->input('passC');
     	//$nivel = $_POST['nivel'];
-        $nivel = 1;
+        $nivel = 0;
 
     	if($pass != $passC)
     		return \Response::json(["miembro"=>false],500);
     	
     	else{
     		try{
-    			usuario::agrega($email, $nombre, $pass, $nivel);
-                $id = DB::table('usuarios')->where('email', $email)->value('id');
+    			$id = usuario::agrega($email, $nombre, $pass, $nivel);
                 horario::agrega($id); 
     		}catch(\Exception $e){
     			\Log::info('Error getInfo: '.$e);
@@ -59,7 +58,14 @@ class usuarioController extends Controller
 
     public function getInfo(){
 
-    	return session('jsonMiembro');
+    	$usuario = session('jsonMiembro');
+
+        $usuario_id = $usuario['id'];
+
+        $horario = horario::getById($usuario_id);
+
+        return \Response::json(["miembro"=>$usuario, "horario"=>$horario],200);
+
     }
 
 

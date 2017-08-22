@@ -56,4 +56,11 @@ class horario extends Model
     			['dia', 5],])
             ->update(['horas' => $arrayViernes]);
     }
+
+    public static function getById($usuario_id){
+
+        return DB::table('horarios')
+                ->where('usuario_id', $usuario_id)
+                ->get();
+    }
 }

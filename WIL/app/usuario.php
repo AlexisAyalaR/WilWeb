@@ -25,6 +25,7 @@ class usuario extends Model
             ['email' => $email, 'nombre' => $nombre, 'password' => $passH, 'nivel' => $nivel, 'progreso' => 0]
         );
         
+        return DB::table('usuarios')->where('email', $email)->value('id');
     }
 
     public static function elimina($nombre){
