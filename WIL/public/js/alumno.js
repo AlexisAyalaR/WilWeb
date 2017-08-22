@@ -8,3 +8,9 @@ r.onreadystatechange = function() {
 };
 r.open("POST", "http://localhost/WilWeb/Wil/app/Http/Controllers/loginController.php", true);
 r.send();
+
+$(document).ready(function(){
+    $.get("/getInfoUsuario", function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
+});
