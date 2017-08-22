@@ -4,7 +4,7 @@ $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoUsuario", function(data, status){
     	var x = 0;
     	var y = data.miembro.progreso;
-    	consol.log(y);
+    	console.log(y);
  		switch(y) {
 		    case 1:
 		        x = 16.5;
