@@ -14,7 +14,12 @@ class infoController extends Controller
 {
     public function cargaAlumnos(){
     	
-    	$alumnos = DB::table('usuarios')->where('nivel', 0)->value('nombre');
+    	$alumnos = DB::table('usuarios')
+    				->select('nombre')
+    				->where('nivel', 0)
+    				->orderBy('nombre', 'desc')
+    				->get();
+
     	return \Response::json(["alumnos" => $alumnos], 200);
   	}  
 }
