@@ -28,6 +28,6 @@ $(document).ready(function(){
 		        x = 0;
 		}
 		console.log(x);
-    	$(".barraP").css("width" ,data.miembro.progreso+"%");
+    	$(".barraP").css("width" ,x+"%");
     });
 });
