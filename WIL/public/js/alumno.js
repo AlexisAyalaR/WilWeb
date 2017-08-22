@@ -27,6 +27,7 @@ $(document).ready(function(){
 		    default:
 		        x = 0;
 		}
+		console.log(x);
     	$(".barraP").css("width" ,data.miembro.progreso+"%");
     });
 });
