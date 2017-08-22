@@ -1,4 +1,4 @@
-var r = new XMLHttpRequest();
+
 
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoUsuario", function(data, status){
