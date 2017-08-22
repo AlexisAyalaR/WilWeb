@@ -1,16 +1,9 @@
 var r = new XMLHttpRequest();
 
-r.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        myObj = JSON.parse(JSON.stringify(this.responseText));
-        document.getElementById("request").innerHTML = myObj;
-    }
-};
-r.open("POST", "http://localhost/WilWeb/Wil/app/Http/Controllers/loginController.php", true);
-r.send();
-
 $(document).ready(function(){
-    $.get("/getInfoUsuario", function(data, status){
+    $.get("/WilWeb/Wil/public/getInfoUsuario", function(data, status){
+    	document.getElementById("sectio1").innerHTML = "hola";
+    	console.log("data: "+ data + "\nStatus: " + status);
         alert("Data: " + data + "\nStatus: " + status);
     });
 });
