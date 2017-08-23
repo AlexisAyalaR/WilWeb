@@ -29,6 +29,7 @@ $(document).ready(function(){
 		}
     	$(".barraP").css("width" ,x+"%");
     	var z = data.horario;
+    	console.log(typeof z);
     	for(i = 0; i<z.length; i++){
     		var k = z[i];
     		var n = k.horas;
