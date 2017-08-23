@@ -31,7 +31,6 @@ $(document).ready(function(){
     	var z = data.horario;
     	for(i = 0; i<5; i++){
     		var k = z[i];
-    		console.log(k);
     		for(j = 0; i<26; i++){
     			var n = k.horas[j];
     			console.log(n);
