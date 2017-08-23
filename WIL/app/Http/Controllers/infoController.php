@@ -54,7 +54,7 @@ class infoController extends Controller
         else
             $usuario_nivel = '-1';
 
-        return $usuario_nivel;
+        return \Response::json(["nivel" => $usuario_nivel], 200);
     }
 }
 
