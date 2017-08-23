@@ -37,6 +37,10 @@ $(document).ready(function(){
     			console.log(""+i+""+j/2);
     			if(l == 1){
     				$("."+i+j/2).css("background-color", "blue");
+    			}else{
+    				if(l == ","){
+    					console.log("hay un error");
+    				}
     			}
     		}
     	}
