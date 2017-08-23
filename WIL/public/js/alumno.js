@@ -27,7 +27,6 @@ $(document).ready(function(){
 		    default:
 		        x = 0;
 		}
-		$(".00").css("background-color", "blue");
     	$(".barraP").css("width" ,x+"%");
     	var z = data.horario;
     	for(i = 0; i<5; i++){
