@@ -62,7 +62,7 @@ $(document).ready(function(){
         var x = data.alumnos;
         console.log(x);
         var y = document.createElement("option");
-        for(i = 0; i<x.length;i++){
+        for(i = 0; i<x.length+1;i++){
             y.innerHTML = x[i].nombre;
             $("#alumno").append(y);
         }
