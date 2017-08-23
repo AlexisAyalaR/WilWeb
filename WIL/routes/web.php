@@ -51,6 +51,19 @@ Route::get('/getAlumnos', ["uses" => 'infoController@cargaAlumnos']);
 ruta.info*/
 Route::get('/getUsuarios', ["uses" => 'infoController@cargaUsuarios']);
 
+/*Saca al usuario de la sesión
+ruta.info*/
+Route::get('/signout', function(){
+
+	session(['jsonMiembro' => '']); 
+
+});
+
+/*Verifica que tipo de usuario es para permitir o no el ingreso a páginas
+ruta.info*/
+//TRABAJANDO EN ESTE
+Route::get('/checaUsuario', ["uses" => 'infoController@verificaUsuario']);
+
 
 
 

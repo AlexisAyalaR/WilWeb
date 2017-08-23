@@ -26,7 +26,7 @@ class horario extends Model
 
     	for ($i=1; $i < 6; $i++) { 
     		DB::table('horarios')->insert(
-            	['dia' => $i, 'horas' => '{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}', 'usuario_id' => $id]
+            	['dia' => $i, 'horas' => '0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0', 'usuario_id' => $id]
         	);
     	}
     }

@@ -44,5 +44,17 @@ class infoController extends Controller
 
     	return \Response::json(["usuarios" => $usuarios], 200);
   	} 
+
+    public function verificaUsuario(){
+
+        $usuario = session('jsonMiembro');
+
+        if($usuario != '')
+            $usuario_nivel = $usuario['nivel'];
+        else
+            $usuario_nivel = '';
+
+        return $usuario_nivel;
+    }
 }
 
