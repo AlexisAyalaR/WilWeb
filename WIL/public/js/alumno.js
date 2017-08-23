@@ -32,10 +32,9 @@ $(document).ready(function(){
     	for(i = 0; i<5; i++){
     		var k = z[i];
     		var n = k.horas;
+    		console.log(n);
     		for(j = 0; i<26; i++){
     			var l = n.substring(j+1,j+2);
-    			console.log(n);
-    			console.log(l);
     			if(n == 1){
     				$("."+i+j).css("background-color", "blue");
     			}
