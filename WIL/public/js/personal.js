@@ -62,7 +62,7 @@ $(document).ready(function(){
         var x = data.alumnos;
         console.log(x);
         for(i = 0; i<x.lenght;i++){
-            $(#alumno).append("<option value="">"+ x[i] +"</option>");
+            $(#alumno).append("<option value=''>"+ x[i] +"</option>");
         }
     });
 });
