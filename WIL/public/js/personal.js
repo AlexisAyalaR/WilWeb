@@ -63,7 +63,7 @@ $(document).ready(function(){
         console.log(x);
         var y;
         for(i = 0; i<x.length;i++){
-            y = = document.createElement("option");
+            y = document.createElement("option");
             y.innerHTML = x[i].nombre;
             $("#alumno").append(y);
         }
