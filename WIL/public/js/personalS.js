@@ -24,7 +24,7 @@ $(document).ready(function(){
 });
 
 function openClose() {
-    var x = document.getElementById('imput');
+    var x = document.getElementById('pequenio');
     if (x.style.display === 'block') {
         x.style.display = 'none';
     } else {
