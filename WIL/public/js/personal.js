@@ -56,4 +56,10 @@ function envia(){
                           
 }
 
+$(document).ready(function(){
+    $.get("/WilWeb/Wil/public/getAlumnos", function(data, status){
+        console.log(data);
+        
+    });
+});
 
