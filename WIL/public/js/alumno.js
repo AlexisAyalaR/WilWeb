@@ -33,9 +33,9 @@ $(document).ready(function(){
     		var k = z[i];
     		var n = k.horas;
     		console.log(n);
-    		for(j = 0; i<26; i++){
+    		for(j = 0; j<26; j++){
     			var l = n.charAt(j);
-    			console.log(j);
+    			console.log(l);
     			if(n == 1){
     				$("."+i+j).css("background-color", "blue");
     			}
