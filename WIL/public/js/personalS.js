@@ -22,3 +22,12 @@ $(document).ready(function(){
         }
     });
 });
+
+function openClose() {
+    var x = document.getElementById('imput');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
