@@ -34,7 +34,7 @@ $(document).ready(function(){
     		var n = k.horas;
     		for(j = 0; j<n.length; j++){
     			var l = n.charAt(j);
-    			console.log(""+i+""j);
+    			console.log(""+i+""+j);
     			if(l == 1){
     				$("."+i+j/2).css("background-color", "blue");
     			}
