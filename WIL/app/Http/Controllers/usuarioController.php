@@ -25,8 +25,7 @@ class usuarioController extends Controller
         $nombre = $req->input('nombre');
     	$pass = $req->input('pass');
     	$passC = $req->input('passC');
-    	//$nivel = $_POST['nivel'];
-        $nivel = 0;
+    	$nivel = $_POST['nivel'];
 
     	if($pass != $passC)
     		return \Response::json(["miembro"=>false],500);
@@ -131,5 +130,6 @@ class usuarioController extends Controller
     	DB::table('usuarios')
             ->where('nombre', $nombre)
             ->update(['progreso' => $progreso]);
+        return redirect()->back();
     }
 }

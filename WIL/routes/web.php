@@ -29,7 +29,7 @@ Route::post('/cambiaHorario', ["uses" => 'usuarioController@cambiaHorario']);
 
 /*Cambia progreso de usuario
 personal.html*/
-Route::post('/cambiaProgreso/', ["uses" => 'usuarioController@cambiaProgreso']);
+Route::post('/cambiaProgreso', ["uses" => 'usuarioController@cambiaProgreso']);
 
 /*Registra un usuario nuevo
 personalS.html*/
@@ -50,6 +50,7 @@ Route::get('/getAlumnos', ["uses" => 'infoController@cargaAlumnos']);
 /*Obtiene el nombre de los usuarios
 ruta.info*/
 Route::get('/getUsuarios', ["uses" => 'infoController@cargaUsuarios']);
+
 
 
 

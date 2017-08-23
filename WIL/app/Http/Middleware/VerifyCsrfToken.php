@@ -24,6 +24,7 @@ class VerifyCsrfToken extends BaseVerifier
         '/getInfoUsuario',
         '/getAlumnos',
         '/getUsuarios',
+        'cambiaProgreso',
         '/eliminaUsuario'
     ];
 
