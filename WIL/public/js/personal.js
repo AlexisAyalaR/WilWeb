@@ -61,8 +61,10 @@ $(document).ready(function(){
         console.log(data);
         var x = data.alumnos;
         console.log(x);
-        for(i = 0; i<x.lenght;i++){
-            $("#alumno").append("Hola");
+        var y = document.createElement("option");
+        for(i = 0; i<x.length;i++){
+            y.innerHTML = x[i].nombre;
+            $("#alumno").append(y);
         }
     });
 });
