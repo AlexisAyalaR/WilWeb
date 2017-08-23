@@ -61,8 +61,9 @@ $(document).ready(function(){
         console.log(data);
         var x = data.alumnos;
         console.log(x);
-        var y = document.createElement("option");
+        var y;
         for(i = 0; i<x.length;i++){
+            y = = document.createElement("option");
             y.innerHTML = x[i].nombre;
             $("#alumno").append(y);
         }
