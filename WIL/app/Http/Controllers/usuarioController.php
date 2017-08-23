@@ -94,12 +94,6 @@ class usuarioController extends Controller
         $arrayMiercoles = substr($matriz, 104, 51);
         $arrayJueves = substr($matriz, 156, 51);
         $arrayViernes = substr($matriz, 208, 51);
-        
-        $arrayLunes = $arrayLunes;
-        $arrayMartes = $arrayMartes;
-        $arrayMiercoles = $arrayMiercoles;
-        $arrayJueves = $arrayJueves;
-        $arrayViernes = $arrayViernes;
 
         $usuario = session('jsonMiembro');
 

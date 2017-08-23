@@ -17,31 +17,31 @@ var arrayJu = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 var arrayVi = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 function cambiaValue(cb, n, m){
-    var i = cb % 6;
 	var cb = document.getElementById(cb);
+    a = m - 1;
 	if(cb.checked){
         switch(n){
-            case 1: arrayLu[m] = 1;
+            case 1: arrayLu[a] = 1;
             break;
-            case 2: arrayMa[m] = 1;
+            case 2: arrayMa[a] = 1;
             break;
-            case 3: arrayMi[m] = 1;
+            case 3: arrayMi[a] = 1;
             break;
-            case 4: arrayJu[m] = 1;
+            case 4: arrayJu[a] = 1;
             break;
-            case 5: arrayVi[m] = 1;
+            case 5: arrayVi[a] = 1;
         }
     }else{
         switch(n){
-            case 1: arrayLu[m] = 0;
+            case 1: arrayLu[a] = 0;
             break;
-            case 2: arrayMa[m] = 0;
+            case 2: arrayMa[a] = 0;
             break;
-            case 3: arrayMi[m] = 0;
+            case 3: arrayMi[a] = 0;
             break;
-            case 4: arrayJu[m] = 0;
+            case 4: arrayJu[a] = 0;
             break;
-            case 5: arrayVi[m] = 0;
+            case 5: arrayVi[a] = 0;
         }
     }
 }
