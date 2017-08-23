@@ -11,3 +11,14 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function(){
+    $.get("/WilWeb/Wil/public/checaUsuario", function(data, status){
+        console.log(data);
+        var x = data.nivel;
+        console.log(x);
+        if(x != 2){
+            $(location).attr('href',"/WilWeb/Wil/public/html/prueba.html");
+        }
+    });
+});
