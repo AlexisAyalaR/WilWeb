@@ -28,7 +28,7 @@ $(document).ready(function(){
 		        x = 0;
 		}
     	$(".barraP").css("width" ,x+"%");
-    	var z = data.horario.Array;
+    	var z = data.horario;
     	for(i = 0; i<5; i++){
     		var k = z[i];
     		for(j = 0; i<26; i++){
