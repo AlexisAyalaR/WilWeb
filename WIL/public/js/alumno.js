@@ -44,7 +44,8 @@ $(document).ready(function(){
     			}
     		}
     	}
-
+    });
+});
 
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/checaUsuario", function(data, status){
