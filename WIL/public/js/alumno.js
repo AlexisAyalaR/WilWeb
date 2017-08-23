@@ -34,7 +34,7 @@ $(document).ready(function(){
     		var k = z[i];
     		for(j = 0; i<26; i++){
     			var n = k.horas.substring(j+1,j+2);;
-    			console.log(i+""+j);
+    			console.log(n);
     			if(n == 1){
     				$("."+i+j).css("background-color", "blue");
     			}
