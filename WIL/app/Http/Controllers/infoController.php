@@ -52,7 +52,7 @@ class infoController extends Controller
         if($usuario != '')
             $usuario_nivel = $usuario['nivel'];
         else
-            $usuario_nivel = '';
+            $usuario_nivel = '-1';
 
         return $usuario_nivel;
     }

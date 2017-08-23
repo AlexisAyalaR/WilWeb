@@ -55,6 +55,7 @@ Route::get('/getUsuarios', ["uses" => 'infoController@cargaUsuarios']);
 ruta.info*/
 Route::get('/signout', function(){
 
+	redirect('/WilWeb/Wil/public/html/prueba.html');
 	session(['jsonMiembro' => '']); 
 
 });
