@@ -28,10 +28,14 @@ $(document).ready(function(){
 		        x = 0;
 		}
     	$(".barraP").css("width" ,x+"%");
-    	var z = data.horario;
+    	var z = data.horario.Array;
     	for(i = 0; i<5; i++){
+    		var k = z[i];
     		for(j = 0; i<26; i++){
-    			
+    			var n = k.horas[j];
+    			if(n == 1){
+    				$("."+i+j).css("background-color", "blue");
+    			}
     		}
     	}
     });
