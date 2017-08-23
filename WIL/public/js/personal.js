@@ -81,7 +81,7 @@ $(document).ready(function(){
     });
 });
 
-function openClose1() {
+function openClose() {
     var x = document.getElementById('pequenio');
     if (x.style.display === 'block') {
         x.style.display = 'none';
