@@ -29,14 +29,12 @@ $(document).ready(function(){
 		}
     	$(".barraP").css("width" ,x+"%");
     	var z = data.horario;
-    	console.log(z[1]);
-    	console.log(z[2]);
     	for(i = 0; i<z.length; i++){
     		var k = z[i];
     		var n = k.horas;
-    		console.log(n);
     		for(j = 0; j<n.length; j++){
     			var l = n.charAt(j);
+    			console.log(j);
     			if(l == 1){
     				$("."+i+j).css("background-color", "blue");
     			}
