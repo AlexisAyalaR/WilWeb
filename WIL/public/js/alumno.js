@@ -34,12 +34,10 @@ $(document).ready(function(){
     		var n = k.horas;
     		for(j = 0; j<n.length; j++){
     			var l = n.charAt(j);
-    			console.log(""+i+""+j/2);
     			if(l == 1){
     				$("."+i+j/2).css("background-color", "blue");
     			}else{
     				if(l == ","){
-    					console.log("hay un error");
     				}
     			}
     		}
