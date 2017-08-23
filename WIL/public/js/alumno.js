@@ -28,6 +28,11 @@ $(document).ready(function(){
 		        x = 0;
 		}
     	$(".barraP").css("width" ,x+"%");
-    	var z = 0;
+    	var z = data.horario;
+    	for(i = 0; i<5; i++){
+    		for(j = 0; i<26; i++){
+    			
+    		}
+    	}
     });
 });
