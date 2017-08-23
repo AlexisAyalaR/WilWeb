@@ -60,6 +60,7 @@ $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getAlumnos", function(data, status){
         console.log(data);
         var x = data.alumnos;
+        console.log(x);
         for(i = 0; i<x.lenght;i++){
             $(#alumno).append("<option value="">"+ x[i] +"</option>");
         }
