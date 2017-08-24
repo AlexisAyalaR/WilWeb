@@ -88,7 +88,7 @@ $(document).ready(function(){
         }
         x = data.miembros;
         y = document.createElement("option");
-        y.innerHTML = x[i];
+        y.innerHTML = x;
         $("#miembros").append(y);
     });
 });
