@@ -20,7 +20,7 @@ $(document).ready(function(){
 });
 
 function openClose() {
-    var x = document.getElementById('pequenio');
+    var x = document.getElementById('mini');
     if (x.style.display === 'block') {
         x.style.display = 'none';
     } else {

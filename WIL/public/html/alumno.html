@@ -21,23 +21,27 @@
 		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section2"><i class="fa fa-code" aria-hidden="true"></i> Introducción</a></li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section"><i class="fa fa-terminal" aria-hidden="true"></i> Guías</a></li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
-			
 			<form action="/WilWeb/Wil/public/signout" method="get">
-			<li onclick="openClose()" id="mini" class="w3-bar-item w3-mobile w3-right w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium header__but">
-			<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</li>
-			</button>
-
-		</div>
-		<li onclick="openClose1()" class="w3-bar-item w3-hide-large"><i class="fa fa-bars"></i></a></li>
+				<li onclick="openClose()" class="w3-bar-item w3-mobile w3-right w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium header__but">
+					<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión
+					</button>
+				</li>
+			</form>
+		<li onclick="openClose()" class="w3-bar-item w3-hide-large"><i class="fa fa-bars"></i></a></li>
 		<li class="w3-bar-item w3-hide-large"><i class="fa fa-terminal" aria-hidden="true"></i>Web ITAM Laboratory</li>
 	</nav>
-	<nav class="w3-sidebar w3-animate-left w3 w3-bar-block w3-blue w3-hide-large" id="pequenio">
-		<li class="w3-bar-item w3-button w3-large w3-padding-16 w3-right w3-hover-red" onclick="openClose1()">X</a></li>
+	<nav class="w3-sidebar w3-animate-left w3 w3-bar-block w3-blue w3-hide-large" id="mini">
+		<li class="w3-bar-item w3-button w3-large w3-padding-16 w3-right w3-hover-red" onclick="openClose()">X</li>
 		<li class="w3-bar-item w3-button"><a class="link" href="prueba.html"><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
-		<li class="w3-bar-item w3-button"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> ¿Qué es WIL?</a></li>
-		<li class="w3-bar-item w3-button"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> ¿Porqué WIL?</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#article"><i class="fa fa-code" aria-hidden="true"></i> Introducción</a></li>
+		<li class="w3-bar-item w3-button"><a class="link" href="#article"><i class="fa fa-terminal" aria-hidden="true"></i> Guías</a></li>
 		<li class="w3-bar-item w3-button"><a class="link" href="#section2"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
-		<li onclick="openClose()" class="w3-bar-item w3-button"><a class="link" href="prueba.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Cerrar sesión</a></li>
+		<form action="/WilWeb/Wil/public/signout" method="get">
+			<li onclick="openClose()" class="w3-bar-item w3-mobile w3-right w3-hover-shadow w3-hover-opacity w3-hide-large header__but">
+				<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión
+				</button>
+			</li>
+		</form>
 	</nav>
 </header>
 <section class="section0 w3-container">

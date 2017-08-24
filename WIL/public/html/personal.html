@@ -20,25 +20,28 @@
 		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section1"><i class="fa fa-code" aria-hidden="true"></i> Proyectos</a></li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section2"><i class="fa fa-terminal" aria-hidden="true"></i> Horario</a></li>
-		
 		<form action="/WilWeb/Wil/public/signout" method="get">
-			<li onclick="" class="w3-bar-item w3-mobile w3-right w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium header__but">
-				<button onclick="" class="">
-				<i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+			<li onclick="" class="w3-bar-item w3-mobile w3-right w3-hide-small w3-hide-medium header__but">
+				<button onclick="" class="w3-btn w3-white w3-border w3-border-grey w3-text-black w3-round-large">
+				<i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión
 				</button>
 			</li>
 		</form>
-
-		</div>
-		<li onclick="openClose()" class="w3-bar-item w3-hide-large"><i class="fa fa-bars"></i></a></li>
+		<li onclick="openClose()" class="w3-bar-item w3-hide-large"><i class="fa fa-bars"></i></li>
 		<li class="w3-bar-item w3-hide-large"><i class="fa fa-terminal" aria-hidden="true"></i>Web ITAM Laboratory</li>
 	</nav>
-	<nav class="w3-sidebar w3-animate-left w3 w3-bar-block w3-blue w3-hide-large" id="pequenio">
-		<li class="w3-bar-item w3-button w3-large w3-padding-16 w3-right w3-hover-red" onclick="openClose()">X</a></li>
-		<li class="w3-bar-item w3-button"><a class="link" href="prueba.html"><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
-		<li class="w3-bar-item w3-button"><a class="link" href="#section1"><i class="fa fa-code" aria-hidden="true"></i> Proyectos</a></li>
-		<li class="w3-bar-item w3-button"><a class="link" href="#section2"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
-		<li onclick="" class="w3-bar-item w3-button"><a class="link" href="prueba.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Cerrar sesión</a></li>
+	<nav class="w3-sidebar w3-animate-left w3 w3-bar-block w3-blue w3-hide-large" id="mini">
+		<li class="w3-bar-item w3-button w3-large w3-padding-16 w3-right w3-hover-red" onclick="openClose()">X</li>
+		<li class="w3-bar-item w3-hover-white w3-button"><a class="link" href="prueba.html"><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
+		<li class="w3-bar-item w3-hover-white w3-button"><a class="link" href="#section1"><i class="fa fa-code" aria-hidden="true"></i> Proyectos</a></li>
+		<li class="w3-bar-item w3-hover-white w3-button"><a class="link" href="#section2"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
+		<form action="/WilWeb/Wil/public/signout" method="get">
+			<li onclick="" class="w3-bar-item w3-mobile w3-right w3-hide-large header__but">
+				<button onclick="" class="w3-btn w3-white w3-border w3-border-grey w3-text-black w3-round-large">
+				<i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión
+				</button>
+			</li>
+		</form>
 	</nav>
 </header>
 <br>
@@ -54,7 +57,7 @@
 </section>
 <br>
 <section id="section2" class="section2 w3-row-padding">
-	<p class="tit"><b>Horario</b></p>
+	<p class="tit"><h2><h2>Horario</h2><b><h2>Horario</h2></b></h2></p>
 	<div class="w3-half">
 		<p>
 		<form action="/WilWeb/Wil/public/cambiaProgreso" method="post">
@@ -64,6 +67,7 @@
 			  		  <option value="">--Alumno--</option>
 					</select>
 				</div>
+				<br>
 				<br>
 				<div class="w3-dropdown-click">
 			  		<select name="progreso" id="progreso">
@@ -80,14 +84,13 @@
 			</div>
 			<br>
 			<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge">Registrar progreso</button>
+			<br>
+			<br>
 		</form>
 	</div>		
 	<div class="w3-container">
-		<h2>Horario</h2>
-		<div class="w3-quarter">
-		<br>
-		</div>
 		<div class="w3-responsive w3-half">
+		<div class="w3-row-padding">
 			<form action="/WilWeb/Wil/public/getInfoMiembro" method="post">
 				<select name="miembros1" class="miembros1" id="miembros1">
 		  		  	<option value="">--Miembros--</option>
@@ -95,6 +98,7 @@
 				<br>
 				<br>
 				<button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge" id="carga" onclick="envia()">Cargar horario</button>
+				<br>
 				<br>
 				<table class="w3-table-all">
 					<tr>
@@ -307,23 +311,26 @@
 					</tr>
 					<tr>
 						<th>19:30</th>
-						<th class="025"> </th>
-						<th class="125"> </th>
-						<th class="225"> </th>
-						<th class="325"> </th>
-						<th class="425"> </th>
+						<th class="025 w3-border"> </th>
+						<th class="125 w3-border"> </th>
+						<th class="225 w3-border"> </th>
+						<th class="325 w3-border"> </th>
+						<th class="425 w3-border"> </th>
 					</tr>
-					<tr>
 				</table>
-				<br>
-				<br>
 			</form>
+			</div>
+			</div>
+			<div class="w3-responsive w3-half">
+			<div class="w3-row-padding">
 			<form action="/WilWeb/Wil/public/cambiaHorario" method="post">
-				<br>
-				<br>
 				<select name="miembros" class="miembros" id="miembros">
 		  		  	<option value="">--Miembros--</option>
 				</select>
+				<br>
+				<br>
+				<input type="hidden" id="matriz" name="matriz" value="">
+				<button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge" onclick="envia()">Modificar</button>
 				<br>
 				<br>
 				<table class="w3-table-all">
@@ -543,14 +550,9 @@
 						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb130" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 26)"></th>
 					</tr>
 				</table>
-				<br>
-				<input type="hidden" id="matriz" name="matriz" value="">
-				<button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge" onclick="envia()">Modificar</button>
 			</form>
-		</div>		
-		<div class="w3-quarter">
-			<br>
 		</div>
+		</div>		
 	</div>	
 </section>
 <br>
