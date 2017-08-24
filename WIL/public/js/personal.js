@@ -58,9 +58,7 @@ function envia(){
 
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getAlumnos", function(data, status){
-        console.log(data);
         var x = data.alumnos;
-        console.log(x);
         var y;
         for(i = 0; i<x.length;i++){
             y = document.createElement("option");
@@ -72,9 +70,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/checaUsuario", function(data, status){
-        console.log(data);
         var x = data.nivel;
-        console.log(x);
         if(x != 1){
             $(location).attr('href',"/WilWeb/Wil/public/html/prueba.html");
         }
