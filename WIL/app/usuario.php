@@ -42,6 +42,11 @@ class usuario extends Model
     * Return: 
     */
     public static function elimina($nombre){
-    	DB::table('usuarios')->where('nombre', $nombre)->delete();
+
+        $id = DB::table('usuarios')->where('nombre', $nombre)->value('id');
+
+    	DB::table('usuarios')->where('id', $id)->delete();
+
+        return $id;
     }
 }

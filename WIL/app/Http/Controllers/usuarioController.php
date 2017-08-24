@@ -20,7 +20,6 @@ class usuarioController extends Controller
     */
 	public function registraUsuario(Request $req){
         
-        //CARGA DROPDOWN
     	$email = $req->input('email');
         $nombre = $req->input('nombre');
     	$pass = $req->input('pass');
@@ -34,6 +33,7 @@ class usuarioController extends Controller
     		try{
     			$id = usuario::agrega($email, $nombre, $pass, $nivel);
                 horario::agrega($id); 
+
     		}catch(\Exception $e){
     			\Log::info('Error getInfo: '.$e);
     			return \Response::json(["aqui"=>false],500);
@@ -50,17 +50,18 @@ class usuarioController extends Controller
     */
     public function eliminaUsuario(Request $req){
 
-        //CARGA DROPDOWN
         $nombre = $_POST['alumnoE'];
 
         try{
-            usuario::elimina($nombre);
+            $id = usuario::elimina($nombre);
+            horario::elimina($id);
 
         }catch(Exception $e){
             \Log::info('Error getInfo: '.$e);
             return \Response::json(["miembro"=>false],500);
 
         }
+        return \Response::json(["miembro"=>true],200);
     }
 
     /* 

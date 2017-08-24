@@ -72,6 +72,11 @@ class horario extends Model
             ->update(['horas' => $arrayViernes]);
     }
 
+    public static function elimina($id){
+
+        DB::table('horarios')->where('usuario_id', $id)->delete();
+    }
+
     /* 
     * Funcion que se encarga de regresar los horarios de un usuario dado
     * Parametros: El id del del usuario del cual se requieren los horarios.
