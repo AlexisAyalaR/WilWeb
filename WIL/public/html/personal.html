@@ -63,273 +63,497 @@
 			  		<select name="alumno" class="alumno" id="alumno">
 			  		  <option value="">--Alumno--</option>
 					</select>
-				  </div>
+				</div>
 				<br>
 				<br>
 				<div class="w3-dropdown-click">
 			  		<select name="progreso" id="progreso">
-			  		  <option value="">--Progreso--</option>
-					  <option value="0">0</option>
-					  <option value="1">1</option>
-					  <option value="2">2</option>
-					  <option value="3">3</option>
-					  <option value="4">4</option>
-					  <option value="5">5</option>
-					  <option value="6">6</option>
+			  			<option value="">--Progreso--</option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
 					</select>
-
-				  </div>
 				</div>
-				<br>
-				<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge">Registrar progreso</button>
+			</div>
+			<br>
+			<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge">Registrar progreso</button>
 		</form>
 	</div>		
-			<div class="w3-container">
-				<h2>Horario</h2>
-				<div class="w3-quarter">
-					<br>
-				</div>
-				<div class="w3-responsive w3-half">
-					<form action="/WilWeb/Wil/public/cambiaHorario" method="post">
-						<select name="miembros" class="miembros" id="miembros">
-				  		  <option value="">--Miembros--</option>
-						</select>
-						<br>
-						<br>
-						<table class="w3-table-all">
+	<div class="w3-container">
+		<h2>Horario</h2>
+		<div class="w3-quarter">
+		<br>
+		</div>
+		<div class="w3-responsive w3-half">
+			<form>
+				<select name="miembros1" class="miembros1" id="miembros1">
+		  		  	<option value="">--Miembros--</option>
+				</select>
+				<br>
+				<br>
+				<table class="w3-table-all">
+					<tr>
+						<th>Hora</th>
+						<th>Lun.</th>
+					  	<th>Mar.</th>
+					  	<th>Mié.</th>
+					  	<th>Jue.</th>
+						<th>Vie.</th>
+					</tr>
+					<tr>
+						<th>7:00</th>
+						<th class="00"> </th>
+						<th class="10"> </th>
+						<th class="20"> </th>
+						<th class="30"> </th>
+						<th class="40"> </th>
+					</tr>
+					<tr>
+						<th>7:30</th>
+						<th class="01"> </th>
+						<th class="11"> </th>
+						<th class="21"> </th>
+						<th class="31"> </th>
+						<th class="41"> </th>
+					</tr>
+					<tr>
+						<th>8:00</th>
+						<th class="02"> </th>
+						<th class="12"> </th>
+						<th class="22"> </th>
+						<th class="32"> </th>
+						<th class="42"> </th>
+					</tr>
+					<tr>
+						<th>8:30</th>
+						<th class="03"> </th>
+						<th class="13"> </th>
+						<th class="23"> </th>
+						<th class="33"> </th>
+						<th class="43"> </th>
+					</tr>
+					<tr>
+						<th>9:00</th>
+						<th class="04"> </th>
+						<th class="14"> </th>
+						<th class="24"> </th>
+						<th class="34"> </th>
+						<th class="44"> </th>
+					</tr>
+					<tr>
+						<th>9:30</th>
+						<th class="05"> </th>
+						<th class="15"> </th>
+						<th class="25"> </th>
+						<th class="35"> </th>
+						<th class="45"> </th>
+					</tr>
+					<tr>
+						<th>10:00</th>
+						<th class="06"> </th>
+						<th class="16"> </th>
+						<th class="26"> </th>
+						<th class="36"> </th>
+						<th class="46"> </th>
+					</tr>
+					<tr>
+						<th>10:30</th>
+						<th class="07"> </th>
+						<th class="17"> </th>
+						<th class="27"> </th>
+						<th class="37"> </th>
+						<th class="47"> </th>
+					</tr>
 						<tr>
-						  <th>Hora</th>
-						  <th>Lun.</th>
-						  <th>Mar.</th>
-						  <th>Mié.</th>
-						  <th>Jue.</th>
-						  <th>Vie.</th>
+						<th>11:00</th>
+						<th class="08"> </th>
+						<th class="18"> </th>
+						<th class="28"> </th>
+						<th class="38"> </th>
+						<th class="48"> </th>
 						</tr>
-						<tr>
-						  <th>7:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb1" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 1)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb2" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 1)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb3" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 1)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb4" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 1)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb5" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 1)"></th>
-						 </tr>
-						<tr>
-						  <th>7:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb6" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 2)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb7" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 2)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb8" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 2)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb9" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 2)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb10" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 2)"></th>
-						 </tr>
-						<tr>
-						  <th>8:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb11" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 3)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb12" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 3)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb13" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 3)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb14" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 3)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb15" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 3)"></th>
-						 </tr>
-						<tr>
-						  <th>8:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb16" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 4)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb17" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 4)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb18" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 4)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb19" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 4)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb20" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 4)"></th>
-						 </tr>
-						<tr>
-						  <th>9:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb21" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 5)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb22" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 5)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb23" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 5)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb24" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 5)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb25" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 5)"></th>
-						 </tr>
-						<tr>
-						  <th>9:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb26" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 6)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb27" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 6)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb28" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 6)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb29" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 6)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb30" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 6)"></th>
-						 </tr>
-						<tr>
-						  <th>10:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb31" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 7)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb32" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 7)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb33" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 7)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb34" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 7)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb35" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 7)"></th>
-						 </tr>
-						<tr>
-						  <th>10:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb36" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 8)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb37" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 8)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb38" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 8)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb39" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 8)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb40" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 8)"></th>
-						 </tr>
-						<tr>
-						  <th>11:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb41" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 9)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb42" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 9)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb43" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 9)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb44" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 9)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb45" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 9)"></th>
-						 </tr>
-						<tr>
-						  <th>11:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb46" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 10)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb47" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 10)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb48" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 10)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb49" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 10)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb50" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 10)"></th>
-						 </tr>
-						<tr>
-						  <th>12:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb51" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 11)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb52" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 11)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb53" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 11)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb54" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 11)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb55" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 11)"></th>
-						 </tr>
-						<tr>
-						  <th>12:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb56" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 12)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb57" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 12)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb58" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 12)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb59" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 12)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb60" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 12)"></th>
-						 </tr>
-						<tr>
-						  <th>13:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb61" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 13)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb62" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 13)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb63" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 13)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb64" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 13)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb65" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 13)"></th>
-						 </tr>
-						<tr>
-						  <th>13:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb66" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 14)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb67" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 14)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb68" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 14)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb69" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 14)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb70" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 14)"></th>
-						 </tr>
-						<tr>
-						  <th>14:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb71" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 15)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb72" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 15)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb73" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 15)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb74" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 15)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb75" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 15)"></th>
-						 </tr>
-						<tr>
-						  <th>14:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb76" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 16)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb77" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 16)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb78" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 16)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb79" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 16)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb80" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 16)"></th>
-						 </tr>
-						<tr>
-						  <th>15:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb81" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 17)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb82" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 17)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb83" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 17)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb84" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 17)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb85" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 17)"></th>
-						 </tr>
-						<tr>
-						  <th>15:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb86" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 18)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb87" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 18)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb88" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 18)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb89" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 18)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb90" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 18)"></th>
-						 </tr>
-						<tr>
-						  <th>16:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb91" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 19)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb92" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 19)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb93" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 19)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb94" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 19)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb95" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 19)"></th>
-						 </tr>
-						<tr>
-						  <th>16:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb96" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 20)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb97" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 20)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb98" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 20)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb99" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 20)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb100" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 20)"></th>
-						 </tr>
-						<tr>
-						  <th>17:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb101" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 21)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb102" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 21)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb103" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 21)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb104" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 21)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb105" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 21)"></th>
-						 </tr>
-						<tr>
-						  <th>17:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb106" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 22)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb107" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 22)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb108" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 22)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb109" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 22)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb110" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 22)"></th>
-						 </tr>
-						<tr>
-						  <th>18:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb111" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 23)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb112" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 23)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb113" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 23)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb114" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 23)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb115" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 23)"></th>
-						 </tr>
-						<tr>
-						  <th>18:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb116" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 24)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb117" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 24)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb118" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 24)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb119" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 24)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb120" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 24)"></th>
-						 </tr>
-						<tr>
-						  <th>19:00</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb121" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 25)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb122" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 25)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb123" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 25)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb124" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 25)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb125" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 25)"></th>
-						 </tr>
-						<tr>
-						  <th>19:30</th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb126" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 26)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb127" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 26)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb128" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 26)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb129" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 26)"></th>
-						  <th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb130" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 26)"></th>
-						 </tr>
-						</table>
-						<br>
-						<input type="hidden" id="matriz" name="matriz" value="">
-						<button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge" onclick="envia()">Modificar</button>
-						</form>
-						</div>
-				
-				<div class="w3-quarter">
-					<br>
-				</div>
-		</p>
-	</div>
-	
+					<tr>
+						<th>11:30</th>
+						<th class="09"> </th>
+						<th class="19"> </th>
+						<th class="29"> </th>
+						<th class="39"> </th>
+						<th class="49"> </th>
+					</tr>
+					<tr>
+						<th>12:00</th>
+						<th class="010"> </th>
+						<th class="110"> </th>
+						<th class="210"> </th>
+						<th class="310"> </th>
+						<th class="410"> </th>
+					</tr>
+					<tr>
+						<th>12:30</th>
+						<th class="011"> </th>
+						<th class="111"> </th>
+						<th class="211"> </th>
+						<th class="311"> </th>
+						<th class="411"> </th>
+					</tr>
+					<tr>
+						<th>13:00</th>
+						<th class="012"> </th>
+						<th class="112"> </th>
+						<th class="212"> </th>
+						<th class="312"> </th>
+						<th class="412"> </th>
+					</tr>
+					<tr>
+						<th>13:30</th>
+						<th class="013"> </th>
+						<th class="113"> </th>
+						<th class="213"> </th>
+						<th class="313"> </th>
+						<th class="413"> </th>
+					</tr>
+					<tr>
+						<th>14:00</th>
+						<th class="014"> </th>
+						<th class="114"> </th>
+						<th class="214"> </th>
+						<th class="314"> </th>
+						<th class="414"> </th>
+					</tr>
+					<tr>
+						<th>14:30</th>
+						<th class="015"> </th>
+						<th class="115"> </th>
+						<th class="215"> </th>
+						<th class="315"> </th>
+						<th class="415"> </th>
+					</tr>
+					<tr>
+						<th>15:00</th>
+						<th class="016"> </th>
+						<th class="116"> </th>
+						<th class="216"> </th>
+						<th class="316"> </th>
+						<th class="416"> </th>
+					</tr>
+					<tr>
+						<th>15:30</th>
+						<th class="017"> </th>
+						<th class="117"> </th>
+						<th class="217"> </th>
+						<th class="317"> </th>
+						<th class="417"> </th>
+					</tr>
+					<tr>
+						<th>16:00</th>
+						<th class="018"> </th>
+						<th class="118"> </th>
+						<th class="218"> </th>
+						<th class="318"> </th>
+						<th class="418"> </th>
+					</tr>
+					<tr>
+						<th>16:30</th>
+						<th class="019"> </th>
+						<th class="119"> </th>
+						<th class="219"> </th>
+						<th class="319"> </th>
+						<th class="419"> </th>
+					</tr>
+					<tr>
+						<th>17:00</th>
+						<th class="020"> </th>
+						<th class="120"> </th>
+						<th class="220"> </th>
+						<th class="320"> </th>
+						<th class="420"> </th>
+					</tr>
+					<tr>
+						<th>17:30</th>
+						<th class="021"> </th>
+						<th class="121"> </th>
+						<th class="221"> </th>
+						<th class="321"> </th>
+						<th class="421"> </th>
+					</tr>
+					<tr>
+						<th>18:00</th>
+						<th class="022"> </th>
+						<th class="122"> </th>
+						<th class="222"> </th>
+						<th class="322"> </th>
+						<th class="422"> </th>
+					</tr>
+					<tr>
+						<th>18:30</th>
+						<th class="023"> </th>
+						<th class="123"> </th>
+						<th class="223"> </th>
+						<th class="323"> </th>
+						<th class="423"> </th>
+					</tr>
+					<tr>
+						<th>19:00</th>
+						<th class="024"> </th>
+						<th class="124"> </th>
+						<th class="224"> </th>
+						<th class="324"> </th>
+						<th class="424"> </th>
+					</tr>
+					<tr>
+						<th>19:30</th>
+						<th class="025"> </th>
+						<th class="125"> </th>
+						<th class="225"> </th>
+						<th class="325"> </th>
+						<th class="425"> </th>
+					</tr>
+					<tr>
+				</table>
+				<button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge" onclick="envia()">Cargar horario</button>
+			</form>
+			<form action="/WilWeb/Wil/public/cambiaHorario" method="post">
+				<select name="miembros" class="miembros" id="miembros">
+		  		  	<option value="">--Miembros--</option>
+				</select>
+				<br>
+				<br>
+				<table class="w3-table-all">
+					<tr>
+						<th>Hora</th>
+					  	<th>Lun.</th>
+					 	<th>Mar.</th>
+					  	<th>Mié.</th>
+					  	<th>Jue.</th>
+					  	<th>Vie.</th>
+					</tr>
+					<tr>
+						<th>7:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb1" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 1)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb2" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 1)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb3" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 1)"></th>
+					 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb4" name=horaJ" value="0" onclick="cambiaValue(this.id, 4, 1)"></th>
+					 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb5" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 1)"></th>
+					</tr>
+					<tr>
+					  	<th>7:30</th>
+					  	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb6" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 2)"></th>
+					 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb7" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 2)"></th>
+					  	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb8" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 2)"></th>
+					  	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb9" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 2)"></th>
+					  	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb10" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 2)"></th>
+					</tr>
+					<tr>
+					  	<th>8:00</th>
+					 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb11" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 3)"></th>
+					 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb12" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 3)"></th>						 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb13" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 3)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb14" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 3)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb15" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 3)"></th>
+				 	</tr>
+					<tr>
+						<th>8:30</th>
+					 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb16" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 4)"></th>
+					 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb17" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 4)"></th>
+					 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb18" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 4)"></th>
+					  	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb19" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 4)"></th>
+					 	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb20" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 4)"></th>
+					</tr>
+					<tr>
+					  	<th>9:00</th>
+					  	<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb21" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 5)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb22" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 5)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb23" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 5)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb24" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 5)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb25" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 5)"></th>
+					</tr>
+					<tr>
+						<th>9:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb26" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 6)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb27" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 6)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb28" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 6)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb29" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 6)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb30" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 6)"></th>
+					</tr>
+					<tr>
+						<th>10:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb31" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 7)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb32" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 7)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb33" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 7)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb34" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 7)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb35" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 7)"></th>
+					</tr>
+					<tr>
+						<th>10:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb36" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 8)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb37" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 8)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb38" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 8)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb39" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 8)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb40" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 8)"></th>
+					</tr>
+					<tr>
+						<th>11:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb41" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 9)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb42" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 9)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb43" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 9)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb44" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 9)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb45" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 9)"></th>
+					</tr>
+					<tr>
+						<th>11:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb46" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 10)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb47" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 10)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb48" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 10)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb49" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 10)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb50" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 10)"></th>
+					</tr>
+					<tr>
+						<th>12:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb51" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 11)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb52" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 11)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb53" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 11)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb54" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 11)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb55" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 11)"></th>
+					</tr>
+					<tr>
+						<th>12:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb56" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 12)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb57" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 12)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb58" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 12)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb59" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 12)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb60" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 12)"></th>
+					</tr>
+					<tr>
+						<th>13:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb61" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 13)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb62" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 13)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb63" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 13)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb64" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 13)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb65" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 13)"></th>
+					</tr>
+					<tr>
+						<th>13:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb66" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 14)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb67" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 14)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb68" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 14)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb69" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 14)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb70" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 14)"></th>
+					</tr>
+					<tr>
+						<th>14:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb71" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 15)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb72" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 15)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb73" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 15)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb74" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 15)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb75" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 15)"></th>
+					</tr>
+					<tr>
+						<th>14:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb76" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 16)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb77" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 16)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb78" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 16)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb79" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 16)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb80" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 16)"></th>
+					</tr>
+					<tr>
+						<th>15:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb81" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 17)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb82" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 17)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb83" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 17)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb84" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 17)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb85" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 17)"></th>
+					</tr>
+					<tr>
+						<th>15:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb86" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 18)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb87" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 18)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb88" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 18)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb89" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 18)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb90" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 18)"></th>
+					</tr>
+					<tr>
+						<th>16:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb91" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 19)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb92" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 19)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb93" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 19)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb94" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 19)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb95" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 19)"></th>
+					</tr>
+					<tr>
+						<th>16:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb96" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 20)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb97" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 20)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb98" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 20)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb99" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 20)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb100" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 20)"></th>
+					</tr>
+					<tr>
+						<th>17:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb101" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 21)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb102" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 21)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb103" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 21)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb104" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 21)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb105" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 21)"></th>
+					</tr>
+					<tr>
+						<th>17:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb106" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 22)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb107" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 22)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb108" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 22)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb109" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 22)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb110" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 22)"></th>
+					</tr>
+					<tr>
+						<th>18:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb111" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 23)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb112" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 23)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb113" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 23)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb114" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 23)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb115" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 23)"></th>
+					</tr>
+					<tr>
+						<th>18:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb116" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 24)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb117" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 24)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb118" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 24)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb119" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 24)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb120" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 24)"></th>
+					</tr>
+					<tr>
+						<th>19:00</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb121" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 25)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb122" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 25)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb123" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 25)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb124" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 25)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb125" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 25)"></th>
+					</tr>
+					<tr>
+						<th>19:30</th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb126" name="horaL[]" value="0" onclick="cambiaValue(this.id, 1, 26)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb127" name="horaMa[]" value="0" onclick="cambiaValue(this.id, 2, 26)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb128" name="horaMi[]" value="0" onclick="cambiaValue(this.id, 3, 26)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb129" name="horaJ" value="0" onclick="cambiaValue(this.id, 4, 26)"></th>
+						<th class="w3-border" style="background-color: white" onclick=""><input type="checkbox" id ="cb130" name="horaV" value="0" onclick="cambiaValue(this.id, 5, 26)"></th>
+					</tr>
+				</table>
+				<br>
+				<input type="hidden" id="matriz" name="matriz" value="">
+				<button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge" onclick="envia()">Modificar</button>
+			</form>
+		</div>		
+		<div class="w3-quarter">
+			<br>
+		</div>
+	</div>	
 </section>
 <br>
 <footer class="footer w3-indigo w3-display-container">
-	<p class="footer__arriba w3-display-topmiddle w3-hover-opacity"><a class="link" href="#section1">Ir arriba <i class="fa fa-long-arrow-up fa-6" aria-hidden="true"></i></a></p>
+	<p class="footer__arriba w3-display-topmiddle w3-hover-opacity">
+		<a class="link" href="#section1">Ir arriba <i class="fa fa-long-arrow-up fa-6" aria-hidden="true"></i></a>
+	</p>
 	<div class="footer__div w3-blue ">
 		<p class="footer__p w3-display-left">
 			<a class="footer__a1 w3-hover-opacity" href="https://www.itam.mx/">ITAM</a>
@@ -342,7 +566,9 @@
 				<i class="fa fa-twitter-square w3-hover-opacity link" aria-hidden="true" style="font-size:36px;"></i>
 			</a>
 		</p>
-		<p class="footer__p w3-display-right">@WIL, 2017</p>
+		<p class="footer__p w3-display-right">
+			@WIL, 2017
+		</p>
 	</div>
 </footer>
 <script

@@ -84,11 +84,13 @@ $(document).ready(function(){
             y = document.createElement("option");
             y.innerHTML = x[i].nombre;
             $("#miembros").append(y);
+            $("#miembros1").append(y);
         }
         x = data.miembros;
         y = document.createElement("option");
         y.innerHTML = x;
         $("#miembros").append(y);
+        $("#miembros1").append(y);
     });
 });
 
