@@ -47,13 +47,9 @@ function cambiaValue(cb, n, m){
 }
 
 function envia(){
-
     var arrayTotal = [arrayLu, arrayMa, arrayMi, arrayJu, arrayVi];
-
     //alert(arrayTotal);
-
-    return document.getElementById("matriz").value = arrayTotal;
-                          
+    return document.getElementById("matriz").value = arrayTotal;  
 }
 
 $(document).ready(function(){
