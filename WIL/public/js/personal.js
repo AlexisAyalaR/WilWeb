@@ -83,7 +83,6 @@ $(document).ready(function(){
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getalumnosYUsuario", function(data, status){
         console.log(data);
-        }
     });
 });
 
