@@ -90,7 +90,7 @@ class usuarioController extends Controller
 
         $usuario = session('jsonMiembro');
 
-        $nombre = $_POST['miembro'];
+        $nombre = $_POST['miembros1'];
 
         $usuario_id = usuario::getById($nombre);
 
@@ -143,7 +143,6 @@ class usuarioController extends Controller
     */
     public function cambiaProgreso(Request $req){
   		
-        //CARGA DROPDOWN
   		$nombre = $_POST['alumno'];
         $progreso = $_POST['progreso'];
     	DB::table('usuarios')
