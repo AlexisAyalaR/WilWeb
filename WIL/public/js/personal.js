@@ -80,12 +80,25 @@ $(document).ready(function(){
             y = document.createElement("option");
             y.innerHTML = x[i].nombre;
             $("#miembros").append(y);
-            $("#miembros1").append(y);
         }
         x = data.miembros;
         y = document.createElement("option");
         y.innerHTML = x;
         $("#miembros").append(y);
+    });
+});
+$(document).ready(function(){
+    $.get("/WilWeb/Wil/public/getalumnosYUsuario", function(data, status){
+        var x = data.alumnos;
+        var y;
+        for (i = 0; i<x.length; i++) {
+            y = document.createElement("option");
+            y.innerHTML = x[i].nombre;
+            $("#miembros1").append(y);
+        }
+        x = data.miembros;
+        y = document.createElement("option");
+        y.innerHTML = x;
         $("#miembros1").append(y);
     });
 });
