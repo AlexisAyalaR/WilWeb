@@ -34,6 +34,6 @@ class Proyecto extends Mailable
             'descrip' => $req->descripcion,
             'telefono' => $req->telefono,
             'email' => $req->email
-            ])->to('alexis9613@gmail.com');
+            ])->to('wil@itam.mx');
     }
 }

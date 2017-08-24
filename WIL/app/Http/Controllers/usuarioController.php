@@ -96,9 +96,13 @@ class usuarioController extends Controller
         $arrayJueves = substr($matriz, 156, 51);
         $arrayViernes = substr($matriz, 208, 51);
 
-        $usuario = session('jsonMiembro');
+        $nombre = $_POST['miembros'];
 
-        $usuario_id = $usuario['id'];
+        if($nombre == '')
+            return redirect()->back();
+            
+
+        $usuario_id = usuario::getById($nombre);
 
         try{
             horario::modifica($usuario_id ,$arrayLunes, $arrayMartes, $arrayMiercoles, $arrayJueves, $arrayViernes);

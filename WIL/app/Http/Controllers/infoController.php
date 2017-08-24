@@ -56,5 +56,21 @@ class infoController extends Controller
 
         return \Response::json(["nivel" => $usuario_nivel], 200);
     }
+
+    public function cargaAlumnosUsuario(){
+
+        $usuario = session('jsonMiembro');
+
+        $usuario_nombre = $usuario['nombre'];
+
+        $usuarios = DB::table('usuarios')
+                    ->select('nombre')
+                    ->where('nivel', 0)
+                    ->orderBy('nombre', 'desc')
+                    ->get();
+
+
+        return \Response::json(["alumnos" => $usuarios, "miembros" => $usuario_nombre], 200);
+    }
 }
 

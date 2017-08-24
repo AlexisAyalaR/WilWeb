@@ -51,6 +51,10 @@ Route::get('/getAlumnos', ["uses" => 'infoController@cargaAlumnos']);
 ruta.info*/
 Route::get('/getUsuarios', ["uses" => 'infoController@cargaUsuarios']);
 
+/*Obtiene el nombre de los alumnos y del usuario que esta presente
+ruta.info*/
+Route::get('/getalumnosYUsuario', ["uses" => 'infoController@cargaAlumnosUsuario']);
+
 /*Verifica que tipo de usuario es para permitir o no el ingreso a páginas
 ruta.info*/
 Route::get('/checaUsuario', ["uses" => 'infoController@verificaUsuario']);

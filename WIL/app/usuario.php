@@ -49,4 +49,10 @@ class usuario extends Model
 
         return $id;
     }
+
+    public static function getById($nombre){
+
+        return DB::table('usuarios')->where('nombre', $nombre)->value('id');
+    }
+
 }
