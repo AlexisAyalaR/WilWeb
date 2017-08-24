@@ -2,7 +2,6 @@
 
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoUsuario", function(data, status){
-    	console.log(data);
     	var x = 0;
     	var y = data.miembro.progreso;
  		switch(y) {
@@ -47,9 +46,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/checaUsuario", function(data, status){
-    	console.log(data);
     	var x = data.nivel;
-    	console.log(x);
     	if(x != 0){
     		$(location).attr('href',"/WilWeb/Wil/public/html/prueba.html");
     	}

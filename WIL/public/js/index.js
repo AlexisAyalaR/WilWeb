@@ -42,7 +42,6 @@ function creaPerfil(num){
 	exp.innerHTML = cv[num] + "<br> <br> Proyectos hechos en el WIL: <br>" + experiencia[num];
 
 	var sec = document.getElementById("sec");
-	console.log(sec);
 	sec.appendChild(div);
 }
 
