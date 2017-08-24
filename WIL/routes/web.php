@@ -39,13 +39,13 @@ Route::post('/registra', ["uses" => 'usuarioController@registraUsuario']);
 personalS.html*/
 Route::post('/eliminaUsuario', ["uses" => 'usuarioController@eliminaUsuario']);
 
-/*Obtiene info de usuario ingresado
-ruta.info*/
-Route::get('/getInfoUsuario', ["uses" => 'usuarioController@getInfo']);
-
 /*Obtiene la información del miembro y el horario actual
 ruta.info*/
 Route::post('/getInfoMiembro', ["uses" => 'usuarioController@getInfoMiembro']);
+
+/*Obtiene info de usuario ingresado
+ruta.info*/
+Route::get('/getInfoUsuario', ["uses" => 'usuarioController@getInfo']);
 
 /*Obtiene el nombre de los alumnos
 ruta.info*/

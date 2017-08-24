@@ -52,6 +52,11 @@ class usuarioController extends Controller
 
         $nombre = $_POST['alumnoE'];
 
+        if($nombre == '')
+            return redirect()->back();
+        else
+            return $nombre;
+
         try{
             $id = usuario::elimina($nombre);
             horario::elimina($id);
