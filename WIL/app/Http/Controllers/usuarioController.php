@@ -82,6 +82,26 @@ class usuarioController extends Controller
     }
 
     /* 
+    * Funcion que se encarga de dar entregar los datos de un usuario ya ingresado. 
+    * Parametros: 
+    * Return: json{usuario, horario}
+    */
+    public function getInfoMiembro(){
+
+        $usuario = session('jsonMiembro');
+
+        $nombre = $_POST['miembro'];
+
+        $usuario_id = usuario::getById($nombre);
+
+        $horario = horario::getById($usuario_id);
+
+        return \Response::json(["miembro"=>$usuario, "horario"=>$horario],200);
+
+    }
+
+
+    /* 
     * Funcion que se encarga de dar cambiar el horario del usuario ingresado. 
     * Parametros: Request->POST
     * Return: json{miembro=boolean}

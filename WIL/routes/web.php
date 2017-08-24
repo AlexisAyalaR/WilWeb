@@ -43,6 +43,10 @@ Route::post('/eliminaUsuario', ["uses" => 'usuarioController@eliminaUsuario']);
 ruta.info*/
 Route::get('/getInfoUsuario', ["uses" => 'usuarioController@getInfo']);
 
+/*Obtiene la información del miembro y el horario actual
+ruta.info*/
+Route::post('/getInfoMiembro', ["uses" => 'usuarioController@getInfoMiembro']);
+
 /*Obtiene el nombre de los alumnos
 ruta.info*/
 Route::get('/getAlumnos', ["uses" => 'infoController@cargaAlumnos']);
@@ -67,6 +71,7 @@ Route::get('/signout', function(){
 	return redirect('/html/prueba.html'); 
 
 });
+
 
 
 
