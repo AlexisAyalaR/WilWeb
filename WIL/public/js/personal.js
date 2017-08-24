@@ -80,7 +80,7 @@ $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getalumnosYUsuario", function(data, status){
         console.log(data);
         var x = data.alumnos;
-        ver y;
+        var y;
         for (i = 0; i<x.length; i++) {
             y = document.createElement("option");
             y.innerHTML = x[i].nombre;
