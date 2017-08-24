@@ -72,6 +72,7 @@ $(document).ready(function(){
         }
     });
 });
+
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getalumnosYUsuario", function(data, status){
         var x = data.alumnos;
@@ -87,6 +88,7 @@ $(document).ready(function(){
         $("#miembros").append(y);
     });
 });
+
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getalumnosYUsuario", function(data, status){
         var x = data.alumnos;
@@ -100,6 +102,12 @@ $(document).ready(function(){
         y = document.createElement("option");
         y.innerHTML = x;
         $("#miembros1").append(y);
+    });
+});
+
+$("#carga").ready(function(){
+    $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
+        console.log(x);
     });
 });
 
