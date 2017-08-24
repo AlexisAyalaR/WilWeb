@@ -86,6 +86,12 @@ $(document).ready(function(){
             y.innerHTML = x[i].nombre;
             $("#miembros").append(y);
         }
+        x = data.miembros;
+        for (i = 0; i<x.length; i++) {
+            y = document.createElement("option");
+            y.innerHTML = x[i].nombre;
+            $("#miembros").append(y);
+        }
     });
 });
 
