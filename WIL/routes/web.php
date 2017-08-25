@@ -39,9 +39,13 @@ Route::post('/registra', ["uses" => 'usuarioController@registraUsuario']);
 personalS.html*/
 Route::post('/eliminaUsuario', ["uses" => 'usuarioController@eliminaUsuario']);
 
-/*Obtiene la información del miembro y el horario actual
+/*Carga el horario del alumno seleccionado
+personal.html*/
+Route::post('/cargaHorario', ["uses" => 'usuarioController@cargaHorario']);
+
+/*Obtiene la información del horario actual en personal
 ruta.info*/
-Route::post('/getInfoMiembro', ["uses" => 'usuarioController@getInfoMiembro']);
+Route::get('/getInfoMiembro', ["uses" => 'usuarioController@getInfoMiembro']);
 
 /*Obtiene info de usuario ingresado
 ruta.info*/

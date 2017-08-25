@@ -54,8 +54,6 @@ class usuarioController extends Controller
 
         if($nombre == '')
             return redirect()->back();
-        else
-            return $nombre;
 
         try{
             $id = usuario::elimina($nombre);
@@ -86,14 +84,7 @@ class usuarioController extends Controller
 
     }
 
-    /* 
-    * Funcion que se encarga de dar entregar los datos de un usuario ya ingresado. 
-    * Parametros: 
-    * Return: json{usuario, horario}
-    */
-    public function getInfoMiembro(){
-
-        $usuario = session('jsonMiembro');
+    public function cargaHorario(){
 
         $nombre = $_POST['miembros1'];
 
@@ -101,8 +92,38 @@ class usuarioController extends Controller
 
         $horario = horario::getById($usuario_id);
 
-        return \Response::json(["miembro"=>$usuario, "horario"=>$horario],200);
+        session(['horario' => $horario]);
 
+        session(['nombre' => $nombre]); 
+
+        return redirect('/html/personal.html');
+
+    }
+
+    /* 
+    * Funcion que se encarga de dar entregar los datos de un usuario ya ingresado. 
+    * Parametros: 
+    * Return: json{usuario, horario}
+    */
+    public function getInfoMiembro(){
+
+        $horario = session('horario');
+        $nombre = session('nombre');
+
+        if(session('horario') == ''){
+        
+            $usuario = session('jsonMiembro');
+            $usuario_id = $usuario['id'];
+            $usuario_nombre = $usuario['nombre'];
+            $horario = horario::getById($usuario_id);
+
+        }
+
+        session(['horario' => '']);
+
+        session(['nombre' => '']); 
+
+        return \Response::json(["horario"=>$horario, "nombre" => $nombre],200);
     }
 
 

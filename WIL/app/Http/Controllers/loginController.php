@@ -49,10 +49,7 @@ class loginController extends Controller
                 
                 session(['jsonMiembro' => $usuarioJson]); 
     			return redirect('/html/personalS.html');
-            }
-            
+            }   
     	}
-        //\Response::json(["miembro"=>$usuarioJson, 'nivel'=>$usuario_nivel],200);
-
     }
 }

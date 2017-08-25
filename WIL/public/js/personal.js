@@ -107,7 +107,7 @@ $(document).ready(function(){
 
 $("#carga").ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
-        console.log(x);
+        console.log(data);
     });
 });
 
