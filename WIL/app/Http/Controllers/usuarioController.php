@@ -93,7 +93,11 @@ class usuarioController extends Controller
 
     public function cargaHorario(){
 
+        //VALIDADO
         $nombre = $_POST['miembros1'];
+
+        if($nombre == '')
+            return redirect()->back();
 
         $usuario_id = usuario::getById($nombre);
 
@@ -191,10 +195,13 @@ class usuarioController extends Controller
         $arrayJueves = substr($matriz, 156, 51);
         $arrayViernes = substr($matriz, 208, 51);
 
+        //VALIDADO
         $nombre = $_POST['miembros'];
 
-        if($nombre == '')
+        if($nombre == ''){
+            session(['cargaHorario' => -1]);
             return redirect()->back();
+        }
             
 
         $usuario_id = usuario::getById($nombre);
@@ -219,8 +226,13 @@ class usuarioController extends Controller
     */
     public function cambiaProgreso(Request $req){
   		
+        //VALIDADO
   		$nombre = $_POST['alumno'];
         $progreso = $_POST['progreso'];
+
+        if($nombre == '' || $progreso == '')
+            return redirect()->back();
+
     	DB::table('usuarios')
             ->where('nombre', $nombre)
             ->update(['progreso' => $progreso]);
