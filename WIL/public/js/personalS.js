@@ -57,7 +57,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $.get("/WilWeb/Wil/public/getUsuario", function(data, status){
+    $.get("/WilWeb/Wil/public/getUsuarios", function(data, status){
         var x = data.alumnos;
         var y;
         for (i = 0; i<x.length; i++) {
