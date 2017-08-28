@@ -49,81 +49,6 @@
 <br>
 <br>
 <br>
-<section id="section1" class="section1 w3-row-padding">
-		<p class="tit"><h2><b>Regristro</b></h2></p>
-		<div class="w3-third">
-			<br>
-		</div>
-		<div class="w3-third">
-		<p class="">
-			Aquí puedes registrar alumnos, personal o personalS.
-		</p>
-		<p>
-			<form class="section3__form w3-card w3-padding w3-blue" action="/WilWeb/Wil/public/registra" method="post">
-				<meta name="csrf-token" content="{{ csrf_token() }}" />
-					<div class="">
-						<br>
-						<input type="hidden" name="_token" value="{!! csrf_token() !!}">
-						<label class="w3-text-black"><i class="fa fa-font" aria-hidden="true"></i> <b>Nombre</b></label>
-						<input class="w3-input w3-border w3-light-grey" required type="text" name="nombre">
-						<label class="w3-text-black"><i class="fa fa-envelope-square" aria-hidden="true"></i> <b>Email</b></label>
-						<input class="w3-input w3-border w3-light-grey" required type="email" name="email">
-						<label class="w3-text-black"><i class="fa fa-unlock-alt" aria-hidden="true"></i> <b>Contraseña</b></label>
-						<input class="w3-input w3-border w3-light-grey" required type="password" name="pass">
-						<label class="w3-text-black"><i class="fa fa-unlock-alt" aria-hidden="true"></i> <b>Confirmar Contraseña</b></label>
-						<input class="w3-input w3-border w3-light-grey" required type="password" name="passC">
-						<label class="w3-text-black"><i class="fa fa-level-up" aria-hidden="true"></i> <b>Nivel</b></label>
-						<br>
-						<select name="nivel" id="nivel">
-						  <option value="0">Alumno</option>
-						  <option value="1">Personal</option>
-						  <option value="2">PersonalS</option>
-						</select>
-						<br>
-						<br>
-						<button class="w3-btn w3-grey w3-round-large"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar</button>
-						<br>
-						<br>
-					</div>
-			</form>
-		</p>
-	</div>
-	<div class="third">
-		<br>
-	</div>
-</section>
-<br>
-<section id="section2" class="section2 w3-row-padding">
-		<p class="tit"><h2><b>Bajas</b></h2></p>
-		<div class="w3-third">
-			<br>
-		</div>
-		<div class="w3-third">
-		<p class="">
-			Aquí puedes eliminar alumnos.
-		</p>
-		<p>
-			<form class="section3__form w3-card w3-padding w3-blue" action="/WilWeb/Wil/public/eliminaUsuario" method="post">
-					<div class="">
-						<br>
-						<br>
-						<select name="alumnoE" id="alumnoE">
-						  <option value="">--Alumno--</option>
-						</select>
-						<br>
-						<br>
-						<button class="w3-btn w3-grey w3-round-large"><i class="fa fa-trash-o" aria-hidden="true"></i> Eliminar Alumno</button>
-						<br>
-						<br>
-					</div>
-			</form>
-		</p>
-	</div>
-	<div class="third">
-		<br>
-	</div>
-</section>
-<br>
 <section id="section2" class="section1 w3-row-padding">
 	<p class="tit"><h2><b>Progreso</h2></b></p>
 	<p>Aquí puedes modificar el progreso de tus alumnos.</p>
@@ -169,6 +94,82 @@
 		</div>
 	</div>
 	<br>
+</section>
+<br>
+<section id="section1" class="section1 w3-row-padding">
+		<div class="w3-half">
+		<p class="tit"><h2><b>Regristro</b></h2></p>
+		<div class="w3-third">
+			<br>
+		</div>
+		<div class="w3-third">
+		<p class="">
+			Aquí puedes registrar alumnos, personal o personalS.
+		</p>
+		<p>
+			<form class="section3__form w3-card w3-padding w3-blue" action="/WilWeb/Wil/public/registra" method="post">
+				<meta name="csrf-token" content="{{ csrf_token() }}" />
+					<div class="">
+						<br>
+						<input type="hidden" name="_token" value="{!! csrf_token() !!}">
+						<label class="w3-text-black"><i class="fa fa-font" aria-hidden="true"></i> <b>Nombre</b></label>
+						<input class="w3-input w3-border w3-light-grey" required type="text" name="nombre">
+						<label class="w3-text-black"><i class="fa fa-envelope-square" aria-hidden="true"></i> <b>Email</b></label>
+						<input class="w3-input w3-border w3-light-grey" required type="email" name="email">
+						<label class="w3-text-black"><i class="fa fa-unlock-alt" aria-hidden="true"></i> <b>Contraseña</b></label>
+						<input class="w3-input w3-border w3-light-grey" required type="password" name="pass">
+						<label class="w3-text-black"><i class="fa fa-unlock-alt" aria-hidden="true"></i> <b>Confirmar Contraseña</b></label>
+						<input class="w3-input w3-border w3-light-grey" required type="password" name="passC">
+						<label class="w3-text-black"><i class="fa fa-level-up" aria-hidden="true"></i> <b>Nivel</b></label>
+						<br>
+						<select name="nivel" id="nivel">
+						  <option value="0">Alumno</option>
+						  <option value="1">Personal</option>
+						  <option value="2">PersonalS</option>
+						</select>
+						<br>
+						<br>
+						<button class="w3-btn w3-grey w3-round-large"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar</button>
+						<br>
+						<br>
+					</div>
+			</form>
+		</p>
+	</div>
+	<div class="third">
+		<br>
+	</div>
+	</div>
+	<div class="w3-half">
+		<p class="tit"><h2><b>Bajas</b></h2></p>
+		<div class="w3-third">
+			<br>
+		</div>
+		<div class="w3-third">
+		<p class="">
+			Aquí puedes eliminar alumnos.
+		</p>
+		<p>
+			<form class="section3__form w3-card w3-padding w3-blue" action="/WilWeb/Wil/public/eliminaUsuario" method="post">
+					<div class="">
+						<br>
+						<br>
+						<select name="alumnoE" id="alumnoE">
+						  <option value="">--Alumno--</option>
+						</select>
+						<br>
+						<br>
+						<button class="w3-btn w3-grey w3-round-large"><i class="fa fa-trash-o" aria-hidden="true"></i> Eliminar Alumno</button>
+						<br>
+						<br>
+					</div>
+			</form>
+		</p>
+	</div>
+	<div class="third">
+		<br>
+	</div>
+</div>
 </section>
 <br>
 <section class="section2">
