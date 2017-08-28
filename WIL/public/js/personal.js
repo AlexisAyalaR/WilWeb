@@ -112,7 +112,8 @@ $("#carga").ready(function(){
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
         var z = data.horario;
-        var a = data[1];
+        var a = data.nombre;
+        document.getElementById("nombre").innerHTML = a;
         console.log(a);
         for(i = 0; i<z.length; i++){
             var k = z[i];
@@ -121,9 +122,6 @@ $(document).ready(function(){
                 var l = n.charAt(j);
                 if(l == 1){
                     $("."+i+j/2).css("background-color", "blue");
-                }else{
-                    if(l == ","){
-                    }
                 }
             }
         }
