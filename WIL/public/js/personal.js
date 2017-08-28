@@ -107,6 +107,8 @@ $(document).ready(function(){
 
 $("#carga").ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
+        var z = data;
+        console.log(z);
         var x = data.alumnos;
         var y;
         for (i = 0; i<x.length; i++) {
