@@ -113,8 +113,10 @@ $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
         var z = data.horario;
         var a = data.nombre;
+        var b = data.cargaHoario;
+        console.log(b);
         document.getElementById("nombre").innerHTML = "<b>Nombre: </b>"+  a;
-        console.log(a);
+        console.log(data);
         for(i = 0; i<z.length; i++){
             var k = z[i];
             var n = k.horas;
