@@ -109,6 +109,7 @@ $("#carga").ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
         var a = data;
         console.log(a);
+        document.getElementById("nombre").innerHTML=a.nombre;
         var z = data.horario;
         for(i = 0; i<z.length; i++){
             var k = z[i];
