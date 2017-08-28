@@ -112,9 +112,11 @@ $(document).ready(function(){
         var b = data.cargaHorario;
         if(b == 1){
             alert("Se modificó el horario correctamente.");
+            location.reload(true);
         }else{
             if(b == -1){
                 alert("No se modificó el horario correctamente.");
+                location.reload(true);
             }
         }
         document.getElementById("nombre").innerHTML = "<b>Nombre: </b>"+  a;
