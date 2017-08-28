@@ -105,10 +105,6 @@ $(document).ready(function(){
     });
 });
 
-/*$("#carga").ready(function(){
-    $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
-    });
-});*/
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
         var z = data.horario;
