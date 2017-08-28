@@ -10,16 +10,16 @@ imgs = ["../img/vicky.png", "../img/emi.png", "../img/horacio.png", "../img/alex
 cv = 
 ["Cofundador <br> Back-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>", 
 "Cofundador <br> Front-End Master Developer <br> Estudiante de Ingeniería en Computación <br> <br>",
- "Director de RRPP <br> Senior Programmer <br> Estudiante de Ingeniería en Telecomunicaciones <br>", 
- "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br> <br>", 
- "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Ingeniería en Telecomunicaciones <br> <br>", 
- "Front-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> <br> <br> <br>", 
- "Back-End Jr. Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br> <br> <br>"];
+ "Director de RRPP <br> Senior Programmer <br> Estudiante de Ingeniería en Telecomunicaciones <br> <br> <br>", 
+ "Back-End Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br> <br>", 
+ "Front-End Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Ingeniería en Telecomunicaciones <br> <br>", 
+ "Front-End Developer <br> Estudiante de Ingeniería en Computación <br> <br> <br> <br>", 
+ "Back-End Developer <br> Estudiante de Ingeniería en Computación <br> Estudiante de Matemáticas Aplicadas <br> <br>"];
 experiencia = 
 ["Radio ITAM <br> Practicas de verano 2017",
 "Radio ITAM <br> Practicas de verano 2017",
 "Radio ITAM <br> <br>","Página del WIL <br> <br>",
-"Página del WIL <br> <br>","<br> <br>","<br> <br>"];
+"Página del WIL <br> <br>","Página del WIL <br> <br>","Página del WIL <br> <br>"];
 num = 7;
 function creaPerfil(num){
 	var div = document.createElement("div");
