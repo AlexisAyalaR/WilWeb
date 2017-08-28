@@ -114,7 +114,7 @@ class usuarioController extends Controller
         
             $usuario = session('jsonMiembro');
             $usuario_id = $usuario['id'];
-            $usuario_nombre = $usuario['nombre'];
+            $nombre = $usuario['nombre'];
             $horario = horario::getById($usuario_id);
 
         }
