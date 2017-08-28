@@ -34,7 +34,7 @@ $(document).ready(function(){
     		for(j = 0; j<n.length; j++){
     			var l = n.charAt(j);
     			if(l == 1){
-    				$("."+i+j/2).css("background-color", "blue");
+    				$("."+i+j/2).css("background-color", "#2196f3");
     			}else{
     				if(l == ","){
     				}

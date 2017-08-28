@@ -140,8 +140,10 @@ class usuarioController extends Controller
 
         session(['nombre' => '']); 
 
-        if($cargaHorario == '')
-           $cargaHorario = 0;
+        if($cargaHorario == ''){
+            session(['cargaHorario' => 0]);
+            $cargaHorario = 0;
+        }
         else{
             session(['cargaHorario' => 0]);
         }
@@ -175,20 +177,26 @@ class usuarioController extends Controller
 
         session(['nombre' => '']); 
 
-        if($eliminaUsuario == '')
+        if($eliminaUsuario == ''){
+            session(['eliminaUsuario' => 0]);
            $eliminaUsuario = 0;
+        }
         else{
             session(['eliminaUsuario' => 0]);
         }
 
-        if($agregaUsuario == '')
+        if($agregaUsuario == ''){
+            session(['agregaUsuario' => 0]);
            $agregaUsuario = 0;
+        }
         else{
             session(['agregaUsuario' => 0]);
         }
 
-        if($cargaHorario == '')
+        if($cargaHorario == ''){
+            session(['cargaHorario' => 0]);
            $cargaHorario = 0;
+        }
         else{
             session(['cargaHorario' => 0]);
         }
