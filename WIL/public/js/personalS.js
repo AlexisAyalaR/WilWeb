@@ -69,7 +69,6 @@ $(document).ready(function(){
         var z = data.horario;
         var a = data.nombre;
         var b = data.cargaHorario;
-        console.log(b);
         if(b == 1){
             alert("Se modificó el horario correctamente.");
         }else{
@@ -78,7 +77,6 @@ $(document).ready(function(){
             }
         }
         document.getElementById("nombre").innerHTML = "<b>Nombre: </b>"+  a;
-        console.log(data);
         for(i = 0; i<z.length; i++){
             var k = z[i];
             var n = k.horas;
