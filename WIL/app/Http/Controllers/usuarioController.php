@@ -177,7 +177,13 @@ class usuarioController extends Controller
             session(['agregaUsuario' => 0]);
         }
 
-        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "agregaUsuario" => $agregaUsuario, "eliminaUsuario" => $eliminaUsuario],200);
+        if($cargaHorario == '')
+           $cargaHorario = 0;
+        else{
+            session(['cargaHorario' => 0]);
+        }
+
+        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "cargaHorario" => $cargaHorario], "agregaUsuario" => $agregaUsuario, "eliminaUsuario" => $eliminaUsuario],200);
     }
 
     /* 
