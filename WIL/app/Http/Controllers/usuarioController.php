@@ -19,11 +19,12 @@ class usuarioController extends Controller
     * Return: json{miembro=boolean}
     */
 	public function registraUsuario(Request $req){
-        
+
     	$email = $req->input('email');
         $nombre = $req->input('nombre');
     	$pass = $req->input('pass');
     	$passC = $req->input('passC');
+        //VALIDADO
     	$nivel = $_POST['nivel'];
 
     	if($pass != $passC)
@@ -51,10 +52,13 @@ class usuarioController extends Controller
     */
     public function eliminaUsuario(Request $req){
 
+        //VALIDADO
         $nombre = $_POST['alumnoE'];
 
-        if($nombre == '')
+        if($nombre == ''){
+            session(['eliminaUsuario' => -1]);
             return redirect()->back();
+        }
 
         try{
             $id = usuario::elimina($nombre);
