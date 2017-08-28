@@ -105,15 +105,15 @@ $(document).ready(function(){
     });
 });
 
-$("#carga").ready(function(){
+*/$("#carga").ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
     });
-});
+});*/
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
         var z = data.horario;
         var a = data.nombre;
-        document.getElementById("nombre").innerHTML = a;
+        document.getElementById("nombre").innerHTML = "<b>Nombre: </b>"+  a;
         console.log(a);
         for(i = 0; i<z.length; i++){
             var k = z[i];
