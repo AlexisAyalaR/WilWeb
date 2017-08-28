@@ -88,7 +88,9 @@ $(document).ready(function(){
         if(d == 1){
             alert("Se agregó exitosamente.");
         }else{
-            alert("No se agregó exitosamente.");
+            if (d == -1) {
+                alert("No se agregó exitosamente.");
+            }
         }
         document.getElementById("nombre").innerHTML = "<b>Nombre: </b>"+  a;
         for(i = 0; i<z.length; i++){
