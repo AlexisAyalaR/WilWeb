@@ -18,8 +18,8 @@
 			</div>
 		</li>
 		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href=""><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section1"><i class="fa fa-code" aria-hidden="true"></i> Proyectos</a></li>
-		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section2"><i class="fa fa-terminal" aria-hidden="true"></i> Horario</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#section2"><i class="fa fa-code" aria-hidden="true"></i> Progreso</a></li>
+		<li class="w3-bar-item w3-mobile w3-hover-shadow w3-hover-opacity w3-hide-small w3-hide-medium"><a class="link" href="#horario"><i class="fa fa-terminal" aria-hidden="true"></i> Horario</a></li>
 		<form action="/WilWeb/Wil/public/signout" method="get">
 			<li onclick="" class="w3-bar-item w3-mobile w3-right w3-hide-small w3-hide-medium header__but">
 				<button onclick="" class="w3-btn w3-white w3-border w3-border-grey w3-text-black w3-round-large">
@@ -33,7 +33,7 @@
 	<nav class="w3-sidebar w3-animate-left w3 w3-bar-block w3-blue w3-hide-large" id="mini">
 		<li class="w3-bar-item w3-button w3-large w3-padding-16 w3-right w3-hover-red" onclick="openClose()">X</li>
 		<li class="w3-bar-item w3-hover-white w3-button"><a class="link" href="prueba.html"><i class="fa fa-laptop" aria-hidden="true"></i> Inicio</a></li>
-		<li class="w3-bar-item w3-hover-white w3-button"><a class="link" href="#section1"><i class="fa fa-code" aria-hidden="true"></i> Proyectos</a></li>
+		<li class="w3-bar-item w3-hover-white w3-button"><a class="link" href="#section1"><i class="fa fa-code" aria-hidden="true"></i> Progreso</a></li>
 		<li class="w3-bar-item w3-hover-white w3-button"><a class="link" href="#section2"><i class="fa fa-calendar" aria-hidden="true"></i> Horario</a></li>
 		<form action="/WilWeb/Wil/public/signout" method="get">
 			<li onclick="" class="w3-bar-item w3-mobile w3-right w3-hide-large header__but">
@@ -54,40 +54,47 @@
 		<br>
 	</div>
 	<div class="w3-third progreso w3-round-xlarge w3-center">
-		<p>
-		<form action="/WilWeb/Wil/public/cambiaProgreso" method="post">
-			<div class="w3-container">
-				<div class="w3-dropdown-click">
-			  		<select name="alumno" class="alumno" id="alumno">
-			  		  <option value="">--Alumno--</option>
-					</select>
+		<div class="w3-row-padding">
+				<div class="w3-half">
+					<br>
+					<form action="/WilWeb/Wil/public/cambiaProgreso" method="post">
+						<div class="w3-container">
+							<div class="w3-dropdown-click">
+						  		<select name="alumno" class="alumno" id="alumno">
+						  		  <option value="">--Alumno--</option>
+								</select>
+							</div>
+							<br>
+							<br>
+							<div class="w3-dropdown-click">
+						  		<select name="progreso" id="progreso">
+						  			<option value="">--Progreso--</option>
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+								</select>
+							</div>
+						</div>
+						<br>
+						<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge">Registrar progreso</button>
+						<br>
+						<br>
+					</form>
 				</div>
-				<br>
-				<br>
-				<div class="w3-dropdown-click">
-			  		<select name="progreso" id="progreso">
-			  			<option value="">--Progreso--</option>
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-					</select>
+				<div class="w3-half">
+					<img src="https://cdn1.iconfinder.com/data/icons/complete-set-icons/512/graph.png" width="200">
 				</div>
-			</div>
-			<br>
-			<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge">Registrar progreso</button>
-			<br>
-			<br>
-		</form>
+		</div>
 	</div>
 	<br>
 	<div class="w3-third">
 		<br>
 	</div>
-	<div class="w3-container">
+	<div class="w3-container" id="horario">
 		<p class="tit"><h2><b>Horario</h2></b></p>
 		<div class="w3-responsive w3-half">
 		<div class="w3-row-padding">
