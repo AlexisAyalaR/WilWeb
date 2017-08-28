@@ -105,7 +105,7 @@ $(document).ready(function(){
     });
 });
 
-*/$("#carga").ready(function(){
+/*$("#carga").ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
     });
 });*/
