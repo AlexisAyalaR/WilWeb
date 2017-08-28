@@ -45,18 +45,11 @@ class infoController extends Controller
     	return \Response::json(["usuarios" => $usuarios], 200);
   	} 
 
-    public function verificaUsuario(){
-
-        $usuario = session('jsonMiembro');
-
-        if($usuario != '')
-            $usuario_nivel = $usuario['nivel'];
-        else
-            $usuario_nivel = '-1';
-
-        return \Response::json(["nivel" => $usuario_nivel], 200);
-    }
-
+    /* 
+    * Funcion que se encarga de entregar el nombre de los alumnos y del usuario
+    * Parametros: 
+    * Return: el nombre de los alumnos y del usuario
+    */
     public function cargaAlumnosUsuario(){
 
         $usuario = session('jsonMiembro');
@@ -71,6 +64,23 @@ class infoController extends Controller
 
 
         return \Response::json(["alumnos" => $usuarios, "miembros" => $usuario_nombre], 200);
+    }
+
+    /* 
+    * Funcion que se encarga de entregar el nivel del usuario para validar su entrada a una página
+    * Parametros: 
+    * Return: el nivel del usuario
+    */
+    public function verificaUsuario(){
+
+        $usuario = session('jsonMiembro');
+
+        if($usuario != '')
+            $usuario_nivel = $usuario['nivel'];
+        else
+            $usuario_nivel = '-1';
+
+        return \Response::json(["nivel" => $usuario_nivel], 200);
     }
 }
 

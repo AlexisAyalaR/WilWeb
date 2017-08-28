@@ -16,7 +16,7 @@ class usuarioController extends Controller
     /* 
     * Funcion que se encarga de registrar un usuario desde PersonalS
     * Parametros: Request->POST
-    * Return: json{miembro=boolean}
+    * Return:
     */
 	public function registraUsuario(Request $req){
 
@@ -48,7 +48,7 @@ class usuarioController extends Controller
     /* 
     * Funcion que se encarga de eliminar un usuario desde PersonalS
     * Parametros: Request->POST
-    * Return: json{miembro=boolean}
+    * Return:
     */
     public function eliminaUsuario(Request $req){
 
@@ -91,6 +91,11 @@ class usuarioController extends Controller
 
     }
 
+    /* 
+    * Funcion que se encarga de cargar el horario del usuario ingresado 
+    * Parametros: 
+    * Return:
+    */
     public function cargaHorario(){
 
         //VALIDADO
@@ -112,7 +117,7 @@ class usuarioController extends Controller
     }
 
     /* 
-    * Funcion que se encarga de dar entregar los datos de un usuario ya ingresado. 
+    * Funcion que se encarga de dar entregar los datos de un usuario ya ingresado en Personal
     * Parametros: 
     * Return: json{usuario, horario}
     */
@@ -144,13 +149,18 @@ class usuarioController extends Controller
         return \Response::json(["horario"=>$horario, "nombre" => $nombre, "cargaHorario" => $cargaHorario],200);
     }
 
-
+    /* 
+    * Funcion que se encarga de dar entregar los datos de un usuario ya ingresado en PersonalS
+    * Parametros: 
+    * Return: json{usuario, horario}
+    */
     public function getInfoMiembroPersonalS(){
 
         $horario = session('horario');
         $nombre = session('nombre');
         $eliminaUsuario = session('eliminaUsuario');
         $agregaUsuario = session('agregaUsuario');
+        $cargaHorario = session('cargaHorario');
 
         if($horario == ''){
         
@@ -183,13 +193,13 @@ class usuarioController extends Controller
             session(['cargaHorario' => 0]);
         }
 
-        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "cargaHorario" => $cargaHorario], "agregaUsuario" => $agregaUsuario, "eliminaUsuario" => $eliminaUsuario],200);
+        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "cargaHorario" => $cargaHorario, "agregaUsuario" => $agregaUsuario, "eliminaUsuario" => $eliminaUsuario],200);
     }
 
     /* 
     * Funcion que se encarga de dar cambiar el horario del usuario ingresado. 
     * Parametros: Request->POST
-    * Return: json{miembro=boolean}
+    * Return:
     */
     public function cambiaHorario(Request $req){
 
@@ -228,7 +238,7 @@ class usuarioController extends Controller
     /* 
     * Funcion que se encarga de dar cambiar el progreso del usuario seleccionado con en ddl en Personal. 
     * Parametros: Request-> Post
-    * Return: json{miembro=boolean}
+    * Return:
     */
     public function cambiaProgreso(Request $req){
   		
