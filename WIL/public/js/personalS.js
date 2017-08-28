@@ -73,23 +73,29 @@ $(document).ready(function(){
         var d = data.agregaUsuario;
         if(b == 1){
             alert("Se modificó el horario correctamente.");
+            location.reload(true);
         }else{
             if(b == -1){
                 alert("No se modificó el horario correctamente.");
+                location.reload(true);
             }
         }
         if(c == 1){
             alert("Se eliminó exitosamente.");
+            location.reload(true);
         }else{
             if(c == -1){
                 alert("No se eliminó exitosamente.");
+                location.reload(true);
             }
         }
         if(d == 1){
             alert("Se agregó exitosamente.");
+            location.reload(true);
         }else{
             if (d == -1) {
                 alert("No se agregó exitosamente.");
+                location.reload(true);
             }
         }
         document.getElementById("nombre").innerHTML = "<b>Nombre: </b>"+  a;
