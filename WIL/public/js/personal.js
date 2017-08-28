@@ -107,7 +107,17 @@ $(document).ready(function(){
 
 $("#carga").ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
-        console.log(data);
+        var x = data.alumnos;
+        var y;
+        for (i = 0; i<x.length; i++) {
+            y = document.createElement("option");
+            y.innerHTML = x[i].nombre;
+            $("#miembros1").append(y);
+        }
+        x = data.miembros;
+        y = document.createElement("option");
+        y.innerHTML = x;
+        $("#miembros1").append(y);
     });
 });
 
