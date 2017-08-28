@@ -107,19 +107,22 @@ $(document).ready(function(){
 
 $("#carga").ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
-        var z = data;
-        console.log(z);
-        var x = data.alumnos;
-        var y;
-        for (i = 0; i<x.length; i++) {
-            y = document.createElement("option");
-            y.innerHTML = x[i].nombre;
-            $("#miembros1").append(y);
+        var a = data;
+        console.log(a);
+        var z = data.horario;
+        for(i = 0; i<z.length; i++){
+            var k = z[i];
+            var n = k.horas;
+            for(j = 0; j<n.length; j++){
+                var l = n.charAt(j);
+                if(l == 1){
+                    $("."+i+j/2).css("background-color", "blue");
+                }else{
+                    if(l == ","){
+                    }
+                }
+            }
         }
-        x = data.miembros;
-        y = document.createElement("option");
-        y.innerHTML = x;
-        $("#miembros1").append(y);
     });
 });
 
