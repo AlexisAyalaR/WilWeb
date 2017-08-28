@@ -49,10 +49,6 @@ $(document).ready(function(){
             y.innerHTML = x[i].nombre;
             $("#miembros").append(y);
         }
-        x = data.miembros;
-        y = document.createElement("option");
-        y.innerHTML = x;
-        $("#miembros").append(y);
     });
 });
 
@@ -65,10 +61,6 @@ $(document).ready(function(){
             y.innerHTML = x[i].nombre;
             $("#miembros1").append(y);
         }
-        x = data.miembros;
-        y = document.createElement("option");
-        y.innerHTML = x;
-        $("#miembros1").append(y);
     });
 });
 
