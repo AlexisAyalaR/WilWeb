@@ -99,7 +99,7 @@ class usuarioController extends Controller
 
         session(['nombre' => $nombre]); 
 
-        return redirect('/html/personal.html');
+        return redirect()->back();
 
     }
 
