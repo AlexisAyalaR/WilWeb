@@ -41,7 +41,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $.get("/WilWeb/Wil/public/getalumnosYUsuario", function(data, status){
+    $.get("/WilWeb/Wil/public/getAlumnos", function(data, status){
         var x = data.alumnos;
         var y;
         for (i = 0; i<x.length; i++) {
@@ -57,7 +57,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $.get("/WilWeb/Wil/public/getalumnosYUsuario", function(data, status){
+    $.get("/WilWeb/Wil/public/getUsuario", function(data, status){
         var x = data.alumnos;
         var y;
         for (i = 0; i<x.length; i++) {
