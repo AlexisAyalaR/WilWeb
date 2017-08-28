@@ -47,6 +47,10 @@ Route::post('/cargaHorario', ["uses" => 'usuarioController@cargaHorario']);
 ruta.info*/
 Route::get('/getInfoMiembro', ["uses" => 'usuarioController@getInfoMiembro']);
 
+/*Obtiene la información del horario actual en personalS
+ruta.info*/
+Route::get('/getInfoMiembroPersonalS', ["uses" => 'usuarioController@getInfoMiembroPersonalS']);
+
 /*Obtiene info de usuario ingresado
 ruta.info*/
 Route::get('/getInfoUsuario', ["uses" => 'usuarioController@getInfo']);

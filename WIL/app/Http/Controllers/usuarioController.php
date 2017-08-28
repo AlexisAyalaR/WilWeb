@@ -36,11 +36,12 @@ class usuarioController extends Controller
 
     		}catch(\Exception $e){
     			\Log::info('Error getInfo: '.$e);
-    			return \Response::json(["aqui"=>false],500);
+                session(['agregaUsuario' => -1]);
+                return redirect()->back();
     		}
     	}
-
-    	return \Response::json(["miembro"=>true],200);
+        session(['agregaUsuario' => 1]);
+        return redirect()->back();
     }
 
     /* 
@@ -61,10 +62,12 @@ class usuarioController extends Controller
 
         }catch(Exception $e){
             \Log::info('Error getInfo: '.$e);
-            return \Response::json(["miembro"=>false],500);
+            session(['eliminaUsuario' => -1]);
+            return redirect()->back();
 
         }
-        return \Response::json(["miembro"=>true],200);
+        session(['eliminaUsuario' => 1]);
+        return redirect()->back();
     }
 
     /* 
@@ -109,8 +112,9 @@ class usuarioController extends Controller
 
         $horario = session('horario');
         $nombre = session('nombre');
+        $cargaHorario = session('cargaHorario');
 
-        if(session('horario') == ''){
+        if($horario == ''){
         
             $usuario = session('jsonMiembro');
             $usuario_id = $usuario['id'];
@@ -123,9 +127,50 @@ class usuarioController extends Controller
 
         session(['nombre' => '']); 
 
-        return \Response::json(["horario"=>$horario, "nombre" => $nombre],200);
+        if($cargaHorario == '')
+           $cargaHorario = 0;
+        else{
+            session(['cargaHorario' => 0]);
+        }
+
+        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "cargaHorario" => $cargaHorario],200);
     }
 
+
+    public function getInfoMiembroPersonalS(){
+
+        $horario = session('horario');
+        $nombre = session('nombre');
+        $eliminaUsuario = session('eliminaUsuario');
+        $agregaUsuario = session('agregaUsuario');
+
+        if($horario == ''){
+        
+            $usuario = session('jsonMiembro');
+            $usuario_id = $usuario['id'];
+            $nombre = $usuario['nombre'];
+            $horario = horario::getById($usuario_id);
+
+        }
+
+        session(['horario' => '']);
+
+        session(['nombre' => '']); 
+
+        if($eliminaUsuario == '')
+           $eliminaUsuario = 0;
+        else{
+            session(['eliminaUsuario' => 0]);
+        }
+
+        if($agregaUsuario == '')
+           $agregaUsuario = 0;
+        else{
+            session(['agregaUsuario' => 0]);
+        }
+
+        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "agregaUsuario" => $agregaUsuario, "eliminaUsuario" => $eliminaUsuario],200);
+    }
 
     /* 
     * Funcion que se encarga de dar cambiar el horario del usuario ingresado. 
@@ -155,11 +200,12 @@ class usuarioController extends Controller
 
         }catch(Exception $e){
             \Log::info('Error getInfo: '.$e);
-            return \Response::json(["miembro"=>false],500);
+            session(['cargaHorario' => -1]);
+            return redirect()->back();
 
         }
-
-        return \Response::json(["miembro"=>true],200);
+        session(['cargaHorario' => 1]);
+        return redirect()->back();
     }
 
     /* 
