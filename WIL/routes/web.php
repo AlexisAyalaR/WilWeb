@@ -76,6 +76,11 @@ ruta.info*/
 Route::get('/signout', function(){
 
 	session(['jsonMiembro' => '']);
+	session(['horario' => '']);
+	session(['nombre' => '']);
+	session(['agregaUsuario' => '']);
+	session(['eliminaUsuario' => '']);
+	session(['cargaHorario' => '']);
 	return redirect('/html/prueba.html'); 
 
 });
