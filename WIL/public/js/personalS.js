@@ -65,16 +65,30 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
+    $.get("/WilWeb/Wil/public/getInfoMiembroPersonalS", function(data, status){
         var z = data.horario;
         var a = data.nombre;
         var b = data.cargaHorario;
+        var c = data.eliminaUsuario;
+        var d = data.agregaUsuario;
         if(b == 1){
             alert("Se modificó el horario correctamente.");
         }else{
             if(b == -1){
                 alert("No se modificó el horario correctamente.");
             }
+        }
+        if(c == 1){
+            alert("Se eliminó exitosamente.");
+        }else{
+            if(c == -1){
+                alert("No se eliminó exitosamente.");
+            }
+        }
+        if(d == 1){
+            alert("Se agregó exitosamente.");
+        }else{
+            alert("No se agregó exitosamente.");
         }
         document.getElementById("nombre").innerHTML = "<b>Nombre: </b>"+  a;
         for(i = 0; i<z.length; i++){
