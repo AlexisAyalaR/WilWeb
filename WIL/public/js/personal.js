@@ -107,12 +107,13 @@ $(document).ready(function(){
 
 $("#carga").ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
-        console.log(data);
     });
 });
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
         var z = data.horario;
+        var a = data.nombre;
+        console.log(a);
         for(i = 0; i<z.length; i++){
             var k = z[i];
             var n = k.horas;
