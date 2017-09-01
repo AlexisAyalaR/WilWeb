@@ -27,6 +27,7 @@ class VerifyCsrfToken extends BaseVerifier
         '/cambiaProgreso',
         '/cargaHorario',
         '/getInfoMiembro',
+        '/buscaHorario',
         '/eliminaUsuario'
     ];
 

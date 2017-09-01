@@ -45,7 +45,7 @@ Route::post('/cargaHorario', ["uses" => 'usuarioController@cargaHorario']);
 
 /*Busca el personal en el horario indicado
 personal.html-personalS.html*/
-Route::post('buscaHorario', ["uses" => 'usuarioController@buscaHorario']);
+Route::post('/buscaHorario', ["uses" => 'usuarioController@buscaHorario']);
 
 /*Obtiene la información del horario actual en personal
 ruta.info*/

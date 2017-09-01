@@ -273,12 +273,13 @@ class usuarioController extends Controller
         if($hora == '' || $dia == '')
             return redirect()->back();
 
-        $usuarios_nombres = DB::table('usuarios')
+        return DB::table('usuarios')
                                 ->join('horarios', 'usuarios.id', '=', 'horarios.usuario_id')
                                 ->where([
                                     ['horarios.dia', '=', $dia],
-                                    ['horarios.horas', '=', $hora],
-                                ->value('usuarios.nombre');
+                                    ['horarios.horas', '=', $hora]])
+                                ->get();
+                                //->value('usuarios.nombre');
 
         return $usuarios_nombres;
     }
