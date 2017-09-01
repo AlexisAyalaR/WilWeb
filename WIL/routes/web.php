@@ -24,11 +24,11 @@ prueba.html*/
 Route::post('/enviaProyecto', ["uses" => 'mailController@envia']);
 
 /*Cambia horario de usuario
-personal.html*/
+personal.html-personalS.html*/
 Route::post('/cambiaHorario', ["uses" => 'usuarioController@cambiaHorario']);
 
 /*Cambia progreso de usuario
-personal.html*/
+personal.html-personalS.html*/
 Route::post('/cambiaProgreso', ["uses" => 'usuarioController@cambiaProgreso']);
 
 /*Registra un usuario nuevo
@@ -40,8 +40,12 @@ personalS.html*/
 Route::post('/eliminaUsuario', ["uses" => 'usuarioController@eliminaUsuario']);
 
 /*Carga el horario del alumno seleccionado
-personal.html*/
+personal.html-personalS.html*/
 Route::post('/cargaHorario', ["uses" => 'usuarioController@cargaHorario']);
+
+/*Busca el personal en el horario indicado
+personal.html-personalS.html*/
+Route::post('buscaHorario', ["uses" => 'usuarioController@buscaHorario']);
 
 /*Obtiene la información del horario actual en personal
 ruta.info*/

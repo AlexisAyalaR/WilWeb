@@ -262,4 +262,24 @@ class usuarioController extends Controller
             ->update(['progreso' => $progreso]);
         return redirect()->back();
     }
+
+    public function buscaHorario(Request $req){
+
+        //VALIDADO
+        $hora = $_POST['hora'];
+
+        $dia = $_POST['dia'];
+
+        if($hora == '' || $dia == '')
+            return redirect()->back();
+
+        $usuarios_nombres = DB::table('usuarios')
+                                ->join('horarios', 'usuarios.id', '=', 'horarios.usuario_id')
+                                ->where([
+                                    ['horarios.dia', '=', $dia],
+                                    ['horarios.horas', '=', $hora],
+                                ->value('usuarios.nombre');
+
+        return $usuarios_nombres;
+    }
 }
