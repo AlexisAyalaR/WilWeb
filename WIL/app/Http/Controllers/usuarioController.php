@@ -282,5 +282,5 @@ class usuarioController extends Controller
                                 //->value('usuarios.nombre');
 
         return $usuarios_nombres;
-    }
+    } //5gifaw2Q=
 }
