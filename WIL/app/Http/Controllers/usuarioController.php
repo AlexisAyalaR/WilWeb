@@ -273,14 +273,41 @@ class usuarioController extends Controller
         if($hora == '' || $dia == '')
             return redirect()->back();
 
-        return DB::table('usuarios')
-                                ->join('horarios', 'usuarios.id', '=', 'horarios.usuario_id')
-                                ->where([
-                                    ['horarios.dia', '=', $dia],
-                                    ['horarios.horas', '=', $hora]])
-                                ->get();
-                                //->value('usuarios.nombre');
+        $rawDB = DB::table('horarios')
+                    ->join('usuarios', 'usuarios.id', '=', 'horarios.usuario_id')
+                    ->where([
+                        ['horarios.dia', '=', $dia],
+                        ['usuarios.nivel', '<>', 2]])
+                    ->get();
 
-        return $usuarios_nombres;
-    } //5gifaw2Q=
+        $usuarios_count = DB::table('usuarios')
+                            ->where('usuarios.nivel', '<>', 2)
+                            ->count();
+
+        $decodeJson = json_decode($rawDB,true);
+
+        $arregloResultado = [];
+
+
+        $replace = array(","); 
+
+        for ($i=0; $i < $usuarios_count; $i++) { 
+            $usuarioJson = $decodeJson[$i];
+            $horario = $usuarioJson['horas'];
+            $horarioNoCommas = str_replace($replace, "", $horario);
+            if($horarioNoCommas{$hora-1} == 1)
+                array_push($arregloResultado,$usuarioJson);
+        }
+
+        $arregloNombres = [];
+
+        for ($i=0; $i < count($arregloResultado); $i++) { 
+            $usuario = $arregloResultado[$i];
+            $usuario_nombre = $usuario['nombre'];
+            array_push($arregloNombres,$usuario_nombre);
+        }
+
+        return json_encode($arregloNombres);
+
+    }
 }
