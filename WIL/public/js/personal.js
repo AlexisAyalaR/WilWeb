@@ -49,7 +49,7 @@ function cambiaValue(cb, n, m){
 function envia(){
     var arrayTotal = [arrayLu, arrayMa, arrayMi, arrayJu, arrayVi];
     //alert(arrayTotal);
-    return document.getElementById("matriz").value = arrayTotal;  
+    return document.getElementById("matriz").value = arrayTotal;
 }
 
 $(document).ready(function(){
@@ -141,3 +141,19 @@ function openClose() {
         x.style.display = 'block';
     }
 }
+
+$(document).ready(function(){
+    $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
+        var x = data.nombresDropdown;
+        console.log(x);
+        var y;
+        var z;
+        for (i = 0; i < x.length; i++){
+            y = x[i];
+            z = document.createElement(tr);
+            $(".busca").append(y);
+        }
+    }
+}
+        y.innerHTML = x;
+        $("#miembros1").append(y);
