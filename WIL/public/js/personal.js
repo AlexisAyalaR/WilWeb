@@ -142,7 +142,7 @@ function openClose() {
     }
 }
 
-$(document).ready(function()){
+$(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
         var x = data.nombresDropdown;
         console.log(data);
@@ -154,5 +154,5 @@ $(document).ready(function()){
             z = document.createElement(tr);
             $(".busca").append(y);
         }
-    }
-}
+    });
+});
