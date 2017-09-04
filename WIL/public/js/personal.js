@@ -152,7 +152,7 @@ $(document).ready(function(){
             z = document.createElement("tr");
             z.append(y);
             console.log(z);
-            $(".busca").append(z);
+            $("#busca").append(z);
         }
     });
 });
