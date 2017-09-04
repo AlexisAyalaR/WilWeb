@@ -164,6 +164,7 @@ class usuarioController extends Controller
         $eliminaUsuario = session('eliminaUsuario');
         $agregaUsuario = session('agregaUsuario');
         $cargaHorario = session('cargaHorario');
+        $nombresDrowdown = session('nombresDropdown');
 
         if($horario == ''){
         
@@ -202,7 +203,7 @@ class usuarioController extends Controller
             session(['cargaHorario' => 0]);
         }
 
-        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "cargaHorario" => $cargaHorario, "agregaUsuario" => $agregaUsuario, "eliminaUsuario" => $eliminaUsuario],200);
+        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "cargaHorario" => $cargaHorario, "agregaUsuario" => $agregaUsuario, "eliminaUsuario" => $eliminaUsuario, "nombresDropdown" => $nombresDrowdown],200);
     }
 
     /* 
