@@ -145,14 +145,13 @@ function openClose() {
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
         var x = data.nombresDropdown;
-        console.log(data);
-        console.log(x);
         var y;
         var z;
         for (i = 0; i < x.length; i++){
             y = x[i];
             z = document.createElement("tr");
-            $(".busca").append(y);
+            z.append(y);
+            $(".busca").append(z);
         }
     });
 });
