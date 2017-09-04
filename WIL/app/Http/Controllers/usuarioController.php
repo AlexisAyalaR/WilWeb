@@ -126,6 +126,7 @@ class usuarioController extends Controller
         $horario = session('horario');
         $nombre = session('nombre');
         $cargaHorario = session('cargaHorario');
+        $nombresDrowdown = session('nombresDropdown');
 
         if($horario == ''){
         
@@ -148,7 +149,7 @@ class usuarioController extends Controller
             session(['cargaHorario' => 0]);
         }
 
-        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "cargaHorario" => $cargaHorario],200);
+        return \Response::json(["horario"=>$horario, "nombre" => $nombre, "cargaHorario" => $cargaHorario, "nombresDropdown" => $nombresDrowdown],200);
     }
 
     /* 
@@ -307,7 +308,9 @@ class usuarioController extends Controller
             array_push($arregloNombres,$usuario_nombre);
         }
 
-        return json_encode($arregloNombres);
+        session(['nombresDropdown' => $arregloNombres]);
+
+        return redirect()->back();
 
     }
 }
