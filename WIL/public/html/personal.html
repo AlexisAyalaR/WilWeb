@@ -108,9 +108,9 @@
 		</div>
 		<div class="w3-half progreso w3-round-xlarge w3-center">
 			<div class="w3-row-padding">
+				<form action="/WilWeb/Wil/public/buscaHorario" method="post">
 					<div class="w3-half">
 						<br>
-						<form action="/WilWeb/Wil/public/buscaHorario" method="post">
 							<div class="w3-container">
 								<div class="">
 									<select name="dia" class="dia" id="dia">
@@ -157,8 +157,11 @@
 							</div>
 							<br>
 							<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge">Consultar</button>
+							</div>
 							<br>
-							<br>
+							<div class="w3-half w3-padding">
+								<img src="http://icons.iconarchive.com/icons/flat-icons.com/flat/512/Clock-icon.png" width="150">
+							</div>
 							<div class="w3-center">
 								<table id="busca" class="w3-centered w3-table-all w3-border-blue">
 									<tr>
@@ -167,11 +170,7 @@
 								</table>
 								<br>
 							</div>
-						</form>
-					</div>
-					<div class="w3-half w3-padding">
-						<img src="http://icons.iconarchive.com/icons/flat-icons.com/flat/512/Clock-icon.png" width="150">
-					</div>
+				</form>
 			</div>
 		</div>
 		<div class="w3-quarter">
