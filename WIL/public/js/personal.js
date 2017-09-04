@@ -145,6 +145,7 @@ function openClose() {
 $(document).ready(function(){
     $.get("/WilWeb/Wil/public/getInfoMiembro", function(data, status){
         var x = data.nombresDropdown;
+        console.log(data);
         console.log(x);
         var y;
         var z;
@@ -155,5 +156,3 @@ $(document).ready(function(){
         }
     }
 }
-        y.innerHTML = x;
-        $("#miembros1").append(y);
