@@ -153,3 +153,20 @@ function envia(){
     //alert(arrayTotal);
     return document.getElementById("matriz").value = arrayTotal;  
 }
+
+$(document).ready(function(){
+    $.get("/WilWeb/Wil/public/getInfoMiembroPersonalS", function(data, status){
+        var x = data.nombresDropdown;
+        var y;
+        var z;
+        var z1;
+        for (i = 0; i < x.length; i++){
+            y = x[i];
+            z1 = document.createElement("th");
+            z = document.createElement("tr");
+            z1.append(y);
+            z.append(z1);
+            $("#busca").append(z);
+        }
+    });
+});

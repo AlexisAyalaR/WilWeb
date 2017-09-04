@@ -101,6 +101,93 @@
 	<br>
 </section>
 <br>
+<section class="section2 w3-row-padding">
+	<div class="w3-container">
+		<p class="tit"><h2><b>Consulta personal</b></h2></p>
+	</div>
+	<p>Aquí puedes consultar quién esta disponible en una hora en especifico.</p>
+	<div class="w3-row-padding">
+		<div class="w3-quarter">
+			<br>
+		</div>
+		<div class="w3-half progreso w3-round-xlarge w3-center">
+			<div class="w3-row-padding">
+				<form action="/WilWeb/Wil/public/buscaHorario" method="post">
+					<div class="w3-half">
+						<br>
+							<div class="w3-container">
+								<div class="">
+									<select name="dia" class="dia" id="dia">
+							  		  <option value="">--Días--</option>
+							  		  <option value="1">Lunes</option>
+							  		  <option value="2">Martes</option>
+							  		  <option value="3">Miércoles</option>
+							  		  <option value="4">Jueves</option>
+							  		  <option value="5">Viernes</option>
+									</select>
+									<br>
+									<br>
+							  		<select name="hora" class="hora" id="hora">
+							  		  <option value="">--Hora--</option>
+							  		  <option value="1">7:00</option>
+							  		  <option value="2">7:30</option>
+							  		  <option value="3">8:00</option>
+							  		  <option value="4">8:30</option>
+							  		  <option value="5">9:00</option>
+							  		  <option value="6">9:30</option>
+							  		  <option value="7">10:00</option>
+							  		  <option value="8">10:30</option>
+							  		  <option value="9">11:00</option>
+							  		  <option value="10">11:30</option>
+							  		  <option value="11">12:00</option>
+							  		  <option value="12">12:30</option>
+							  		  <option value="13">13:00</option>
+							  		  <option value="14">13:30</option>
+							  		  <option value="15">14:00</option>
+							  		  <option value="16">14:30</option>
+							  		  <option value="17">15:00</option>
+							  		  <option value="18">15:30</option>
+							  		  <option value="19">16:00</option>
+							  		  <option value="20">16:30</option>
+							  		  <option value="21">17:00</option>
+							  		  <option value="22">17:30</option>
+							  		  <option value="23">18:00</option>
+							  		  <option value="24">18:30</option>
+							  		  <option value="25">19:00</option>
+							  		  <option value="26">19:30</option>
+									</select>
+								</div>
+								<br>
+							</div>
+							<br>
+							<button onclick="" class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge">Consultar</button>
+							</div>
+							<br>
+							<div class="w3-half w3-padding">
+								<img src="http://icons.iconarchive.com/icons/flat-icons.com/flat/512/Clock-icon.png" width="150">
+							</div>
+							<div class="w3-center">
+								<table id="busca" class="w3-centered w3-table-all w3-border-blue">
+									<tr>
+										<th>Personal</th>
+									</tr>
+								</table>
+								<br>
+							</div>
+				</form>
+			</div>
+		</div>
+		<div class="w3-quarter">
+			<br>
+		</div>
+	</div>
+	<br>
+	<div class=" w3-container w3-row-padding">
+		<br>
+	</div>
+	<br>
+</section>
+<br>
 <section id="section1" class="section1 w3-row-padding">
 		<div class="w3-half">
 		<p class="tit"><h2><b>Regristro</b></h2></p>
