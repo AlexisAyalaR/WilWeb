@@ -151,6 +151,7 @@ $(document).ready(function(){
             y = x[i];
             z = document.createElement("tr");
             z.append(y);
+            console.log(z);
             $(".busca").append(z);
         }
     });
