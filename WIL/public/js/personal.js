@@ -151,7 +151,7 @@ $(document).ready(function(){
         var z;
         for (i = 0; i < x.length; i++){
             y = x[i];
-            z = document.createElement(tr);
+            z = document.createElement("tr");
             $(".busca").append(y);
         }
     });
